@@ -1,14 +1,14 @@
-# Editor and operating system files
+
 .DS_Store
 Thumbs.db
 .vscode/*.log
 
-# Dependencies and build output (reserved for future app setup)
+
 node_modules/
 dist/
 build/
 
-# Local environment secrets
+
 .env
 .env.*
 !.env.example
