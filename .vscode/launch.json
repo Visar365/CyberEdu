@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "CyberEdu: Hap në Chrome",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "file://${workspaceFolder}/Platforme_Siguria_Kibernetike_AI/index.html",
+      "webRoot": "${workspaceFolder}/Platforme_Siguria_Kibernetike_AI"
+    }
+  ]
+}
