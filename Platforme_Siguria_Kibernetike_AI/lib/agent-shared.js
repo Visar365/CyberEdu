@@ -3,6 +3,7 @@ const baseLessons = require("../data/base-lessons.json");
 
 const STORE_KEY = "cyberedu-lessons-v1";
 const SITE_STORE_KEY = "cyberedu-site-config-v1";
+const CONTENT_STORE_KEY = "cyberedu-managed-content-v1";
 const categories = new Set(["Llogaritë", "Mashtrimet", "Privatësia", "Pajisjet", "Rrjetet", "Incidente"]);
 const levels = new Set(["Fillestar", "Mesatar", "I avancuar"]);
 const siteViews = new Set(["dashboard", "lessons", "quiz", "lab", "assistant", "safety"]);
@@ -18,7 +19,8 @@ const defaultSiteConfig = {
   tipTitle: "Mendo para se të klikosh.",
   tipText: "Kontrollo dërguesin dhe lidhjen para se të hapësh një mesazh të papritur.",
   enabledViews: ["dashboard", "lessons", "quiz", "lab", "assistant", "safety"],
-  featuredLessonIds: [1, 2, 3]
+  featuredLessonIds: [1, 2, 3],
+  managedContent: { quizQuestions: [], labCases: [], safetyTips: [] }
 };
 
 function send(res, status, data) {
@@ -73,9 +75,28 @@ async function saveLessons(lessons) { await redis("set", STORE_KEY, lessons); }
 
 async function getSiteConfig() {
   const value = await redis("get", SITE_STORE_KEY);
-  if (!value) return { ...defaultSiteConfig };
-  try { return { ...defaultSiteConfig, ...JSON.parse(value) }; } catch { return { ...defaultSiteConfig }; }
+  if (!value) return { ...defaultSiteConfig, managedContent: await getManagedContent() };
+  try {
+    const config = { ...defaultSiteConfig, ...JSON.parse(value) };
+    config.managedContent = await getManagedContent();
+    return config;
+  } catch { return { ...defaultSiteConfig, managedContent: await getManagedContent().catch(() => defaultSiteConfig.managedContent) }; }
 }
+
+async function getManagedContent() {
+  const value = await redis("get", CONTENT_STORE_KEY);
+  if (!value) return { quizQuestions: [], labCases: [], safetyTips: [] };
+  try {
+    const parsed = JSON.parse(value);
+    return {
+      quizQuestions: Array.isArray(parsed.quizQuestions) ? parsed.quizQuestions : [],
+      labCases: Array.isArray(parsed.labCases) ? parsed.labCases : [],
+      safetyTips: Array.isArray(parsed.safetyTips) ? parsed.safetyTips : []
+    };
+  } catch { return { quizQuestions: [], labCases: [], safetyTips: [] }; }
+}
+
+async function saveManagedContent(content) { await redis("set", CONTENT_STORE_KEY, content); }
 
 function validateSiteConfig(config, lessons) {
   const textFields = ["siteName", "tagline", "heroTitle", "heroDescription", "sidebarTitle", "sidebarNote", "tipTitle", "tipText"];
@@ -97,8 +118,8 @@ async function commandSite(request, config, lessons, { maxLessonChanges = 3, req
       model: process.env.OPENAI_MODEL || "gpt-4.1-mini",
       store: false,
       tools: [{ type: "web_search" }],
-      instructions: `Je administratori përmbajtjesor i CyberEdu. Përditëso konfigurimin e faqes dhe mësimet sipas udhëzimit. Mund të ndryshosh titullin/emrin, përshkrimet, njoftimin, këshillën e ditës, mësimet e paraqitura, seksionet ekzistuese dhe përmbajtjen e mësimeve; mund të shtosh mësim të ri kur ka vlerë. Mos hiq kurrë dashboard ose mësimet. Mos shpik fakte. Për udhëzime aktuale përdor web search dhe burime HTTPS zyrtare nga CISA, NCSC, ENISA, FTC, OWASP, NIST ose CERT. Mos ndrysho domenet, identitetin, përparimin e nxënësve, të dhënat personale, kodin ose pamjen/komponentët e faqes. Kthe JSON {siteConfig:{siteName,tagline,announcement,heroTitle,heroDescription,sidebarTitle,sidebarNote,tipTitle,tipText,enabledViews,featuredLessonIds},lessonProposals:[{operation:'add'|'update',targetId:number,reason:string,lesson:{id:number,title:string,icon:string,time:string,level:string,category:string,short:string,body:string,points:string[],action:string,agentChapters:[{title:string,paragraphs:string[],example:string}],sources:[{name:string,url:string}]}}],message:string}. Kthe 0-3 lessonProposals. Çdo mësim i ri/përditësuar duhet të ketë të paktën 500 fjalë, 5-7 kapituj me nga dy paragrafë dhe shembull, 3-6 pika, veprim praktik dhe burime reale. Për add vendos id 0; për update përdor id ekzistuese dhe targetId. Ruaj vlerat aktuale që nuk preken nga udhëzimi. enabledViews lejon vetëm: ${[...siteViews].join(", ")}. featuredLessonIds duhet të jenë ID nga kursi, maksimumi 3. Shkruaj shqip të qartë. Nëse kërkesa kërkon kod, veçori të re interaktive ose ndryshim dizajni që nuk realizohet me këto fusha, mos pretendo se u bë; sqaroje te message.`,
-      input: `Konfigurimi aktual:\n${JSON.stringify(config)}\nKatalogu i mësimeve:\n${JSON.stringify(lessons)}\n\nUdhëzimi:\n${request}`,
+      instructions: `Je administratori përmbajtjesor i CyberEdu. Përditëso materialet e të gjitha pjesëve ekzistuese: mësime, kuize, skenarë laboratori, këshilla sigurie dhe tekstet/konfigurimin e faqes. Mund të shtosh ose korrigjosh përmbajtje, por mos fshi asnjë material ekzistues. Ruaj të gjitha vargjet ekzistuese të managedContent dhe shto propozimet e reja; serveri do t'i bashkojë pa zëvendësuar përmbajtjen ekzistuese. Mos ndrysho identitetin e faqes, përparimin e nxënësve, të dhënat personale, kodin, dizajnin, domenin ose autentikimin. Për kod/veçori të reja mos pretendo se u implementuan; shënoji te message si kërkesë që kërkon publikim kodi. Mos shpik fakte. Për çdo material përdor web search dhe burime HTTPS zyrtare nga CISA, NCSC, ENISA, FTC, OWASP, NIST ose CERT. Shkruaj shqip. Kthe JSON {siteConfig:{siteName,tagline,announcement,heroTitle,heroDescription,sidebarTitle,sidebarNote,tipTitle,tipText,enabledViews,featuredLessonIds},lessonProposals:[{operation:'add'|'update',targetId:number,reason:string,lesson:{id:number,title:string,icon:string,time:string,level:string,category:string,short:string,body:string,points:string[],action:string,agentChapters:[{title:string,paragraphs:string[],example:string}],sources:[{name:string,url:string}]}}],contentAdditions:{quizQuestions:[{q:string,a:string[],correct:number,why:string}],labCases:[{title:string,sender:string,message:string,options:string[],correct:number,feedback:string}],safetyTips:[{icon:string,title:string,text:string,sourceName:string,sourceUrl:string}]},message:string}. Kthe 0-1 lessonProposals dhe deri në një shtesë për secilin lloj përmbajtjeje në ciklin ditor. Çdo mësim i ri/përditësuar: të paktën 500 fjalë, 5-7 kapituj me nga dy paragrafë dhe shembull, 3-6 pika, veprim praktik dhe burime reale. Për add vendos id 0; për update përdor id ekzistuese dhe targetId. Quiz: saktësisht 4 alternativa, correct indeks 0-3. Laboratori: 3 alternativa, correct indeks 0-2. Këshilla: lidhje burimi vetëm HTTPS nga hostet zyrtare të lejuara. Ruaj vlerat aktuale që nuk preken. Mos hiq dashboard ose seksione ekzistuese. enabledViews lejon vetëm: ${[...siteViews].join(", ")}. featuredLessonIds duhet të jenë ID nga kursi, maksimumi 3.`,
+      input: `Konfigurimi dhe përmbajtja aktuale:\n${JSON.stringify(config)}\nKatalogu i mësimeve:\n${JSON.stringify(lessons)}\n\nUdhëzimi:\n${request}`,
       text: { format: { type: "json_object" } },
       max_output_tokens: 9000
     })
@@ -125,9 +146,35 @@ async function commandSite(request, config, lessons, { maxLessonChanges = 3, req
     proposal.lesson = cleanLesson(proposal.lesson);
   }
   const selected = proposals.slice(0, maxLessonChanges);
+  const content = await getManagedContent();
+  const additions = parsed.contentAdditions || {};
+  for (const type of ["quizQuestions", "labCases", "safetyTips"]) {
+    const incoming = additions[type] || [];
+    if (!Array.isArray(incoming) || incoming.length > 1) throw new Error("AI ktheu numër të pavlefshëm shtesash në platformë.");
+    if (requireNewLesson && incoming.length !== 1) throw new Error("Cikli ditor kërkonte nga një shtesë të re në kuiz, laborator dhe këshilla sigurie.");
+    for (const item of incoming) {
+      const text = JSON.stringify(item);
+      if (text.length > 8000 || /<\/?\w+|javascript:/i.test(text)) throw new Error("Përmbajtja e re nuk kaloi kontrollin e sigurisë.");
+      const shortText = (value, max) => typeof value === "string" && value.trim().length > 0 && value.length <= max;
+      if (type === "quizQuestions" && (!shortText(item.q, 500) || !Array.isArray(item.a) || item.a.length !== 4 || item.a.some(answer => !shortText(answer, 300)) || !Number.isInteger(item.correct) || item.correct < 0 || item.correct > 3 || !shortText(item.why, 800))) throw new Error("Pyetja e kuizit nuk kaloi validimin.");
+      if (type === "labCases" && (!shortText(item.title, 160) || !shortText(item.sender, 160) || !shortText(item.message, 1000) || !Array.isArray(item.options) || item.options.length !== 3 || item.options.some(option => !shortText(option, 300)) || !Number.isInteger(item.correct) || item.correct < 0 || item.correct > 2 || !shortText(item.feedback, 800))) throw new Error("Skenari i laboratorit nuk kaloi validimin.");
+      if (type === "safetyTips") {
+        let url; try { url = new URL(item.sourceUrl); } catch { throw new Error("Burimi i këshillës nuk është URL e vlefshme."); }
+        if (!shortText(item.title, 160) || !shortText(item.text, 800) || !shortText(item.sourceName, 200) || (item.icon !== undefined && !shortText(item.icon, 8)) || url.protocol !== "https:" || !officialHosts.some(host => url.hostname === host || url.hostname.endsWith(`.${host}`))) throw new Error("Këshilla nuk ka burim zyrtar të lejuar.");
+      }
+      const key = type === "quizQuestions" ? "q" : "title";
+      if (content[type].some(existing => String(existing[key]).toLowerCase() === String(item[key]).toLowerCase())) {
+        if (requireNewLesson) throw new Error("Cikli ditor propozoi përmbajtje të përsëritur.");
+        continue;
+      }
+      content[type].push(item);
+    }
+  }
   if (selected.length) await applyProposals(selected, lessons);
+  await saveManagedContent(content);
+  cleaned.managedContent = content;
   await saveSiteConfig(cleaned);
-  return { siteConfig: cleaned, lessonChanges: selected.length, message: String(parsed.message || "Përditësimi përfundoi.").slice(0, 500) };
+  return { siteConfig: cleaned, lessonChanges: selected.length, contentChanges: Object.values(additions).reduce((total, items) => total + (Array.isArray(items) ? items.length : 0), 0), message: String(parsed.message || "Përditësimi përfundoi.").slice(0, 500) };
 }
 
 function escapeText(value) {
@@ -207,4 +254,4 @@ async function applyProposals(proposals, lessons) {
   return next;
 }
 
-module.exports = { send, readBody, authorized, requireEnv, getLessons, saveLessons, validLesson, cleanLesson, propose, applyProposals, defaultSiteConfig, getSiteConfig, validateSiteConfig, commandSite };
+module.exports = { send, readBody, authorized, requireEnv, getLessons, saveLessons, validLesson, cleanLesson, propose, applyProposals, defaultSiteConfig, getSiteConfig, getManagedContent, validateSiteConfig, commandSite };

@@ -454,6 +454,16 @@ quizQuestions.push(
   {q:"Dyshon se llogaria e shkollës është komprometuar. Çfarë bën?",a:["Fshin mesazhet","Njofton IT-në shpejt dhe ruan provat","Përgjigjesh te dërguesi i dyshimtë","Përdor të njëjtin fjalëkalim"],correct:1,why:"Njoftimi i shpejtë ndihmon reagimin; ruaj provat dhe ndiq udhëzimet zyrtare."}
 );const quizSections=["Bazat e sigurisë","Llogaritë dhe pajisjet","Skenarë praktikë","Siguria mobile dhe reagimi","Praktika e avancuar"];
 quizQuestions.forEach((question,index)=>{question.section=quizSections[Math.floor(index/6)]});
+const loadedManagedItems=new Set();
+function mergeManagedContent(content={}){
+  (content.quizQuestions||[]).forEach(item=>{const key=`quiz:${item.q}`;if(loadedManagedItems.has(key))return;loadedManagedItems.add(key);quizQuestions.push({...item,section:"Praktika e avancuar"})});
+  (content.labCases||[]).forEach(item=>{const key=`lab:${item.title}`;if(loadedManagedItems.has(key))return;loadedManagedItems.add(key);labCases.push(item)});
+  const grid=document.querySelector("#safety .safety-grid");
+  (content.safetyTips||[]).forEach(item=>{const key=`tip:${item.title}`;if(loadedManagedItems.has(key))return;loadedManagedItems.add(key);if(!grid)return;const card=document.createElement("article");card.className="safety-card";const icon=document.createElement("span");icon.className="safety-icon icon-violet";icon.textContent=item.icon||"✦";const title=document.createElement("h3");title.textContent=item.title;const body=document.createElement("p");body.textContent=item.text;const link=document.createElement("a");link.href=item.sourceUrl;link.target="_blank";link.rel="noopener noreferrer";link.textContent=`${item.sourceName} ↗`;card.append(icon,title,body,link);grid.append(card)});
+  const quizIntro=document.querySelector("#quiz .intro p");if(quizIntro)quizIntro.textContent=`${quizQuestions.length} pyetje në ${quizSections.length} blloqe. Pas çdo përgjigjeje shfaqet shpjegimi dhe në fund rezultati sipas temës.`;
+  const safetyIntro=document.querySelector("#safety .intro p");if(safetyIntro)safetyIntro.textContent=`${grid?.children.length||0} këshilla të shkurtra për llogaritë, pajisjet dhe situatat e përditshme. Hap burimet zyrtare për udhëzime më të hollësishme.`;
+  if(typeof renderLabCase==="function"&&labCases.length)renderLabCase();
+}
 
 const titles={dashboard:"Përshëndetje, mirë se erdhe!",lessons:"Mësimet e tua",quiz:"Kuizi i sigurisë",assistant:"Chatbot edukativ",lab:"Laboratori i sigurisë",safety:"Këshilla sigurie"};
 function readProgress(key,fallback){try{const value=localStorage.getItem(key);return value?JSON.parse(value):fallback}catch{return fallback}}
@@ -575,15 +585,15 @@ function renderQuestion(){
   const box=document.getElementById("quiz-container");
   if(currentQuestion>=quizQuestions.length){
     totalScore+=quizScore;recordActivity(`Përfundove kuizin: ${quizScore} nga ${quizQuestions.length} përgjigje të sakta`);saveProgress();
-    const sectionResults=quizSections.map(section=>{const earned=quizAnswers.filter(answer=>answer.section===section&&answer.correct).length;return `<li><span>${section}</span><b>${earned} / 6</b></li>`}).join("");
+    const sectionResults=quizSections.map(section=>{const count=quizQuestions.filter(question=>question.section===section).length;if(!count)return "";const earned=quizAnswers.filter(answer=>answer.section===section&&answer.correct).length;return `<li><span>${section}</span><b>${earned} / ${count}</b></li>`}).join("");
     const resultText=quizScore>=20?"Shkëlqyeshëm! Ke zotëruar shumicën e temave.":quizScore>=15?"Mirë! Rishiko temat ku humbe pikë dhe provo sërish.":"Rilexo kapitujt dhe përpiqu përsëri; secila pyetje shpjegon arsyen.";
     box.innerHTML=`<div class="quiz-start quiz-results"><div class="quiz-big-icon">★</div><span class="section-kicker">REZULTATI YT</span><h2>Kuizi përfundoi!</h2><p class="quiz-score-total"><b>${quizScore} / ${quizQuestions.length}</b> përgjigje të sakta</p><p>${resultText}</p><h3>Rezultati sipas temës</h3><ul class="quiz-section-results">${sectionResults}</ul><button class="primary-btn" id="restart-quiz">Provo përsëri <span>↻</span></button></div>`;
     document.getElementById("restart-quiz").onclick=startQuiz;return
   }
   answered=false;const question=quizQuestions[currentQuestion];
   const progress=((currentQuestion+1)/quizQuestions.length)*100;
-  const sectionQuestion=currentQuestion%6+1;
-  box.innerHTML=`<div class="question-top"><span>Pyetja ${currentQuestion+1} nga ${quizQuestions.length}</span><span>Pikët: ${quizScore}</span></div><div class="quiz-section-label">${question.section} <span>·</span> Pyetja ${sectionQuestion} nga 6</div><div class="quiz-progress" role="progressbar" aria-label="Përparimi i kuizit" aria-valuemin="0" aria-valuemax="${quizQuestions.length}" aria-valuenow="${currentQuestion+1}"><span style="width:${progress}%"></span></div><h3>${question.q}</h3><p class="answer-hint">Zgjidh përgjigjen që të duket më e saktë.</p><div class="answers">${question.a.map((answer,index)=>`<button class="answer-btn" data-answer="${index}">${String.fromCharCode(65+index)}. ${answer}</button>`).join("")}</div><div id="explanation-slot" aria-live="polite"></div><div class="quiz-actions"><button class="primary-btn hidden" id="next-question">${currentQuestion===quizQuestions.length-1?"Shiko rezultatin":"Vazhdo te pyetja tjetër →"}</button></div>`;
+  const sectionItems=quizQuestions.filter(item=>item.section===question.section),sectionQuestion=sectionItems.indexOf(question)+1;
+  box.innerHTML=`<div class="question-top"><span>Pyetja ${currentQuestion+1} nga ${quizQuestions.length}</span><span>Pikët: ${quizScore}</span></div><div class="quiz-section-label">${question.section} <span>·</span> Pyetja ${sectionQuestion} nga ${sectionItems.length}</div><div class="quiz-progress" role="progressbar" aria-label="Përparimi i kuizit" aria-valuemin="0" aria-valuemax="${quizQuestions.length}" aria-valuenow="${currentQuestion+1}"><span style="width:${progress}%"></span></div><h3>${question.q}</h3><p class="answer-hint">Zgjidh përgjigjen që të duket më e saktë.</p><div class="answers">${question.a.map((answer,index)=>`<button class="answer-btn" data-answer="${index}">${String.fromCharCode(65+index)}. ${answer}</button>`).join("")}</div><div id="explanation-slot" aria-live="polite"></div><div class="quiz-actions"><button class="primary-btn hidden" id="next-question">${currentQuestion===quizQuestions.length-1?"Shiko rezultatin":"Vazhdo te pyetja tjetër →"}</button></div>`;
   box.querySelectorAll("[data-answer]").forEach(button=>button.onclick=()=>chooseAnswer(Number(button.dataset.answer)));
 }
 function chooseAnswer(index){
@@ -736,6 +746,7 @@ let lessonAgentKey=sessionStorage.getItem("cyberedu_lesson_agent_key")||"";
 let pendingLessonProposals=[];
 function applySiteConfig(config){
   activeSiteConfig=config;
+  mergeManagedContent(config.managedContent||{});
   document.querySelectorAll("[data-site]").forEach(element=>{const value=config[element.dataset.site];if(typeof value==="string")element.textContent=value});
   const announcement=document.getElementById("site-announcement");announcement.textContent=config.announcement||"";announcement.classList.toggle("hidden",!config.announcement);
   document.title=`${config.siteName||"CyberEdu"} — Mëso të mbrohesh online`;
@@ -757,7 +768,7 @@ document.getElementById("lesson-agent-command").onclick=async()=>{
   if(!lessonAgentKey){lessonAgentKey=prompt("Vendos çelësin e redaktorit (LESSON_AGENT_KEY):")||"";if(lessonAgentKey)sessionStorage.setItem("cyberedu_lesson_agent_key",lessonAgentKey)}
   if(!lessonAgentKey){lessonAgentStatus.textContent="Mungon çelësi i redaktorit.";return}
   const button=document.getElementById("lesson-agent-command");button.disabled=true;lessonAgentStatus.textContent="AI po përditëson platformën…";
-  try{const response=await fetch("/api/agent/command",{method:"POST",headers:{"Content-Type":"application/json",Authorization:`Bearer ${lessonAgentKey}`},body:JSON.stringify({request})}),result=await response.json();if(!response.ok)throw new Error(result.error||"Përditësimi dështoi.");applySiteConfig(result.siteConfig);await loadAgentLessons();lessonAgentStatus.textContent=`${result.message||"U përditësua."} ${result.lessonChanges?`U ruajtën ${result.lessonChanges} ndryshime në mësime.`:""}`.trim();}
+  try{const response=await fetch("/api/agent/command",{method:"POST",headers:{"Content-Type":"application/json",Authorization:`Bearer ${lessonAgentKey}`},body:JSON.stringify({request})}),result=await response.json();if(!response.ok)throw new Error(result.error||"Përditësimi dështoi.");applySiteConfig(result.siteConfig);await loadAgentLessons();lessonAgentStatus.textContent=`${result.message||"U përditësua."} ${result.lessonChanges?`Mësime: ${result.lessonChanges}.`:""} ${result.contentChanges?`Shtesa të tjera në platformë: ${result.contentChanges}.`:""}`.trim();}
   catch(error){lessonAgentStatus.textContent=error.message;if(error.message.includes("Çelësi i redaktorit")){sessionStorage.removeItem("cyberedu_lesson_agent_key");lessonAgentKey=""}}
   finally{button.disabled=false}
 };
