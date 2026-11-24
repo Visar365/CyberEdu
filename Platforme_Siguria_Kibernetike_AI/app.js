@@ -27,6 +27,8 @@ const lessons = [
   {id:26,title:"Raportimi i një incidenti kibernetik",icon:"!",time:"6 min",level:"Mesatar",category:"Incidente",short:"Ruaj provat dhe njofto personin ose institucionin e duhur.",body:"Raportimi i shpejtë ndihmon në kufizimin e dëmit dhe në mbrojtjen e të tjerëve. Ruaj mesazhin ose pamjet relevante, por mos e përcill lidhjen e rrezikshme dhe mos fshi prova para se të marrësh udhëzim.",points:["Njofto ekipin e IT-së nëse është llogari pune ose shkolle.","Kontakto bankën nga numri zyrtar nëse përfshihet pagesa.","Raporto mesazhin në platformën ku e more.","Përshkruaj çfarë ndodhi, kur dhe çfarë të dhënash mund të jenë ndarë."]}
 ];
 
+let activeSiteConfig={featuredLessonIds:[1,2,3],enabledViews:["dashboard","lessons","quiz","lab","assistant","safety"]};
+
 const lessonReading = {
   1: {
     chapters: [
@@ -492,7 +494,8 @@ function saveProgress(){try{localStorage.setItem(progressPrefix()+"completed",JS
 function lessonCard(lesson){const done=completed.includes(lesson.id);return `<article class="lesson-card" data-lesson="${lesson.id}" tabindex="0" role="button" aria-label="Hap mësimin: ${lesson.title}"><div class="lesson-icon">${lesson.icon}</div><h3>${lesson.title}${done?" ✓":""}</h3><p>${lesson.short}</p><div class="lesson-meta"><span>◷ ${lesson.time} lexim</span><span class="tag ${done?"done":""}">${done?"Përfunduar":lesson.level}</span></div><span class="lesson-category">${lesson.category}</span></article>`}
 function renderLessons(){
   const suggested=[...lessons.filter(lesson=>!completed.includes(lesson.id)),...lessons.filter(lesson=>completed.includes(lesson.id))];
-  document.getElementById("featured-lessons").innerHTML=suggested.slice(0,3).map(lessonCard).join("");
+  const pinned=(activeSiteConfig.featuredLessonIds||[]).map(id=>lessons.find(lesson=>lesson.id===id)).filter(Boolean);
+  document.getElementById("featured-lessons").innerHTML=[...pinned,...suggested.filter(lesson=>!pinned.includes(lesson))].slice(0,3).map(lessonCard).join("");
   renderLessonCatalog();
   document.querySelectorAll("#featured-lessons [data-lesson]").forEach(card=>{const open=()=>{showView("lessons");openLesson(Number(card.dataset.lesson))};card.addEventListener("click",open);card.addEventListener("keydown",event=>{if(event.key==="Enter"||event.key===" "){event.preventDefault();open()}})});
 }
@@ -731,12 +734,33 @@ const lessonAgentStatus=document.getElementById("lesson-agent-status");
 const lessonAgentProposals=document.getElementById("lesson-agent-proposals");
 let lessonAgentKey=sessionStorage.getItem("cyberedu_lesson_agent_key")||"";
 let pendingLessonProposals=[];
+function applySiteConfig(config){
+  activeSiteConfig=config;
+  document.querySelectorAll("[data-site]").forEach(element=>{const value=config[element.dataset.site];if(typeof value==="string")element.textContent=value});
+  const announcement=document.getElementById("site-announcement");announcement.textContent=config.announcement||"";announcement.classList.toggle("hidden",!config.announcement);
+  document.title=`${config.siteName||"CyberEdu"} — Mëso të mbrohesh online`;
+  const enabled=new Set(config.enabledViews||["dashboard","lessons","quiz","lab","assistant","safety"]);
+  document.querySelectorAll(".nav-link[data-view]").forEach(button=>{const visible=enabled.has(button.dataset.view);button.hidden=!visible;const view=document.getElementById(button.dataset.view);if(view)view.hidden=!visible});
+  const active=document.querySelector(".view.active");if(active?.hidden)showView("dashboard");
+  renderLessons();
+}
+async function loadSiteConfig(){try{const response=await fetch("/api/site-config");if(response.ok)applySiteConfig(await response.json())}catch{}}
 async function loadAgentLessons(){try{const response=await fetch("/api/lessons");if(!response.ok)return;const remote=await response.json();for(const lesson of remote){const index=lessons.findIndex(item=>item.id===lesson.id);if(index>=0)lessons[index]={...lessons[index],...lesson};else lessons.push(lesson)}lessons.forEach(lesson=>{if(lesson.agentChapters)lesson.time=`${Math.max(4,Math.ceil(JSON.stringify(lesson).split(/\s+/).length/125))} min`});renderLessons();updateDashboard()}catch{}}
 loadAgentLessons();
+loadSiteConfig();
 function closeLessonAgent(){lessonAgentModal.classList.add("hidden")}
 document.getElementById("lesson-agent-open").onclick=()=>lessonAgentModal.classList.remove("hidden");
 document.getElementById("lesson-agent-close").onclick=closeLessonAgent;
 lessonAgentModal.addEventListener("click",event=>{if(event.target===lessonAgentModal)closeLessonAgent()});
+document.getElementById("lesson-agent-command").onclick=async()=>{
+  const request=document.getElementById("lesson-agent-request").value.trim();if(request.length<8){lessonAgentStatus.textContent="Shkruaj çfarë dëshiron të ndryshojë AI.";return}
+  if(!lessonAgentKey){lessonAgentKey=prompt("Vendos çelësin e redaktorit (LESSON_AGENT_KEY):")||"";if(lessonAgentKey)sessionStorage.setItem("cyberedu_lesson_agent_key",lessonAgentKey)}
+  if(!lessonAgentKey){lessonAgentStatus.textContent="Mungon çelësi i redaktorit.";return}
+  const button=document.getElementById("lesson-agent-command");button.disabled=true;lessonAgentStatus.textContent="AI po përditëson platformën…";
+  try{const response=await fetch("/api/agent/command",{method:"POST",headers:{"Content-Type":"application/json",Authorization:`Bearer ${lessonAgentKey}`},body:JSON.stringify({request})}),result=await response.json();if(!response.ok)throw new Error(result.error||"Përditësimi dështoi.");applySiteConfig(result.siteConfig);await loadAgentLessons();lessonAgentStatus.textContent=`${result.message||"U përditësua."} ${result.lessonChanges?`U ruajtën ${result.lessonChanges} ndryshime në mësime.`:""}`.trim();}
+  catch(error){lessonAgentStatus.textContent=error.message;if(error.message.includes("Çelësi i redaktorit")){sessionStorage.removeItem("cyberedu_lesson_agent_key");lessonAgentKey=""}}
+  finally{button.disabled=false}
+};
 document.getElementById("lesson-agent-generate").onclick=async()=>{
   const request=document.getElementById("lesson-agent-request").value.trim();if(request.length<8){lessonAgentStatus.textContent="Shkruaj një udhëzim më të plotë.";return}
   if(!lessonAgentKey){lessonAgentStatus.textContent="Mungon çelësi i redaktorit.";return}

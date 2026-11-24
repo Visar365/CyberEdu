@@ -1,4 +1,4 @@
-const { send, readBody, authorized, requireEnv, getLessons, saveLessons, validLesson, propose, applyProposals } = require("../../lib/agent-shared");
+const { send, readBody, authorized, requireEnv, getLessons, saveLessons, validLesson, propose, applyProposals, getSiteConfig, commandSite } = require("../../lib/agent-shared");
 
 module.exports = async function handler(req, res) {
   if (!authorized(req)) return send(res, 401, { error: "Çelësi i redaktorit mungon ose është i pasaktë." });
@@ -6,6 +6,12 @@ module.exports = async function handler(req, res) {
   try {
     if (req.method !== "POST") return send(res, 405, { error: "Metoda nuk mbështetet." });
     const input = await readBody(req);
+    if (action === "command") {
+      if (typeof input.request !== "string" || input.request.trim().length < 8 || input.request.length > 1200) return send(res, 400, { error: "Shkruaj një udhëzim prej të paktën 8 karakteresh." });
+      const [config, lessons] = await Promise.all([getSiteConfig(), getLessons()]);
+      const result = await commandSite(input.request.trim(), config, lessons);
+      return send(res, 200, { ok: true, ...result });
+    }
     if (action === "sync") {
       if (!Array.isArray(input.lessons) || input.lessons.length < 1 || input.lessons.length > 80 || input.lessons.some(lesson => !validLesson(lesson))) return send(res, 400, { error: "Katalogu nuk kaloi kontrollin. Sigurohu që çdo mësim ka kapituj dhe burime HTTPS." });
       const unique = new Set(input.lessons.map(lesson => lesson.id));

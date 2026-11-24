@@ -1,9 +1,25 @@
 const crypto = require("node:crypto");
+const baseLessons = require("../data/base-lessons.json");
 
 const STORE_KEY = "cyberedu-lessons-v1";
+const SITE_STORE_KEY = "cyberedu-site-config-v1";
 const categories = new Set(["Llogaritë", "Mashtrimet", "Privatësia", "Pajisjet", "Rrjetet", "Incidente"]);
 const levels = new Set(["Fillestar", "Mesatar", "I avancuar"]);
+const siteViews = new Set(["dashboard", "lessons", "quiz", "lab", "assistant", "safety"]);
 const officialHosts = ["cisa.gov", "ncsc.gov.uk", "enisa.europa.eu", "ftc.gov", "owasp.org", "nist.gov", "cert.europa.eu", "europa.eu"];
+const defaultSiteConfig = {
+  siteName: "CyberEdu",
+  tagline: "Akademia jote digjitale",
+  announcement: "",
+  heroTitle: "Mëso si të mbrohesh online, me ritmin tënd.",
+  heroDescription: "Nis me një temë të vogël, provo çfarë mësove dhe kthehu kur të duash. Hapat e vegjël të ndihmojnë të kujdesesh më mirë për veten në internet.",
+  sidebarTitle: "Siguria fillon me ty.",
+  sidebarNote: "Një hap i vogël sot të mbron nesër.",
+  tipTitle: "Mendo para se të klikosh.",
+  tipText: "Kontrollo dërguesin dhe lidhjen para se të hapësh një mesazh të papritur.",
+  enabledViews: ["dashboard", "lessons", "quiz", "lab", "assistant", "safety"],
+  featuredLessonIds: [1, 2, 3]
+};
 
 function send(res, status, data) {
   res.statusCode = status;
@@ -50,10 +66,68 @@ async function redis(command, key, value) {
 
 async function getLessons() {
   const value = await redis("get", STORE_KEY);
-  return value ? JSON.parse(value) : [];
+  return value ? JSON.parse(value) : baseLessons;
 }
 
 async function saveLessons(lessons) { await redis("set", STORE_KEY, lessons); }
+
+async function getSiteConfig() {
+  const value = await redis("get", SITE_STORE_KEY);
+  if (!value) return { ...defaultSiteConfig };
+  try { return { ...defaultSiteConfig, ...JSON.parse(value) }; } catch { return { ...defaultSiteConfig }; }
+}
+
+function validateSiteConfig(config, lessons) {
+  const textFields = ["siteName", "tagline", "heroTitle", "heroDescription", "sidebarTitle", "sidebarNote", "tipTitle", "tipText"];
+  if (!config || textFields.some(key => typeof config[key] !== "string" || config[key].trim().length < 2 || config[key].length > 240)) return false;
+  if (typeof config.announcement !== "string" || config.announcement.length > 280) return false;
+  if (!Array.isArray(config.enabledViews) || config.enabledViews.length < 2 || config.enabledViews.length > siteViews.size || config.enabledViews.some(view => !siteViews.has(view)) || !config.enabledViews.includes("dashboard") || !config.enabledViews.includes("lessons")) return false;
+  if (!Array.isArray(config.featuredLessonIds) || config.featuredLessonIds.length > 3 || config.featuredLessonIds.some(id => !Number.isInteger(id) || !lessons.some(lesson => lesson.id === id))) return false;
+  return true;
+}
+
+async function saveSiteConfig(config) { await redis("set", SITE_STORE_KEY, config); }
+
+async function commandSite(request, config, lessons, { maxLessonChanges = 3 } = {}) {
+  requireEnv("OPENAI_API_KEY", "KV_REST_API_URL", "KV_REST_API_TOKEN");
+  const response = await fetch("https://api.openai.com/v1/responses", {
+    method: "POST",
+    headers: { Authorization: `Bearer ${process.env.OPENAI_API_KEY}`, "Content-Type": "application/json" },
+    body: JSON.stringify({
+      model: process.env.OPENAI_MODEL || "gpt-4.1-mini",
+      store: false,
+      tools: [{ type: "web_search" }],
+      instructions: `Je administratori përmbajtjesor i CyberEdu. Përditëso konfigurimin e faqes dhe mësimet sipas udhëzimit. Mund të ndryshosh titullin/emrin, përshkrimet, njoftimin, këshillën e ditës, mësimet e paraqitura, seksionet ekzistuese dhe përmbajtjen e mësimeve; mund të shtosh mësim të ri kur ka vlerë. Mos hiq kurrë dashboard ose mësimet. Mos shpik fakte. Për udhëzime aktuale përdor web search dhe burime HTTPS zyrtare nga CISA, NCSC, ENISA, FTC, OWASP, NIST ose CERT. Mos ndrysho domenet, identitetin, përparimin e nxënësve, të dhënat personale, kodin ose pamjen/komponentët e faqes. Kthe JSON {siteConfig:{siteName,tagline,announcement,heroTitle,heroDescription,sidebarTitle,sidebarNote,tipTitle,tipText,enabledViews,featuredLessonIds},lessonProposals:[{operation:'add'|'update',targetId:number,reason:string,lesson:{id:number,title:string,icon:string,time:string,level:string,category:string,short:string,body:string,points:string[],action:string,agentChapters:[{title:string,paragraphs:string[],example:string}],sources:[{name:string,url:string}]}}],message:string}. Kthe 0-3 lessonProposals. Çdo mësim i ri/përditësuar duhet të ketë të paktën 500 fjalë, 5-7 kapituj me nga dy paragrafë dhe shembull, 3-6 pika, veprim praktik dhe burime reale. Për add vendos id 0; për update përdor id ekzistuese dhe targetId. Ruaj vlerat aktuale që nuk preken nga udhëzimi. enabledViews lejon vetëm: ${[...siteViews].join(", ")}. featuredLessonIds duhet të jenë ID nga kursi, maksimumi 3. Shkruaj shqip të qartë. Nëse kërkesa kërkon kod, veçori të re interaktive ose ndryshim dizajni që nuk realizohet me këto fusha, mos pretendo se u bë; sqaroje te message.`,
+      input: `Konfigurimi aktual:\n${JSON.stringify(config)}\nKatalogu i mësimeve:\n${JSON.stringify(lessons)}\n\nUdhëzimi:\n${request}`,
+      text: { format: { type: "json_object" } },
+      max_output_tokens: 9000
+    })
+  });
+  const result = await response.json();
+  if (!response.ok) throw new Error(result.error?.message || "AI nuk e përditësoi konfigurimin.");
+  const output = result.output?.flatMap(item => item.content || []).find(item => item.type === "output_text")?.text;
+  if (!output) throw new Error("AI nuk ktheu konfigurim të lexueshëm.");
+  const parsed = JSON.parse(output);
+  const generated = parsed.siteConfig;
+  if (!validateSiteConfig(generated, lessons)) throw new Error("Ndryshimi i AI-së nuk kaloi kontrollin e sigurisë.");
+  const cleaned = { ...generated };
+  for (const key of ["siteName", "tagline", "announcement", "heroTitle", "heroDescription", "sidebarTitle", "sidebarNote", "tipTitle", "tipText"]) cleaned[key] = cleaned[key].trim();
+  const proposals = parsed.lessonProposals || [];
+  if (!Array.isArray(proposals) || proposals.length > 3) throw new Error("AI ktheu shumë ndryshime në mësime.");
+  const currentIds = new Set(lessons.map(lesson => lesson.id));
+  let nextId = Math.max(0, ...currentIds) + 1;
+  for (const proposal of proposals) {
+    if (proposal.operation === "add") proposal.lesson.id = nextId++;
+    else if (proposal.operation === "update" && currentIds.has(proposal.targetId)) proposal.lesson.id = proposal.targetId;
+    else throw new Error("AI tentoi të ndryshojë një mësim që nuk ekziston.");
+    if (!validLesson(proposal.lesson, { generated: true })) throw new Error("Një ndryshim i kursit nuk kaloi kontrollin e burimeve dhe strukturës.");
+    proposal.lesson = cleanLesson(proposal.lesson);
+  }
+  const selected = proposals.slice(0, maxLessonChanges);
+  if (selected.length) await applyProposals(selected, lessons);
+  await saveSiteConfig(cleaned);
+  return { siteConfig: cleaned, lessonChanges: selected.length, message: String(parsed.message || "Përditësimi përfundoi.").slice(0, 500) };
+}
 
 function escapeText(value) {
   return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#39;");
@@ -132,4 +206,4 @@ async function applyProposals(proposals, lessons) {
   return next;
 }
 
-module.exports = { send, readBody, authorized, requireEnv, getLessons, saveLessons, validLesson, cleanLesson, propose, applyProposals };
+module.exports = { send, readBody, authorized, requireEnv, getLessons, saveLessons, validLesson, cleanLesson, propose, applyProposals, defaultSiteConfig, getSiteConfig, validateSiteConfig, commandSite };

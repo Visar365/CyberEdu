@@ -1,0 +1,2098 @@
+[
+  {
+    "id": 1,
+    "title": "Fjalëkalime të sigurta",
+    "icon": "⌑",
+    "time": "7 min",
+    "level": "Fillestar",
+    "category": "Llogaritë",
+    "short": "Krijo fjalëkalime të forta dhe unike.",
+    "body": "Fjalëkalimi është një nga shtresat e para të mbrojtjes së llogarisë. Përdor fjalëkalime të gjata dhe unike, pa e ripërdorur të njëjtin në faqe të ndryshme.",
+    "points": [
+      "Përdor fraza të gjata që është e vështirë të hamendësohen.",
+      "Mos përdor emrin, datëlindjen ose fjalë të zakonshme.",
+      "Përdor menaxher fjalëkalimesh për t’i ruajtur në mënyrë të sigurt.",
+      "Aktivizo verifikimin me shumë faktorë (MFA) kur ofrohet."
+    ],
+    "agentChapters": [
+      {
+        "title": "Pse fjalëkalimi yt ka rëndësi",
+        "paragraphs": [
+          "Mendo për fjalëkalimin si çelësin e shtëpisë digjitale. Email-i, rrjetet sociale, dokumentet dhe blerjet online shpesh lidhen me të njëjtën adresë email-i. Nëse dikush hyn në email, mund të kërkojë rivendosjen e fjalëkalimeve të llogarive të tjera. Prandaj, mbrojtja e një llogarie të rëndësishme ndihmon të mbrosh edhe të tjerat.",
+          "Rreziku shtohet kur i njëjti fjalëkalim përdoret në shumë faqe. Nëse një shërbim pëson rrjedhje të të dhënave, sulmuesit provojnë të njëjtat kombinime edhe diku tjetër. Kjo nuk do të thotë se duhet të mbash mend dhjetëra kode të ndërlikuara; do të thotë se secila llogari meriton një çelës të veçantë."
+        ],
+        "example": "Shembull: nëse një faqe lojërash dhe email-i yt kanë të njëjtin fjalëkalim, rrjedhja e faqes së lojërave mund të rrezikojë edhe email-in."
+      },
+      {
+        "title": "Si krijohet një fjalëkalim i fortë",
+        "paragraphs": [
+          "Gjatësia është aleati yt. Një frazë e përbërë nga disa fjalë të zakonshme, por të palidhura mes tyre, mund të jetë më e lehtë për ty për t’u kujtuar dhe më e vështirë për t’u hamendësuar se një fjalë e shkurtër me simbole të rastit. Shmang emrin, datëlindjen, emrin e kafshës shtëpiake dhe vargje të njohura si 123456.",
+          "Mos e ndrysho vetëm një numër në fund kur krijon llogari të reja. Nëse një fjalëkalim zbulohet, variante të ngjashme janë më të lehta për t’u gjetur. Aktivizo verifikimin me shumë faktorë (MFA), veçanërisht për email-in, bankën dhe llogaritë që përdorin për rivendosjen e fjalëkalimeve."
+        ],
+        "example": "Për ide: krijo një frazë të gjatë me fjalë që nuk lidhen me të dhënat e tua personale. Mos përdor një shembull të publikuar si fjalëkalim real."
+      },
+      {
+        "title": "Menaxheri i fjalëkalimeve në praktikë",
+        "paragraphs": [
+          "Menaxheri i fjalëkalimeve ruan kode unike dhe mund të krijojë kode të rastësishme për llogaritë e tua. Ti mban mend një fjalëkalim kryesor dhe mbron vetë pajisjen ku e përdor. Zgjidh një shërbim të besueshëm, mbaje aplikacionin të përditësuar dhe aktivizo MFA për llogarinë e menaxherit.",
+          "Nëse dyshon se një fjalëkalim është zbuluar, ndryshoje nga faqja ose aplikacioni zyrtar. Mos ia dërgo askujt me mesazh dhe mos ua trego të tjerëve kodet njëpërdorimëshe. Një institucion serioz nuk ka nevojë që t’ia lexosh kodin e hyrjes."
+        ],
+        "example": "Provo tani: kontrollo nëse email-i yt ka MFA të aktivizuar dhe shëno një llogari tjetër të rëndësishme për t’i përditësuar cilësimet."
+      },
+      {
+        "title": "Ndrysho fjalëkalimet kur ka arsye",
+        "paragraphs": [
+          "Udhëzimet moderne nuk kërkojnë që fjalëkalimin ta ndryshosh sipas një kalendari arbitrar nëse nuk ka shenjë problemi. Ndryshoje menjëherë kur dyshon se është zbuluar, kur e ke ndarë gabimisht ose kur shërbimi të kërkon ta bësh pas një incidenti. Përdor faqen zyrtare për ndryshimin dhe mos e ripërdor fjalëkalimin e vjetër.",
+          "Nëse ke vështirësi të mbash mend shumë kode, përdor një menaxher të besuar me fjalëkalim kryesor unik dhe verifikim shtesë kur ofrohet. Mos ruaj listë të pambrojtur me fjalëkalime në dokument ose email."
+        ],
+        "example": "Mos ndrysho vetëm një karakter çdo muaj; krijo kode unike dhe ndrysho ato kur ka arsye sigurie."
+      },
+      {
+        "title": "Modeli i rrezikut: çfarë ndodh kur një fjalëkalim zbulohet",
+        "paragraphs": [
+          "Mendo për ndikimin, jo vetëm për gjasën. Një llogari email-i mund të hapë rrugë për rivendosjen e llogarive të tjera; një forum me pak të dhëna personale mund të ketë ndikim më të kufizuar. Prandaj, nis me email-in, bankën, hapësirën cloud dhe llogaritë që administrojnë pajisje ose pagesa.",
+          "Nëse shërbimi ofron njoftime për hyrje, pajisje të njohura ose çelësa sigurie, shqyrtoji. Njoftimi nuk e ndalon vetë sulmin, por mund të të japë kohë të ndryshosh kredencialet dhe të mbyllësh sesionet e panjohura."
+        ],
+        "example": "Rendit tri llogari që do të krijonin dëmin më të madh po të merreshin nën kontroll dhe siguroji së pari."
+      },
+      {
+        "title": "Rikuperimi i llogarisë dhe fjalëkalimi kryesor",
+        "paragraphs": [
+          "Një fjalëkalim unik nuk mjafton nëse adresa ose numri i rikuperimit janë të vjetër. Përditëso kontaktet e rikuperimit dhe kodet rezervë nga cilësimet zyrtare. Ruaji kodet jashtë llogarisë që po mbrojnë, në vend që mund ta gjesh kur humb pajisjen.",
+          "Fjalëkalimi kryesor i menaxherit është një pikë kritike. Bëje të gjatë, mos e ripërdor dhe mbroje me MFA ose passkey kur ofrohet. Provo procesin e rikuperimit përpara se të mbështetesh vetëm te një pajisje."
+        ],
+        "example": "Kontrollo sot nëse email-i rezervë dhe numri i rikuperimit janë ende të tutë."
+      }
+    ],
+    "action": "Zgjidh sot një llogari të rëndësishme, kontrollo nëse fjalëkalimi është unik dhe aktivizo MFA nëse ofrohet.",
+    "sources": [
+      {
+        "name": "NIST — Udhëzimet për autentifikimin dhe fjalëkalimet",
+        "url": "https://pages.nist.gov/800-63-4/sp800-63b.html"
+      },
+      {
+        "name": "NCSC — Fjalëkalim i fortë dhe i veçantë për email-in",
+        "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/use-a-strong-and-separate-password-for-email"
+      },
+      {
+        "name": "NCSC — Menaxherët e fjalëkalimeve",
+        "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/password-managers"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Phishing dhe mashtrimet",
+    "icon": "✉",
+    "time": "7 min",
+    "level": "Fillestar",
+    "category": "Mashtrimet",
+    "short": "Dallo mesazhet dhe lidhjet e dyshimta.",
+    "body": "Phishing-u është përpjekje për të mashtruar dikë që të zbulojë të dhëna, të hapë një skedar ose të kryejë një veprim. Mesazhet shpesh krijojnë urgjencë ose imitojnë organizata të njohura.",
+    "points": [
+      "Kontrollo adresën e dërguesit dhe domenin e faqes.",
+      "Mos hap bashkëngjitje të papritura.",
+      "Mos dërgo fjalëkalime ose kode verifikimi në përgjigje të një mesazhi.",
+      "Nëse ke dyshime, kontakto organizatën përmes faqes së saj zyrtare."
+    ],
+    "agentChapters": [
+      {
+        "title": "Si funksionon një mashtrim phishing",
+        "paragraphs": [
+          "Phishing-u është mashtrim që paraqitet si mesazh i zakonshëm: email, SMS, telefonatë ose njoftim në rrjete sociale. Qëllimi mund të jetë të të bindë të japësh fjalëkalimin, të zbulosh një kod, të hapësh një skedar ose të paguash. Mesazhi mund të imitojë bankën, postën, shkollën, një koleg apo një shërbim që përdor.",
+          "Mashtrimi nuk dallohet gjithmonë nga gabimet drejtshkrimore. Disa mesazhe duken profesionale dhe përmbajnë emrin apo logon e një kompanie. Shiko kërkesën dhe mënyrën si të shtyn të veprosh, jo vetëm pamjen. Urgjenca, kërcënimi i mbylljes së llogarisë dhe premtimi i një shpërblimi janë arsye për të ndaluar e verifikuar."
+        ],
+        "example": "Shembull: një SMS thotë se paketa nuk mund të dorëzohet dhe kërkon pagesë në një lidhje. Mos e përdor lidhjen; kontrollo porosinë te aplikacioni ose faqja zyrtare."
+      },
+      {
+        "title": "Ndalo, kontrollo, verifiko",
+        "paragraphs": [
+          "Para se të klikosh, kontrollo adresën e plotë të dërguesit dhe emrin e domenit. Emri i shfaqur mund të duket i njohur, ndërsa adresa reale të çojë diku tjetër. Në telefon, mbaje shtypur lidhjen vetëm nëse di si të shikosh parapamjen, por mënyra më e sigurt është të mos e hapësh dhe të shkosh vetë te aplikacioni zyrtar.",
+          "Mos iu përgjigj mesazhit për ta verifikuar. Gjej numrin ose adresën e kontaktit në kartelën, kontratën apo faqen zyrtare, jo në mesazhin e dyshimtë. Mos hap bashkëngjitje që nuk i prisje dhe mos aktivizo makro ose përmbajtje për të parë një dokument."
+        ],
+        "example": "Nëse një koleg kërkon urgjent një kartë dhuratë ose pagesë, kontaktoje në një kanal tjetër që e njeh. Llogaria e tij mund të jetë përdorur pa leje."
+      },
+      {
+        "title": "Nëse tashmë klikove",
+        "paragraphs": [
+          "Mos u turpëro dhe mos e fshih incidentin. Nëse ke futur fjalëkalimin, hape shërbimin vetë përmes adresës zyrtare dhe ndryshoje menjëherë; ndryshoje edhe në shërbime të tjera ku është ripërdorur. Dil nga sesionet e panjohura, aktivizo MFA dhe njofto shërbimin ose ekipin e IT-së nëse bëhet fjalë për llogari pune apo shkolle.",
+          "Nëse ke shkarkuar skedar, mos e hap më tej dhe kërko ndihmë nga një person i besuar ose administratori i pajisjes. Në rast pagese, kontakto bankën përmes numrit zyrtar sa më shpejt. Ruaje mesazhin si provë dhe përdor funksionin e raportimit të phishing-ut."
+        ],
+        "example": "Një reagim i shpejtë ndihmon: mbyll faqen, mos fut të dhëna të tjera dhe kërko ndihmë nga burimi zyrtar."
+      },
+      {
+        "title": "Raporto tentativën dhe mbro të tjerët",
+        "paragraphs": [
+          "Përdor funksionin “raporto phishing” ose “raporto mashtrim” në email, telefon apo platformën ku e more mesazhin. Raportimi te shërbimi ndihmon që mesazhi të shqyrtohet. Mos e përcill te miqtë për t’i paralajmëruar, sepse kështu mund të përhapësh lidhjen e rrezikshme; dërgo paralajmërim pa lidhjen ose përdor kanalin e raportimit.",
+          "Nëse mesazhi pretendon se vjen nga një institucion, dërgo njoftim përmes kontaktit të publikuar në faqen e tij zyrtare. Procedurat e raportimit te autoritetet ndryshojnë sipas shtetit, prandaj përdor portalet qeveritare të vendit ku jeton."
+        ],
+        "example": "Mund të ndash paralajmërimin me familjen duke përshkruar mesazhin, pa hapur ose kopjuar lidhjen e dyshimtë."
+      },
+      {
+        "title": "Shenjat e mashtrimit janë kontekst, jo një listë fikse",
+        "paragraphs": [
+          "Një gabim drejtshkrimor nuk provon mashtrim, as logoja e saktë nuk provon se mesazhi është i vërtetë. Vlerëso bashkë: a e prisje mesazhin, a kërkon sekret ose pagesë, a imponon afat, a ndryshon kanalin e zakonshëm dhe ku të çon lidhja? Një sinjal i vetëm kërkon kujdes; disa sinjale rrisin arsyen për verifikim.",
+          "Në organizata, sulmuesit mund të përdorin emra kolegësh, zinxhirë email-esh të vërtetë ose dokumente bindëse. Konfirmo kërkesat financiare dhe ndryshimet e llogarive përmes një kanali të dytë të njohur, jo përmes detajeve brenda mesazhit."
+        ],
+        "example": "Një email i rregullt që kërkon urgjentisht ndryshim të IBAN-it sërish duhet verifikuar me telefonatën e zakonshme."
+      },
+      {
+        "title": "Rrjedha e sigurt e verifikimit dhe raportimit",
+        "paragraphs": [
+          "Mos kliko për ta provuar lidhjen. Hap vetë aplikacionin ose shkruaj adresën që e përdor zakonisht; nëse nuk gjen njoftim atje, kontakto organizatën nga të dhënat e saj zyrtare. Ruaje mesazhin për raportim, por mos ia përcill të tjerëve bashkëngjitjen ose URL-në e rrezikshme.",
+          "Nëse ke ndërvepruar, shëno çfarë ndodhi: hapa lidhjen, shkarkove skedar, fute kredencialet apo miratove pagesë. Këto dallime i ndihmojnë ofruesit dhe ekipit të IT-së të zgjedhin reagimin e duhur."
+        ],
+        "example": "Raporto mesazhin me mjetin e platformës dhe njofto kolegun me një përshkrim pa lidhjen."
+      }
+    ],
+    "action": "Analizo një mesazh të fundit që ke marrë: a njeh dërguesin, a kërkon veprim urgjent dhe si mund ta verifikosh pa hapur lidhjen?",
+    "sources": [
+      {
+        "name": "CISA — Njih dhe raporto phishing-un",
+        "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing"
+      },
+      {
+        "name": "NCSC — Si të dallosh dhe raportosh mashtrimet",
+        "url": "https://www.ncsc.gov.uk/collection/phishing-scams"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Privatësia në internet",
+    "icon": "◇",
+    "time": "6 min",
+    "level": "Fillestar",
+    "category": "Privatësia",
+    "short": "Kontrollo informacionin që ndan online.",
+    "body": "Informacioni i publikuar online mund të kopjohet dhe të shpërndahet më tej. Cilësimet e privatësisë ndihmojnë në kufizimin e asaj që shohin të tjerët, por nuk e zëvendësojnë kujdesin.",
+    "points": [
+      "Publiko vetëm informacionin që ndihesh rehat ta ndash.",
+      "Kontrollo lejet e aplikacioneve dhe cilësimet e profilit.",
+      "Mos publiko dokumente, adresa ose të dhëna personale pa arsye.",
+      "Përdor Wi-Fi publik me kujdes, sidomos për veprime të ndjeshme."
+    ],
+    "agentChapters": [
+      {
+        "title": "Gjurmët që lëmë online",
+        "paragraphs": [
+          "Çdo postim, koment, fotografi dhe regjistrim në një shërbim krijon një pjesë të gjurmës tënde digjitale. Edhe kur e fshin një publikim, dikush mund ta ketë ruajtur ose kopjuar më parë. Kjo nuk është arsye për të mos përdorur internetin; është arsye për të menduar se kush mund ta shohë përmbajtjen dhe çfarë mund të zbulojë ajo për ty.",
+          "Fotografitë mund të zbulojnë vendndodhjen, shkollën, rutinën ose persona të tjerë. Përpara publikimit pyet veten: a do të isha rehat nëse këtë e shihte një i panjohur, mësuesi apo punëdhënësi i ardhshëm? Kujdesu edhe për privatësinë e miqve dhe mos publiko imazhe të tyre pa leje."
+        ],
+        "example": "Një fotografi e bukur e një udhëtimi mund të tregojë se shtëpia është bosh. Mund të presësh derisa të kthehesh para se ta publikosh."
+      },
+      {
+        "title": "Cilësimet dhe lejet e aplikacioneve",
+        "paragraphs": [
+          "Kontrollo periodikisht kush mund t’i shohë postimet, listën e miqve dhe të dhënat e profilit. Cilësimet ndryshojnë, ndaj rishikoji kur aplikacioni përditësohet. Përdor fjalëkalim unik dhe MFA për llogaritë sociale, sepse ato shpesh përdoren për hyrje në shërbime të tjera.",
+          "Aplikacionet kërkojnë leje për kamerën, mikrofonin, kontaktet ose vendndodhjen. Jep vetëm lejet që i nevojiten funksionit që përdor. Nëse një aplikacion elektrik dore kërkon qasje te kontaktet, pyet veten pse i nevojitet. Mund t’ia heqësh lejen nga cilësimet e telefonit."
+        ],
+        "example": "Provo tani: hap cilësimet e privatësisë në një rrjet social dhe kufizo kush mund të të gjejë me numrin ose email-in."
+      },
+      {
+        "title": "Informacioni personal dhe gjurmimi",
+        "paragraphs": [
+          "Mos publiko dokumente identifikimi, bileta me kode, adresa shtëpie, orare të përditshme ose të dhëna financiare. Edhe detaje të vogla, kur bashkohen, mund të ndihmojnë dikë të të imitojë ose të të kontaktojë në mënyrë bindëse. Nëse një shërbim kërkon të dhëna të ndjeshme, verifiko që je në faqen e saktë dhe kupto pse kërkohen.",
+          "Faqet mund të përdorin cookie dhe teknologji të tjera për funksionim, preferenca ose matje të vizitave. Lexo njoftimet e privatësisë kur është e rëndësishme dhe zgjidh opsionet që përputhen me nevojat e tua. Përdor përditësime dhe kyçje në pajisje, sepse privatësia varet edhe nga kush mund ta hapë atë."
+        ],
+        "example": "Para se të publikosh një fotografi të biletës, kontrollo nëse duken barkodi, emri i plotë ose numri i rezervimit."
+      },
+      {
+        "title": "Përmbajtja publike dhe audienca",
+        "paragraphs": [
+          "Përdor opsionet e audiencës me kujdes: publik, ndjekës, miq ose listë e kufizuar nuk kanë të njëjtin kuptim në çdo platformë. Kontrollo cilësimin përpara publikimit dhe mos u mbështet te supozimi se një grup privat e pengon kopjimin e përmbajtjes.",
+          "Praktiko parimin e minimizimit: ndaj vetëm informacionin që nevojitet për qëllimin e postimit ose shërbimit. Nëse aplikacioni kërkon leje të reja pas përditësimit, rishikoji në cilësimet e pajisjes."
+        ],
+        "example": "Para publikimit të fotos së një dokumenti ose bilete, mbulo kodet dhe të dhënat që mund të përdoren për të hyrë në llogari ose rezervim."
+      },
+      {
+        "title": "Minimizimi i të dhënave dhe ndarja sipas audiencës",
+        "paragraphs": [
+          "Përpara se të japësh të dhëna, pyet pse duhen, kush do t’i shohë dhe sa kohë ruhen. Jep vetëm atë që kërkohet për funksionin. Kur ndan dokument, fsheh fushat e panevojshme dhe kontrollo edhe komentet, emrat e skedarëve dhe të dhënat në sfond të fotografisë.",
+          "Cilësimi ‘vetëm miqtë’ kufizon audiencën në platformë, por nuk garanton që përmbajtja nuk kopjohet. Mendo për pasojën në rast se postimi publikohet më gjerë dhe merr leje nga personat e tjerë para se t’i përfshish."
+        ],
+        "example": "Për një formular, dërgo vetëm faqen e kërkuar dhe mbulo numrat që nuk lidhen me qëllimin."
+      },
+      {
+        "title": "Gjurmimi, lejet dhe cikli i jetës së llogarisë",
+        "paragraphs": [
+          "Rishiko lejet e aplikacioneve, lidhjet me llogari të tjera dhe pajisjet ku je identifikuar. Hiq qasjen që nuk e njeh ose nuk e përdor. Kur çaktivizon një shërbim, shkarko vetëm të dhënat që të duhen dhe fshi llogarinë sipas procedurës së ofruesit.",
+          "Cookie-t dhe identifikuesit mund të përdoren për funksionim ose matje, por opsionet ndryshojnë sipas shërbimit dhe ligjit lokal. Lexo zgjedhjet e privatësisë dhe mos instalo shtesa që premtojnë anonimitet të plotë pa verifikuar lejet e tyre."
+        ],
+        "example": "Bëj një rishikim mujor të aplikacioneve të lidhura me rrjetet sociale dhe hiq ato të harruara."
+      }
+    ],
+    "action": "Rishiko një aplikacion: çfarë informacioni ndan, cilat leje i ke dhënë dhe cilat mund t’i heqësh?",
+    "sources": [
+      {
+        "name": "NCSC — Përdorimi i sigurt i rrjeteve sociale",
+        "url": "https://www.ncsc.gov.uk/guidance/social-media-how-to-use-it-safely"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Malware dhe përditësimet",
+    "icon": "↻",
+    "time": "6 min",
+    "level": "Mesatar",
+    "category": "Pajisjet",
+    "short": "Kupto programet keqdashëse dhe si të mbrohesh.",
+    "body": "Malware është softuer i krijuar për të dëmtuar pajisjet, për të vjedhur të dhëna ose për të fituar qasje pa leje. Përditësimet mbyllin dobësi dhe ulin rrezikun e shfrytëzimit të tyre.",
+    "points": [
+      "Instalo programe nga burime zyrtare.",
+      "Mbaj sistemin dhe aplikacionet të përditësuara.",
+      "Mos çaktivizo mbrojtjen për të instaluar skedarë të panjohur.",
+      "Mbaj kopje rezervë të skedarëve të rëndësishëm."
+    ],
+    "agentChapters": [
+      {
+        "title": "Çfarë është malware",
+        "paragraphs": [
+          "Malware është emri i përgjithshëm për programe të krijuara për të dëmtuar pajisjen, për të vjedhur të dhëna ose për të fituar qasje pa leje. Mund të vijë si aplikacion i rremë, bashkëngjitje email-i, reklamë mashtruese apo skedar i shkarkuar nga faqe jozyrtare. Disa programe janë të dukshme, të tjerat përpiqen të qëndrojnë të fshehura.",
+          "Ransomware është një lloj malware-i që mund të bllokojë skedarët dhe të kërkojë pagesë për rikthimin e tyre. Pagesa nuk garanton se skedarët kthehen. Kopjet rezervë dhe përditësimet janë pjesë e përgatitjes, ndërsa kujdesi me lidhjet dhe burimet e shkarkimit ul mundësinë e instalimit."
+        ],
+        "example": "Një faqe që kërkon të çaktivizosh mbrojtjen e pajisjes për të instaluar një lojë të panjohur është arsye e fortë për të ndaluar."
+      },
+      {
+        "title": "Përditësimet mbyllin boshllëqe",
+        "paragraphs": [
+          "Sistemet operative, shfletuesit dhe aplikacionet përditësohen për të shtuar veçori dhe për të rregulluar gabime sigurie. Kur një përditësim ofrohet nga cilësimet zyrtare të pajisjes, instalimi në kohë ndihmon të mbyllen probleme të njohura. Aktivizo përditësimet automatike kur është e përshtatshme dhe rinis pajisjen kur kërkohet.",
+          "Mos instalo përditësime nga dritare të papritura në faqe ose nga lidhje që mbërrijnë me mesazh. Nëse një njoftim të shqetëson, mbylle dhe kontrollo vetë te cilësimet ose dyqani zyrtar. Mbaje edhe shfletuesin dhe programet që përdor shpesh të përditësuara."
+        ],
+        "example": "Përditësimi i sistemit nuk zëvendëson fjalëkalimet e mira, MFA-në apo kopjet rezervë. Mbrojtja funksionon më mirë me disa hapa së bashku."
+      },
+      {
+        "title": "Shkarko dhe instalo me kujdes",
+        "paragraphs": [
+          "Shkarko programe nga faqet e prodhuesve ose dyqanet zyrtare. Para instalimit kontrollo emrin e zhvilluesit, vlerësimet me kujdes dhe lejet që kërkon aplikacioni. Mos e çaktivizo antivirusin apo mbrojtjen e integruar vetëm sepse një dritare thotë se është e nevojshme.",
+          "Nëse pajisja sillet papritur, mos fut më të dhëna të ndjeshme. Shkëputu nga rrjeti vetëm nëse të udhëzon administratori ose një profesionist, dhe kërko ndihmë nga burim i besuar. Në pajisjen e punës, njofto ekipin e IT-së dhe mos provo të rregullosh vetë mjete që nuk i njeh."
+        ],
+        "example": "Nëse dyshon për infektim, përdor mjetet e sigurisë të përditësuara dhe kërko ndihmë profesionale para se të fshish prova ose skedarë."
+      },
+      {
+        "title": "Çfarë të bësh kur dyshon për infektim",
+        "paragraphs": [
+          "Mos u mbështet vetëm te shpejtësia e pajisjes për të vendosur nëse ka malware; ngadalësimi mund të ketë shumë shkaqe. Nëse shfaqen dritare të pazakonta, aplikacione që nuk i njeh ose njoftime për hyrje të dyshimta, mos jep kredenciale të tjera dhe përdor skanimin e sigurisë të pajisjes ose kërko ndihmë.",
+          "Për pajisjen e punës ose shkollës, kontakto ekipin e IT-së para se të fshish skedarë ose të ndryshosh konfigurimin. Në pajisjen personale, ndiq udhëzimet zyrtare të prodhuesit ose ofruesit të mbrojtjes dhe rikthe të dhënat vetëm pasi të jesh i sigurt që pajisja është pastruar."
+        ],
+        "example": "Një antivirus nuk zëvendëson përditësimet, kopjet rezervë dhe kujdesin ndaj lidhjeve të papritura."
+      },
+      {
+        "title": "Rruga e infektimit dhe mbrojtja me shtresa",
+        "paragraphs": [
+          "Malware mund të vijë nga bashkëngjitje, instalues të rremë, dobësi të papërditësuara ose llogari të komprometuara. Asnjë kontroll i vetëm nuk mjafton: përditësimet mbyllin dobësi të njohura, llogaria standarde kufizon disa ndryshime, mbrojtja e pajisjes zbulon sjellje të dyshimta dhe kopjet rezervë ndihmojnë pas dëmit.",
+          "Shkarko programet nga prodhuesi ose dyqani zyrtar. Mos çaktivizo antivirusin, firewall-in apo paralajmërimet për të kaluar një instalues të panjohur. Në pajisje pune, raportimi te IT-ja është më i dobishëm se instalimi i një ‘pastruesi’ të rastësishëm."
+        ],
+        "example": "Një dokument që kërkon aktivizimin e makrove për të shfaqur faturën është arsye të ndalesh dhe të verifikosh."
+      },
+      {
+        "title": "Triage i sigurt kur shfaqen shenja të pazakonta",
+        "paragraphs": [
+          "Ngadalësimi i pajisjes vetëm nuk provon infektim. Vëzhgo ndryshime konkrete: aplikacione të reja, njoftime hyrjeje, ridrejtime të përsëritura ose skedarë të ndryshuar. Mos fut fjalëkalime të tjera në pajisjen e dyshimtë dhe mos fshi gjurmët nëse duhet hetim nga organizata.",
+          "Për pajisje personale, ndiq udhëzimet e prodhuesit dhe të mjeteve të besuara të sigurisë. Për pajisje të shkollës ose punës, shkëputu nga rrjeti vetëm nëse politika ta kërkon dhe kontakto ekipin përgjegjës."
+        ],
+        "example": "Shëno kohën dhe mesazhin e saktë që u shfaq, pastaj kërko ndihmë përmes kanalit zyrtar."
+      }
+    ],
+    "action": "Kontrollo nëse telefoni dhe kompjuteri yt kanë përditësime në pritje dhe planifiko instalimin e tyre nga cilësimet zyrtare.",
+    "sources": [
+      {
+        "name": "CISA — Mbaj softuerin të përditësuar",
+        "url": "https://www.cisa.gov/secure-our-world/update-software"
+      },
+      {
+        "name": "NCSC — Përditësimet e softuerit dhe aplikacioneve",
+        "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/install-the-latest-software-and-app-updates"
+      },
+      {
+        "name": "CISA — Udhëzuesi StopRansomware",
+        "url": "https://www.cisa.gov/stopransomware/ransomware-guide"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Verifikimi me shumë faktorë",
+    "icon": "✓",
+    "time": "6 min",
+    "level": "Fillestar",
+    "category": "Llogaritë",
+    "short": "Shto një shtresë tjetër mbrojtjeje për llogaritë.",
+    "body": "MFA kërkon dy ose më shumë mënyra verifikimi. Nëse dikush mëson fjalëkalimin, faktori shtesë mund ta vështirësojë hyrjen e paautorizuar.",
+    "points": [
+      "Aktivizo MFA për email-in dhe llogaritë kryesore.",
+      "Mos ia trego askujt kodet njëpërdorimëshe.",
+      "Ruaj kodet rezervë në një vend të sigurt.",
+      "Refuzo kërkesat e hyrjes që nuk i ke nisur vetë."
+    ],
+    "agentChapters": [
+      {
+        "title": "Një çelës shtesë për llogarinë",
+        "paragraphs": [
+          "Autentifikimi me shumë faktorë (MFA) kërkon më shumë se një lloj prove për të konfirmuar se je ti. Zakonisht kombinohet diçka që di, si fjalëkalimi, me diçka që ke, si telefoni ose një çelës sigurie. Kjo shton një pengesë nëse fjalëkalimi zbulohet.",
+          "MFA nuk e bën llogarinë të pamposhtur, por ul rrezikun e hyrjes së paautorizuar. Aktivizoje fillimisht për email-in, llogaritë financiare dhe shërbimet që ruajnë dokumente personale. Përdor metodën që ofron shërbimi zyrtar dhe që e kupton."
+        ],
+        "example": "Nëse merr njoftim për hyrje që nuk e ke nisur, mos e aprovo. Ndrysho fjalëkalimin nga shërbimi zyrtar dhe kontrollo pajisjet e kyçura."
+      },
+      {
+        "title": "Zgjidh metodën dhe ruaj rikuperimin",
+        "paragraphs": [
+          "Disa shërbime ofrojnë aplikacion autentifikimi, çelës sigurie ose kod me SMS. Metodat ndryshojnë në nivelin e mbrojtjes dhe lehtësinë e përdorimit. Ndiq udhëzimet e vetë shërbimit dhe ruaj kodet rezervë në vend të sigurt, të ndarë nga telefoni ku merr kodet.",
+          "Nëse humb telefonin, kodet rezervë ose një metodë tjetër rikuperimi mund të të ndihmojnë të hysh përsëri. Mos i ruaj kodet rezervë si fotografi të pambrojtura në të njëjtën pajisje. Për llogaritë e rëndësishme, sigurohu që informacioni i rikuperimit është i përditësuar."
+        ],
+        "example": "Ruaji kodet rezervë në menaxherin e fjalëkalimeve ose në një vend fizik të sigurt, sipas udhëzimeve të shërbimit."
+      },
+      {
+        "title": "Kërkesat që nuk i ke nisur vetë",
+        "paragraphs": [
+          "Mashtruesit mund të përpiqen të të bindin të lexosh kodin me telefon ose të aprovosh një njoftim hyrjeje që nuk e ke kërkuar. Asnjëherë mos ia dërgo kodin një personi që të telefonon apo të shkruan, edhe nëse thotë se është nga mbështetja teknike. Kodi është vetëm për ty.",
+          "Përdor MFA së bashku me fjalëkalim unik dhe kujdes ndaj mesazheve të dyshimta. Nëse merr kërkesa të përsëritura për aprovim, refuzoji dhe kontrollo llogarinë përmes aplikacionit zyrtar. Njofto ofruesin nëse sheh hyrje ose ndryshime që nuk i njeh."
+        ],
+        "example": "Mbaje mend: kërkesa për kod ose aprovim që nuk e nise vetë është shenjë për të ndaluar dhe verifikuar."
+      },
+      {
+        "title": "MFA dhe rezistenca ndaj phishing-ut",
+        "paragraphs": [
+          "Jo çdo metodë MFA ofron të njëjtin nivel mbrojtjeje. Kodet mund të vidhen në faqe mashtruese ose dikush mund të të bindë ta aprovosh kërkesën. Mos aprovo njoftime që nuk i nise dhe mos ia trego kodin askujt.",
+          "Kur shërbimi mbështet çelës sigurie ose passkey, shqyrto opsionet e tij zyrtare; metodat rezistente ndaj phishing-ut janë më të forta ndaj faqeve imituese se kodet që futen manualisht. Zgjedhja varet nga shërbimi dhe pajisja, prandaj lexo dokumentacionin e ofruesit."
+        ],
+        "example": "Nëse merr disa kërkesa për hyrje radhazi, refuzoji të gjitha dhe ndrysho fjalëkalimin nga shërbimi zyrtar."
+      },
+      {
+        "title": "Faktorët e verifikimit dhe kufijtë e secilit",
+        "paragraphs": [
+          "Faktorët zakonisht bazohen në diçka që di, ke ose je. Dy kode të dërguara në të njëjtin telefon nuk janë domosdoshmërisht dy faktorë të pavarur. MFA ul rrezikun kur fjalëkalimi zbulohet, por nuk ndalon çdo mashtrim, vjedhje sesioni apo aprovim të pakujdesshëm.",
+          "Kodet SMS mund të ekspozohen në disa skenarë, ndërsa aplikacionet autentikuese, çelësat e sigurisë dhe passkeys kanë veçori të ndryshme. Zgjidh opsionin më të fortë që mbështet shërbimi dhe përgatit metoda rikuperimi të sigurta."
+        ],
+        "example": "Nëse shfaqet kërkesë hyrjeje që nuk e ke nisur, refuzoje dhe kontrollo aktivitetin e llogarisë."
+      },
+      {
+        "title": "Rezistenca ndaj phishing-ut dhe rikuperimi",
+        "paragraphs": [
+          "Njoftimet e përsëritura të aprovimit mund të jenë presion për të pranuar gabimisht. Mos e aprovo asnjë kërkesë të panjohur dhe mos ia lexo askujt kodin njëpërdorimësh. Nëse dyshon se fjalëkalimi u zbulua, ndryshoje nga faqja zyrtare dhe mbyll sesionet aktive.",
+          "Ruaj kodet rezervë në mënyrë që dikush tjetër të mos i gjejë, por që ti të mund t’i rikuperosh. Për llogaritë kritike, shqyrto çelësa sigurie fizikë ose passkeys dhe regjistro më shumë se një mënyrë rikuperimi të besuar."
+        ],
+        "example": "Mbaj një çelës sigurie rezervë në vend të sigurt nëse llogaria dhe pajisjet e tua e mbështesin."
+      }
+    ],
+    "action": "Aktivizo MFA në një llogari të rëndësishme dhe kontrollo si mund ta rikuperosh nëse humbet pajisjen.",
+    "sources": [
+      {
+        "name": "NCSC — Aktivizo verifikimin me dy hapa",
+        "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/activate-2-step-verification-on-your-email"
+      },
+      {
+        "name": "NIST — Udhëzimet për autentifikimin",
+        "url": "https://pages.nist.gov/800-63-4/sp800-63b.html"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Siguria e Wi-Fi publik",
+    "icon": "⌁",
+    "time": "6 min",
+    "level": "Mesatar",
+    "category": "Rrjetet",
+    "short": "Lidhu me kujdes kur përdor rrjete publike.",
+    "body": "Rrjetet publike janë të përshtatshme, por nuk duhet t’i trajtosh si rrjetin tënd privat. Kontrollo emrin e rrjetit me stafin e vendit dhe shmang veprimet e ndjeshme në rrjete që nuk i njeh.",
+    "points": [
+      "Pyet stafin për emrin e saktë të rrjetit Wi-Fi.",
+      "Çaktivizo lidhjen automatike me rrjete të hapura.",
+      "Përdor faqet dhe aplikacionet zyrtare me lidhje të sigurta.",
+      "Shkëputu nga rrjeti publik kur nuk të nevojitet."
+    ],
+    "agentChapters": [
+      {
+        "title": "Njih rrjetin ku po lidhesh",
+        "paragraphs": [
+          "Wi-Fi publik në bibliotekë, hotel, kafene apo aeroport është i përshtatshëm, por emri i rrjetit mund të kopjohet nga dikush tjetër. Pyet stafin për emrin e saktë dhe shmang rrjetet e panjohura që shfaqen pa paralajmërim. Çaktivizo lidhjen automatike që pajisja të mos lidhet vetë me rrjete të hapura.",
+          "Shenja e kyçit në shfletues tregon se lidhja me faqen është e enkriptuar; nuk vërteton vetvetiu se faqja është e ndershme. Kontrollo adresën e saktë dhe mos anashkalo paralajmërimet e shfletuesit. Përdor aplikacionet zyrtare dhe dil nga llogaritë kur mbaron."
+        ],
+        "example": "Në një kafene, pyet punonjësin për emrin e Wi-Fi. Mos supozo se rrjeti me emrin e lokalit është patjetër i tyre."
+      },
+      {
+        "title": "Kujdes me veprimet e ndjeshme",
+        "paragraphs": [
+          "Në rrjete që nuk i administron vetë, shmang pagesat, veprimet bankare ose hapjen e dokumenteve private kur nuk është e domosdoshme. Nëse duhet të kryesh një veprim të rëndësishëm, përdor lidhjen celulare ose rrjetin tënd të besuar. Mos dërgo kode verifikimi dhe mos e ndaj fjalëkalimin e Wi-Fi me të panjohur.",
+          "Një VPN e besuar mund të mbrojë trafikun në disa rrethana, por nuk e bën të sigurt çdo faqe dhe nuk të mbron nga mashtrimet, malware-i apo fjalëkalimet e dobëta. Zgjidhe me kujdes një shërbim të besuar dhe mbaj të aktivizuara mbrojtjet e tjera."
+        ],
+        "example": "Nëse një portal Wi-Fi kërkon të dhëna bankare për t’u lidhur, mos vazhdo. Verifiko me stafin dhe mos jep të dhëna financiare."
+      },
+      {
+        "title": "Kur mbaron përdorimi",
+        "paragraphs": [
+          "Shkëputu nga rrjeti publik kur nuk të nevojitet dhe përdor opsionin “harro këtë rrjet” nëse nuk do që pajisja të lidhet sërish. Kontrollo që dokumentet e ndjeshme nuk po ndahen me të tjerët dhe mbyll sesionet në pajisje të përbashkëta.",
+          "Nëse ke hyrë në llogari nga një pajisje e huaj, dil plotësisht dhe mos ruaj fjalëkalimin në shfletuesin e saj. Nëse mendon se dikush ka parë të dhënat e tua, ndërro fjalëkalimin nga pajisja jote dhe kontrollo historikun e hyrjeve."
+        ],
+        "example": "Pajisjet publike, si kompjuterët e hotelit apo bibliotekës, duhen trajtuar ndryshe nga laptopi yt personal."
+      },
+      {
+        "title": "Përdor Wi-Fi publik me masë, jo me frikë",
+        "paragraphs": [
+          "Wi-Fi publik nuk është automatikisht i pasigurt: shumë faqe dhe aplikacione përdorin HTTPS për të enkriptuar lidhjen mes pajisjes dhe shërbimit. Megjithatë, kontrollo adresën e faqes, mos anashkalo paralajmërimet e shfletuesit dhe mos supozo se emri i rrjetit provon kush e administron.",
+          "Për punë veçanërisht të ndjeshme, përdor lidhjen celulare ose rrjetin e organizatës sipas udhëzimeve të saj. VPN mund të ndryshojë kush mund të shohë disa pjesë të trafikut, por nuk e bën faqen mashtruese të besueshme dhe nuk të mbron nga phishing-u."
+        ],
+        "example": "Kontrollo që faqja e bankës ka adresën e saktë dhe lidhje të sigurt; HTTPS nuk do të thotë se emri i faqes është i vërtetë."
+      },
+      {
+        "title": "Çfarë mbron dhe çfarë nuk mbron HTTPS",
+        "paragraphs": [
+          "HTTPS enkripton trafikun mes pajisjes dhe domenit të shfaqur. Kjo vështirëson leximin ose ndryshimin e përmbajtjes gjatë rrugës, por nuk provon se domeni i përket bankës apo se rrjeti Wi-Fi është zyrtar. Faqet mashtruese mund të përdorin HTTPS gjithashtu.",
+          "Për rrjetin publik, verifiko emrin me stafin dhe çaktivizo lidhjen automatike. Prefero të dhënat celulare për veprime me pasoja të mëdha kur është e mundur. VPN mund të ndihmojë kundër disa rreziqeve të rrjetit, por nuk e zëvendëson verifikimin e faqes."
+        ],
+        "example": "Një faqe hyrjeje me dry të gjelbër mund të jetë prapë kopje mashtruese e domenit të bankës."
+      },
+      {
+        "title": "Portalet captive dhe rrjetet e rreme",
+        "paragraphs": [
+          "Disa rrjete kërkojnë portal hyrjeje që shfaqet pas lidhjes. Kontrollo URL-në dhe mos jep fjalëkalimin e email-it ose të rrjetit social për të marrë Wi-Fi. Sulmuesit mund të kopjojnë emrin e rrjetit të një lokali; konfirmoje me punonjësin.",
+          "Pas përdorimit, çaktivizo lidhjen dhe harro rrjetin në pajisje, veçanërisht nëse nuk të duhet më. Mbaje sistemin të përditësuar dhe mos anashkalo paralajmërimet e certifikatës për të kryer një pagesë."
+        ],
+        "example": "Nëse portali kërkon instalim profili ose aplikacioni të panjohur, mos vazhdo pa verifikim zyrtar."
+      }
+    ],
+    "action": "Kontrollo cilësimin e lidhjes automatike në telefon dhe çaktivizo lidhjen me rrjete publike të panjohura.",
+    "sources": [
+      {
+        "name": "FTC — Përdorimi i rrjeteve publike Wi-Fi",
+        "url": "https://consumer.ftc.gov/articles/using-public-wi-fi-networks"
+      },
+      {
+        "name": "NCSC — Këshilla për qëndrimin e sigurt online",
+        "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Mbrojtja e telefonit",
+    "icon": "▣",
+    "time": "6 min",
+    "level": "Fillestar",
+    "category": "Pajisjet",
+    "short": "Mbro pajisjen që përdor çdo ditë.",
+    "body": "Telefoni përmban mesazhe, fotografi dhe qasje në llogari të rëndësishme. Disa hapa të thjeshtë ndihmojnë të mbrosh pajisjen në rast humbjeje ose përdorimi të paautorizuar.",
+    "points": [
+      "Përdor kyçje me kod ose biometrikë.",
+      "Aktivizo gjetjen dhe fshirjen në distancë kur ofrohet.",
+      "Shkarko aplikacione vetëm nga dyqanet zyrtare.",
+      "Kontrollo lejet e aplikacioneve dhe përditëso sistemin."
+    ],
+    "agentChapters": [
+      {
+        "title": "Telefoni mban shumë nga jeta jote",
+        "paragraphs": [
+          "Telefoni mund të përmbajë fotografi, mesazhe, email, dokumente dhe qasje të drejtpërdrejtë në rrjete sociale. Një ekran i kyçur me PIN të vështirë për t’u hamendësuar ose me biometrikë ndihmon të pengohet hapja e rastësishme. Aktivizo kyçjen automatike pas një kohe të shkurtër.",
+          "Mos ia jep kodin e pajisjes dikujt që nuk i beson. Në vende publike, mbaje telefonin nën vëzhgim dhe mos lër njoftimet në ekran të shfaqin kode apo mesazhe private. Këto hapa të vegjël mbrojnë informacionin edhe kur telefoni mbetet për pak çaste pa mbikëqyrje."
+        ],
+        "example": "Nëse merr kode njëpërdorimëshe me SMS, fshihi përmbajtjet e njoftimeve nga ekrani i kyçur."
+      },
+      {
+        "title": "Aplikacione dhe leje",
+        "paragraphs": [
+          "Instalo aplikacione vetëm nga dyqani zyrtar i pajisjes dhe kontrollo emrin e zhvilluesit. Lexo çfarë bën aplikacioni dhe pyet veten nëse lejet që kërkon kanë kuptim. Lojë që kërkon vazhdimisht vendndodhjen ose kontaktet mund të mos ketë nevojë për to.",
+          "Rishiko lejet herë pas here dhe hiq ato që nuk duhen më. Fshi aplikacionet që nuk i përdor dhe përditëso të tjerat nga dyqani zyrtar. Mos ndiq lidhje të rastësishme që kërkojnë instalimin e një aplikacioni për të parë një dokument ose për të fituar çmim."
+        ],
+        "example": "Leja për kamerën mund të ketë kuptim për aplikacionin e videotelefonatave; qasja e vazhdueshme te kontaktet mund të mos jetë e nevojshme."
+      },
+      {
+        "title": "Përgatitu për humbje ose vjedhje",
+        "paragraphs": [
+          "Aktivizo veçorinë zyrtare për të gjetur pajisjen dhe për ta kyçur në distancë, nëse prodhuesi e ofron. Mbaje sistemin të përditësuar dhe sigurohu që kopjet rezervë të fotografive e dokumenteve funksionojnë. Shëno numrin serial ose informacionin e nevojshëm për raportim në një vend të sigurt.",
+          "Nëse telefoni humbet, përdor llogarinë zyrtare të prodhuesit për ta shënuar si të humbur, për ta kyçur ose për të fshirë të dhënat, sipas situatës. Kontakto operatorin për kartën SIM dhe ndrysho fjalëkalimet e llogarive kryesore nga një pajisje e sigurt."
+        ],
+        "example": "Provoje paraprakisht faqen zyrtare të gjetjes së pajisjes dhe sigurohu se e di si të hysh në llogarinë tënde."
+      },
+      {
+        "title": "Përditësimi dhe privatësia në ekran",
+        "paragraphs": [
+          "Instalo përditësimet e sistemit dhe aplikacioneve nga cilësimet ose dyqani zyrtar. Përditësimet mund të sjellin rregullime sigurie, prandaj mos i shty pafund. Për pajisje që nuk marrin më përditësime, kontrollo këshillat e prodhuesit për mbështetjen dhe planifiko zëvendësimin kur është e nevojshme.",
+          "Njoftimet në ekranin e kyçur mund të shfaqin mesazhe ose kode. Zgjidh në cilësimet nëse përmbajtja duhet fshehur kur pajisja është e kyçur, sidomos për llogaritë e email-it dhe verifikimit."
+        ],
+        "example": "Bëj një provë: kyçe telefonin dhe kontrollo nëse njoftimet tregojnë kode ose përmbajtje private."
+      },
+      {
+        "title": "Modeli i kërcënimit për telefonin",
+        "paragraphs": [
+          "Telefoni kombinon email, pagesa, fotografi, vendndodhje dhe sesione aktive. Rreziku varet nga çfarë mund të bëjë dikush që e gjen: të shohë njoftimet, të zhbllokojë SIM-in, të përdorë aplikacionet e hapura ose të rivendosë llogaritë. Kodi i fortë dhe kyçja automatike kufizojnë qasjen fizike.",
+          "Përditësimet dhe instalimi nga dyqani zyrtar ulin rreziqet e softuerit. Kontrollo lejet sipas nevojës së aplikacionit dhe fshih përmbajtjen e ndjeshme nga ekrani i kyçur."
+        ],
+        "example": "Mos e lër kodin e verifikimit të duket në ekran kur telefoni është mbi tavolinë publike."
+      },
+      {
+        "title": "Humbja, vjedhja dhe mbrojtja e sesioneve",
+        "paragraphs": [
+          "Aktivizo paraprakisht shërbimin zyrtar të gjetjes së pajisjes dhe mëso si ta kyçësh ose fshish nga distanca. Ruaj mënyrat e rikuperimit jashtë telefonit. Në humbje, përdor pajisje të besuar për të bllokuar SIM-in dhe sesionet, duke nisur nga email-i e llogaritë financiare.",
+          "Shmang aplikacionet e sigurisë që kërkojnë qasje të panevojshme. Përpara se të shesësh ose dhurosh telefonin, dil nga llogaritë, hiq pajisjen nga shërbimet e gjetjes dhe bëj rivendosjen sipas udhëzimeve të prodhuesit."
+        ],
+        "example": "Mbaj të shënuar numrin e operatorit dhe hapat zyrtarë për pezullimin e SIM-it."
+      }
+    ],
+    "action": "Kontrollo kyçjen automatike, lejet e aplikacioneve dhe funksionin e gjetjes së telefonit.",
+    "sources": [
+      {
+        "name": "NCSC — Përditësimet e softuerit dhe aplikacioneve",
+        "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/install-the-latest-software-and-app-updates"
+      },
+      {
+        "name": "NCSC — Këshilla për qëndrimin e sigurt online",
+        "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Kopjet rezervë dhe rikuperimi",
+    "icon": "▧",
+    "time": "6 min",
+    "level": "Mesatar",
+    "category": "Pajisjet",
+    "short": "Përgatitu për humbje, dëmtim ose bllokim të skedarëve.",
+    "body": "Kopjet rezervë të përditësuara ndihmojnë në rikuperimin e dokumenteve dhe fotografive nëse pajisja humbet ose dëmtohet. Mbaji kopjet në një vend të veçantë nga pajisja kryesore.",
+    "points": [
+      "Zgjidh skedarët që janë më të rëndësishëm për ty.",
+      "Aktivizo kopje automatike në një shërbim të besuar.",
+      "Mbaj një kopje rezervë të shkëputur kur është e mundur.",
+      "Provo herë pas here rikthimin e një skedari."
+    ],
+    "agentChapters": [
+      {
+        "title": "Çfarë është kopja rezervë",
+        "paragraphs": [
+          "Kopja rezervë është një kopje shtesë e skedarëve që do të doje t’i riktheje nëse telefoni prishet, kompjuteri humbet ose një dokument fshihet gabimisht. Mund të përfshijë fotografi, detyra shkollore, dokumente pune dhe të dhëna të tjera me vlerë. Sinkronizimi me një shërbim cloud është i dobishëm, por fshirja në një pajisje mund të sinkronizohet edhe me pajisjet e tjera.",
+          "Mendo për kopjen rezervë si plan rikuperimi, jo si arkiv që nuk ndryshon. Ajo duhet të jetë mjaft e re për të qenë e dobishme dhe e mbrojtur nga qasja e paautorizuar. Zgjidh shërbim të besuar, përdor MFA dhe kontrollo se çfarë ruhet."
+        ],
+        "example": "Një fotografi e ngarkuar vetëm në telefon nuk është kopje rezervë nëse telefoni është i vetmi vend ku ekziston."
+      },
+      {
+        "title": "Krijo rutinë të thjeshtë",
+        "paragraphs": [
+          "Përcakto cilët skedarë janë më të rëndësishëm dhe ku do t’i ruash. Mund të përdorësh një shërbim cloud të besuar ose një disk të jashtëm që nuk qëndron gjithmonë i lidhur. Sa më automatike të jetë kopja, aq më pak ka gjasa ta harrosh, por kontrollo herë pas here datën e kopjes së fundit.",
+          "Mbaje të paktën një kopje larg pajisjes kryesore. Nëse humb laptopi, kopja në të njëjtin laptop humbet bashkë me të. Mbro diskun e jashtëm nga humbja dhe nga qasja e të tjerëve, dhe mos e lidh me pajisje që dyshon se janë të infektuara."
+        ],
+        "example": "Për dokumentet e shkollës, vendos një ditë javore për të kontrolluar nëse kopjet po përditësohen."
+      },
+      {
+        "title": "Rikuperimi duhet provuar",
+        "paragraphs": [
+          "Një kopje nuk është e dobishme nëse nuk mund ta hapësh. Provo rikthimin e një dokumenti jo kritik dhe sigurohu që procesi funksionon. Mbaje mend fjalëkalimin dhe metodën e hyrjes në shërbimin ku ruhen kopjet, por mos i shkruaj në vend të dukshëm.",
+          "Nëse skedarët bllokohen nga ransomware ose pajisja sillet çuditshëm, mos e lidh menjëherë kopjen rezervë me pajisjen e prekur. Kërko ndihmë nga një profesionist ose ekipi i IT-së. Rikthimi duhet bërë nga pajisje e pastër dhe pasi të kuptohet shkaku, që problemi të mos përsëritet."
+        ],
+        "example": "Provo një rikthim të vogël sot: zgjidh një fotografi ose dokument të kopjuar dhe sigurohu se mund ta shkarkosh e hapësh."
+      },
+      {
+        "title": "Mos ngatërro sinkronizimin me kopjen rezervë",
+        "paragraphs": [
+          "Sinkronizimi mban skedarët të njëjtë në disa pajisje, por fshirja ose ndryshimi i gabuar mund të përhapet në to. Një kopje e mirë duhet të lejojë rikthimin e versionit ose skedarit të nevojshëm; kontrollo mundësitë dhe afatet e ruajtjes te ofruesi yt.",
+          "Mbro llogarinë cloud me fjalëkalim unik dhe MFA. Për kopje në disk të jashtëm, lidhe vetëm kur po krijon ose rikthen kopjen dhe ruaje në vend të sigurt. Asnjë metodë e vetme nuk mbron nga çdo lloj humbjeje, ndaj zgjidh një rutinë që mund ta mbash."
+        ],
+        "example": "Mos fshi origjinalin menjëherë pasi aktivizon sinkronizimin; provo fillimisht rikthimin e një kopjeje."
+      },
+      {
+        "title": "Strategjia e kopjeve dhe objektivat e rikuperimit",
+        "paragraphs": [
+          "Vendos çfarë nuk mund të humbasësh, sa shpesh ndryshon dhe sa kohë mund të rrish pa të. Dokumentet e punës, fotografitë dhe skedarët e shkollës mund të kenë ritme të ndryshme kopjimi. Një rutinë automatike e testuar është më e dobishme se një plan i ndërlikuar që nuk zbatohet.",
+          "Mbaj kopje në një vend të veçantë nga pajisja dhe mbro llogarinë cloud me MFA. Nëse kopja lidhet vazhdimisht me kompjuterin, malware mund të ndikojë edhe atë."
+        ],
+        "example": "Zgjidh një dosje të rëndësishme dhe cakto kur e si do të kopjohet."
+      },
+      {
+        "title": "Testimi i rikthimit dhe versionet",
+        "paragraphs": [
+          "Kopja rezervë nuk është e provuar derisa të rikthesh një skedar dhe të hapet siç duhet. Kontrollo versionet e vjetra, afatin e ruajtjes dhe mënyrën e hyrjes kur pajisja kryesore humbet. Mbaj udhëzimet e rikuperimit jashtë llogarisë që mund të bllokohet.",
+          "Sinkronizimi, koshi i fshirë dhe backup-i janë veçori të ndryshme. Kupto cili produkt ruan versionet dhe sa kohë, pastaj zgjidh kombinim që përshtatet me nevojat e tua."
+        ],
+        "example": "Rikthe një dokument provë në dosje tjetër; mos e mbishkruaj origjinalin."
+      }
+    ],
+    "action": "Zgjidh një dokument të rëndësishëm, kontrollo datën e kopjes së fundit dhe provo rikthimin e një skedari jo kritik.",
+    "sources": [
+      {
+        "name": "NCSC — Si të bësh kopje rezervë dhe të rikthesh të dhënat",
+        "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/always-back-up-your-most-important-data"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Siguria në rrjetet sociale",
+    "icon": "◎",
+    "time": "6 min",
+    "level": "Fillestar",
+    "category": "Privatësia",
+    "short": "Mbro profilin dhe mendo para se të ndash informacion.",
+    "body": "Rrjetet sociale ndihmojnë për të qëndruar në kontakt, por postimet, listat e miqve dhe detajet e profilit mund të krijojnë një gjurmë digjitale. Cilësimet e privatësisë dhe verifikimi me dy hapa ndihmojnë në mbrojtjen e llogarisë.",
+    "points": [
+      "Rishiko kush mund t’i shohë postimet dhe informacionet e profilit.",
+      "Aktivizo verifikimin me dy hapa për llogarinë.",
+      "Mos prano kërkesa ose lidhje vetëm sepse profili duket i njohur.",
+      "Kontrollo çfarë zbulon fotografia, vendndodhja ose rutina jote."
+    ],
+    "agentChapters": [
+      {
+        "title": "Mbro profilin dhe hyrjen",
+        "paragraphs": [
+          "Llogaritë e rrjeteve sociale përmbajnë biseda, fotografi dhe lidhje me persona të tjerë. Përdor fjalëkalim të veçantë, aktivizo verifikimin me dy hapa dhe mbaje të përditësuar email-in ose numrin e rikuperimit. Nëse platforma ofron njoftime për hyrje të reja, aktivizoji dhe kontrollo sinjalizimet që nuk i njeh.",
+          "Mos aprovo kërkesa për hyrje që nuk i ke nisur dhe mos ia dërgo askujt kodin e verifikimit. Rishiko pajisjet dhe sesionet e kyçura nga cilësimet zyrtare. Nëse sheh ndryshim të panjohur, përdor procesin e rikuperimit të platformës dhe paralajmëro kontaktet nëse llogaria dërgoi mesazhe pa dijeninë tënde."
+        ],
+        "example": "Një mesazh nga një profil i njohur që kërkon kodin e hyrjes mund të vijë nga një llogari e marrë nën kontroll; verifikoje përmes një kanali tjetër."
+      },
+      {
+        "title": "Kufizo gjurmën digjitale",
+        "paragraphs": [
+          "Cilësimet e privatësisë të ndihmojnë të kontrollosh kush mund të shohë postimet, listën e ndjekësve dhe të dhënat e profilit. Emrat e cilësimeve ndryshojnë ndërmjet platformave, prandaj përdor ndihmën zyrtare të aplikacionit dhe rishikoji periodikisht.",
+          "Para se të publikosh, kontrollo nëse fotografia apo përshkrimi zbulon adresë, shkollë, vendndodhje të drejtpërdrejtë, dokument identifikimi ose rutinë ditore. Mos publiko të dhëna të njerëzve të tjerë pa leje. Edhe postimet që duken private mund të kopjohen nga marrësit."
+        ],
+        "example": "Çaktivizo ndarjen e vendndodhjes për një postim nëse nuk ka arsye që publiku ta dijë ku ndodhesh në atë moment."
+      },
+      {
+        "title": "Njihe imitimin dhe llogaritë e rreme",
+        "paragraphs": [
+          "Emri dhe fotografia e profilit nuk vërtetojnë vetvetiu identitetin. Llogaritë e rreme mund të kopjojnë një person ose organizatë për të kërkuar para, kode ose të dhëna. Ki kujdes me kërkesa të papritura për pagesë, votim, ndihmë urgjente apo hyrje në një faqe.",
+          "Mos hap lidhje vetëm sepse erdhi me mesazh privat. Kontakto personin përmes një kanali që e ke përdorur më parë dhe raporto profilin përmes mjeteve të platformës nëse dyshon për imitim. Bllokimi dhe raportimi mund të ndihmojnë, por mos u përball me personin në mënyrë që të rrezikosh sigurinë tënde."
+        ],
+        "example": "Nëse një mik kërkon hua me një mënyrë të pazakontë, telefonoje në numrin që e ke ruajtur më herët për ta konfirmuar."
+      },
+      {
+        "title": "Kërkesat për para dhe lidhjet në mesazhe",
+        "paragraphs": [
+          "Mashtrimet në rrjete sociale shpesh përdorin besimin mes miqve. Një llogari e marrë nën kontroll mund të dërgojë kërkesa urgjente për para, kode ose vota. Mos dërgo pagesë vetëm mbi bazën e një mesazhi; telefono personin në numrin që e ke ruajtur ose përdor një kanal tjetër të njohur.",
+          "Kontrollo edhe adresën e destinacionit të lidhjeve që të vijnë në mesazh privat. Nëse nuk e prisje, mos u nxito ta hapësh. Raporto profilin ose përmbajtjen te platforma dhe njofto personin përmes një rruge të pavarur."
+        ],
+        "example": "Një telefonatë e shkurtër përmes numrit të njohur të mikut është mënyrë më e mirë për të verifikuar një kërkesë të pazakontë."
+      },
+      {
+        "title": "Rreziku i imitimit dhe marrjes së llogarisë",
+        "paragraphs": [
+          "Sulmuesit mund të kopjojnë emrin, fotografinë dhe stilin e një personi të njohur. Një mesazh privat nuk vërteton identitetin, sidomos kur kërkon para, kode, votë ose lidhje për hyrje. Verifiko kërkesën me telefonatë ose kanal tjetër që e ke përdorur më parë.",
+          "Ndaji fjalëkalimet e rrjetit social nga email-i, aktivizo MFA dhe rishiko sesionet. Kufizo informacionin publik që e bën më të lehtë përgjigjen ndaj pyetjeve të sigurisë ose imitim bindës."
+        ],
+        "example": "Nëse një mik kërkon para me urgjencë në chat, telefonoje te numri i ruajtur para transferimit."
+      },
+      {
+        "title": "Moderimi, raportimi dhe privatësia e miqve",
+        "paragraphs": [
+          "Blloko ose raporto profilet që kërkojnë kërcënime, para ose të dhëna intime. Ruaj provat pa e shpërndarë postimin e dëmshëm dhe kërko ndihmë nga një i rritur i besuar kur përfshihen të mitur. Përmbajtja e shpërndarë mund të kopjohet edhe pas fshirjes.",
+          "Rishiko etiketimet, listën e ndjekësve, audiencën e postimeve dhe lejet e aplikacioneve të lidhura. Privatësia e miqve ka rëndësi: kërko leje para se të postosh foto ose detaje që i identifikojnë."
+        ],
+        "example": "Para postimit të fotos së grupit, sigurohu që personat e tjerë janë dakord."
+      }
+    ],
+    "action": "Kontrollo cilësimet e privatësisë dhe hyrjeve aktive në një rrjet social që përdor.",
+    "sources": [
+      {
+        "name": "NCSC — Përdorimi i sigurt i rrjeteve sociale",
+        "url": "https://www.ncsc.gov.uk/guidance/social-media-how-to-use-it-safely"
+      },
+      {
+        "name": "NCSC — Verifikimi me dy hapa",
+        "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/activate-2-step-verification-on-your-email"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Mbrojtja e email-it",
+    "icon": "@",
+    "time": "6 min",
+    "level": "Mesatar",
+    "category": "Llogaritë",
+    "short": "Siguro llogarinë që shpesh përdoret për rikuperimin e llogarive të tjera.",
+    "body": "Email-i është veçanërisht i rëndësishëm sepse përdoret shpesh për rivendosjen e fjalëkalimeve dhe marrjen e njoftimeve. Një fjalëkalim i veçantë dhe verifikimi me dy hapa ulin rrezikun e marrjes së llogarisë.",
+    "points": [
+      "Përdor fjalëkalim unik për email-in.",
+      "Aktivizo verifikimin me dy hapa dhe mbaj të përditësuara metodat e rikuperimit.",
+      "Kontrollo sesionet dhe rregullat e përcjelljes që nuk i njeh.",
+      "Mos hap lidhje për hyrje nga mesazhe të papritura."
+    ],
+    "agentChapters": [
+      {
+        "title": "Pse email-i është llogari kyçe",
+        "paragraphs": [
+          "Email-i shpesh përdoret për të rivendosur fjalëkalimet e shërbimeve të tjera dhe për të marrë njoftime për ndryshime. Nëse dikush hyn në email, mund të kërkojë lidhje rikuperimi, të lexojë komunikime private ose të dërgojë mesazhe duke u paraqitur si ti. Për këtë arsye, trajtoje si një nga llogaritë e tua më të rëndësishme.",
+          "Përdor fjalëkalim unik për email-in dhe aktivizo verifikimin me dy hapa. Mos e ripërdor fjalëkalimin e email-it te rrjetet sociale, lojërat apo blerjet. Një menaxher fjalëkalimesh mund të ndihmojë të krijosh dhe ruash kode të ndryshme."
+        ],
+        "example": "Nëse një fjalëkalim i përdorur në një faqe të vogël zbulohet, fjalëkalimi i veçantë i email-it pengon që i njëjti kod të hapë kutinë hyrëse."
+      },
+      {
+        "title": "Kontrollo cilësimet e rikuperimit",
+        "paragraphs": [
+          "Mbaj të përditësuar numrin e telefonit dhe adresën alternative të rikuperimit. Zgjidh një metodë që e kontrollon ende dhe mos përdor të dhëna që kushdo mund t’i gjejë publikisht si përgjigje për pyetje sigurie. Ruaji kodet rezervë në vend të sigurt dhe mos ia dërgo askujt.",
+          "Kontrollo herë pas here pajisjet dhe sesionet aktive në faqen e ofruesit. Vëzhgo rregulla të panjohura të përcjelljes automatike, filtra ose adresa rikuperimi. Nëse nuk njeh një ndryshim, përdor dokumentacionin zyrtar të ofruesit për ta hequr dhe siguroje përsëri llogarinë."
+        ],
+        "example": "Nëse ke ndryshuar numrin e telefonit, përditësoje metodën e rikuperimit para se të humbasësh qasjen te numri i vjetër."
+      },
+      {
+        "title": "Lexo njoftimet dhe mbro sesionin",
+        "paragraphs": [
+          "Njoftimet për hyrje të reja, ndryshim fjalëkalimi apo rikuperimi duhen kontrolluar. Mos kliko lidhjen në një mesazh nëse nuk je i sigurt; hyr vetë nga aplikacioni ose adresa zyrtare dhe shqyrto aktivitetin e fundit. Një njoftim mund të jetë i rremë, ndaj verifikoje nga llogaria.",
+          "Në pajisje të përbashkëta mos ruaj kredencialet dhe dil kur mbaron. Nëse merr një kërkesë të papritur për kod hyrjeje, mos e aprovo. Në rast dyshimi, ndrysho fjalëkalimin nga shërbimi zyrtar, mbyll sesionet e panjohura dhe kërko ndihmë nga ofruesi."
+        ],
+        "example": "Hap cilësimet e sigurisë duke shtypur vetë adresën e shërbimit, jo përmes një butoni në email të papritur."
+      },
+      {
+        "title": "Siguro llogarinë para se të nevojitet",
+        "paragraphs": [
+          "Përdor faqen e sigurisë së ofruesit për të kontrolluar adresat e rikuperimit, numrin e telefonit, sesionet dhe aplikacionet që kanë qasje. Hiq pajisje ose qasje që nuk i njeh dhe ndiq udhëzimet zyrtare nëse vëren ndryshim të paautorizuar.",
+          "Nëse ofruesi njofton për rrjedhje të të dhënave, mos supozo se çdo mesazh për këtë temë është i vërtetë. Mashtruesit mund të përdorin lajmin për të dërguar faqe të rreme. Kontrollo njoftimin në faqen zyrtare që e hap vetë dhe ndrysho vetëm fjalëkalimet e prekura ose të ripërdorura."
+        ],
+        "example": "Shto një adresë rikuperimi që e kontrollon rregullisht dhe kontrollo që ajo vetë është e mbrojtur me MFA."
+      },
+      {
+        "title": "Email-i si pikë rikuperimi dhe identiteti",
+        "paragraphs": [
+          "Email-i shpesh merr lidhjet e rivendosjes për llogari të tjera. Nëse humbet qasjen, sulmuesi mund të ndryshojë fjalëkalime ose të vendosë rregulla përcjelljeje. Për këtë arsye përdor fjalëkalim unik, MFA dhe metoda rikuperimi që ende i kontrollon.",
+          "Kontrollo sesionet, pajisjet e njohura, delegimet dhe rregullat që përcjellin ose fshijnë mesazhe. Shiko edhe adresën e rikuperimit dhe numrin e telefonit; hiq ndryshimet që nuk i njeh."
+        ],
+        "example": "Një rregull i panjohur që përcjell faturat mund të fshehë njoftimet për aktivitet të dyshimtë."
+      },
+      {
+        "title": "Siguria e dërgimit dhe e bashkëngjitjeve",
+        "paragraphs": [
+          "Kontrollo marrësit përpara dërgimit, sidomos kur plotësohet automatikisht emri i një kontakti. Për dokumente konfidenciale përdor kanalin e miratuar dhe ndaj qasjen vetëm me marrësin e duhur. Fshirja e email-it nga dosja jote nuk e heq domosdoshmërisht kopjen e marrësit.",
+          "Shtypja e ‘Reply’ në një zinxhir të gjatë mund të dërgojë informacion te persona që nuk duhet ta marrin. Për pagesa ose ndryshime llogarie, konfirmo në kanal tjetër."
+        ],
+        "example": "Përpara se të dërgosh listën, kontrollo fushat To, Cc dhe Bcc."
+      }
+    ],
+    "action": "Kontrollo MFA-në, metodat e rikuperimit dhe pajisjet aktive të email-it tënd.",
+    "sources": [
+      {
+        "name": "NCSC — Mbrojtja e email-it me fjalëkalim të veçantë",
+        "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/use-a-strong-and-separate-password-for-email"
+      },
+      {
+        "name": "NCSC — Verifikimi me dy hapa",
+        "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/activate-2-step-verification-on-your-email"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Veprimi pas një incidenti digjital",
+    "icon": "!",
+    "time": "6 min",
+    "level": "Mesatar",
+    "category": "Incidente",
+    "short": "Hapat e sigurt nëse ndave të dhëna ose humbe qasjen në llogari.",
+    "body": "Nëse mendon se ke dhënë fjalëkalimin në faqe të rreme, ke humbur qasjen në llogari ose ke kryer një pagesë të panjohur, vepro shpejt përmes kanaleve zyrtare. Ruaj provat dhe njofto ofruesin përkatës.",
+    "points": [
+      "Hyr te shërbimi nga aplikacioni ose adresa zyrtare, jo nga lidhja e mesazhit.",
+      "Ndrysho fjalëkalimin e prekur dhe të llogarive ku e ke ripërdorur.",
+      "Dil nga sesionet e panjohura dhe aktivizo verifikimin me shumë hapa.",
+      "Kontakto bankën ose organizatën përmes numrit zyrtar nëse preken para ose të dhëna."
+    ],
+    "agentChapters": [
+      {
+        "title": "Njoh shenjat dhe mos e përkeqëso situatën",
+        "paragraphs": [
+          "Një incident mund të jetë mesazh mashtrues, fjalëkalim i futur në faqe të rreme, hyrje që nuk e njeh, telefon i humbur apo pagesë e paautorizuar. Në fillim, ndalo dhe mos iu përgjigj personit që të kontaktoi. Mos dërgo para, kode ose dokumente të tjera për të “zgjidhur” problemin.",
+          "Nëse incidenti ndodhi në pajisje ose llogari të shkollës/punës, njofto menjëherë administratorin ose ekipin e IT-së sipas procedurës së organizatës. Mos fshi mesazhe apo prova para se të marrësh udhëzime, veçanërisht kur mund të nevojitet hetim."
+        ],
+        "example": "Nëse ke klikuar një lidhje, por nuk ke futur të dhëna, mbylle faqen, mos shkarko asgjë dhe kërko ndihmë nëse pajisja sillet ndryshe."
+      },
+      {
+        "title": "Siguro llogaritë nga kanalet zyrtare",
+        "paragraphs": [
+          "Nëse ke ndarë fjalëkalim, hyr në shërbim duke përdorur aplikacionin ose adresën zyrtare dhe ndryshoje. Ndrysho edhe llogaritë e tjera ku ke ripërdorur të njëjtin fjalëkalim. Aktivizo verifikimin me dy hapa, kontrollo aktivitetin e hyrjeve dhe dil nga sesionet që nuk i njeh.",
+          "Nëse nuk mund të hysh, përdor procesin zyrtar të rikuperimit. Mos u beso personave që të kontaktojnë papritur dhe premtojnë rikthim të llogarisë kundrejt pagesës ose kodit. Nëse humbe telefonin, përdor shërbimin zyrtar të prodhuesit për kyçje dhe kontakto operatorin për SIM-in."
+        ],
+        "example": "Përdor një pajisje të besuar dhe të përditësuar për të ndryshuar fjalëkalimet; mos përdor lidhjet në mesazhin e dyshimtë."
+      },
+      {
+        "title": "Kontakto bankën dhe raporto",
+        "paragraphs": [
+          "Nëse ke ndarë të dhëna karte, kryer pagesë të panjohur ose beson se u komprometua llogaria financiare, kontakto bankën menjëherë përmes numrit në kartë ose aplikacionit zyrtar. Ndiq udhëzimet e bankës dhe kontrollo transaksionet e fundit. Mos dërgo PIN, fjalëkalim ose kod njëpërdorimësh personit që telefonon.",
+          "Raporto mesazhin te ofruesi i email-it, platforma ose autoritetet përkatëse në vendin ku jeton. Rregullat dhe kanalet zyrtare ndryshojnë sipas shtetit; gjej udhëzimin në faqet qeveritare ose institucionale zyrtare. Ruaj datën, mesazhin dhe numrat e referencës, por mos publiko të dhëna personale online."
+        ],
+        "example": "Shëno datën, shërbimin e prekur dhe hapat që ndërmore; kjo të ndihmon kur flet me bankën ose ofruesin."
+      },
+      {
+        "title": "Përshtati reagimin me dëmin",
+        "paragraphs": [
+          "Jo çdo klikim do të thotë se llogaria u komprometua. Shëno çfarë ndodhi saktësisht: hape lidhjen, shkarkove skedar, futë fjalëkalim, ndave kod apo bëre pagesë. Kjo ndihmon bankën, ofruesin ose ekipin e IT-së të të japë hapat e duhur pa hamendësime.",
+          "Nëse ke humbur para, vepro shpejt përmes bankës dhe ndiq udhëzimet e saj për bllokim ose kundërshtim transaksioni. Nëse ke ndarë dokument identifikimi, kërko udhëzim nga autoriteti kompetent i vendit tënd; procedurat ndryshojnë. Mos paguaj persona që premtojnë siguri apo rikthim të garantuar."
+        ],
+        "example": "Përshkruaj veprimet, jo supozimet: “futja fjalëkalimin në këtë faqe rreth orës 14:00” është më e dobishme se “më kanë hakuar”."
+      },
+      {
+        "title": "Triage sipas dëmit dhe urgjencës",
+        "paragraphs": [
+          "Së pari përcakto çfarë u ekspozua: vetëm lidhje e hapur, skedar i shkarkuar, fjalëkalim i futur, kod i aprovuar apo pagesë e kryer. Çdo rast kërkon hapa të ndryshëm. Në rast rreziku financiar ose pajisjeje pune, kontakto bankën ose IT-në menjëherë përmes numrit zyrtar.",
+          "Përdor pajisje të besuar për ndryshimin e kredencialeve. Mos iu përgjigj një telefonate të papritur që ofron ‘rikuperim’ dhe kërkon kod ose qasje në distancë."
+        ],
+        "example": "Shëno kohën, shërbimin dhe veprimin që bëre; këto hollësi ndihmojnë ekipin mbështetës."
+      },
+      {
+        "title": "Kufizimi i dëmit pa humbur provat",
+        "paragraphs": [
+          "Mbyll sesionet e panjohura, ndrysho kredencialet nga faqja zyrtare dhe hiq qasjen e aplikacioneve që nuk i njeh. Nëse dyshohet pajisje pune e infektuar, ndiq procedurën e IT-së para fshirjes ose rivendosjes; veprimet e nxituara mund të zhdukin prova.",
+          "Ruaj mesazhet dhe faturat e rëndësishme në mënyrë të sigurt. Pasi të kufizohet dëmi, rishiko llogaritë e tjera ku fjalëkalimi është ripërdorur dhe lajmëro personat që mund të preken."
+        ],
+        "example": "Ruaj screenshot-in e njoftimit pa e publikuar dhe dërgoje vetëm te kanali zyrtar i raportimit."
+      }
+    ],
+    "action": "Ruaje numrin zyrtar të bankës dhe faqen e rikuperimit të email-it në një vend të sigurt.",
+    "sources": [
+      {
+        "name": "NCSC — Veprimet pas rrjedhjes së të dhënave",
+        "url": "https://www.ncsc.gov.uk/guidance/data-breaches"
+      },
+      {
+        "name": "NCSC — Çfarë të bësh pas ndarjes së të dhënave me mashtrues",
+        "url": "https://www.ncsc.gov.uk/collection/phishing-scams/what-to-do"
+      },
+      {
+        "name": "CISA — Njih dhe raporto phishing-un",
+        "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Siguria në pajisjet e përbashkëta",
+    "icon": "▣",
+    "time": "6 min",
+    "level": "Fillestar",
+    "category": "Pajisjet",
+    "short": "Përdor kompjuterët e shkollës, bibliotekës ose publikut me kujdes.",
+    "body": "Pajisjet e përbashkëta mund të përdoren edhe nga persona të tjerë, prandaj mos i trajto si pajisjen tënde private. Shmang ruajtjen e fjalëkalimeve dhe mbyll sesionin kur përfundon.",
+    "points": [
+      "Mos ruaj fjalëkalimin në shfletuesin e pajisjes së përbashkët.",
+      "Përdor dritaren private vetëm për të mos ruajtur historikun lokal; ajo nuk të bën anonim.",
+      "Dil plotësisht nga llogaria dhe mbyll dritaret kur mbaron.",
+      "Mos kryej veprime shumë të ndjeshme në pajisje që nuk i administron."
+    ],
+    "agentChapters": [
+      {
+        "title": "Pajisje e përbashkët nuk do të thotë llogari e përbashkët",
+        "paragraphs": [
+          "Në bibliotekë, shkollë, laborator apo hotel, pajisja mund të ruajë historikun, skedarët e shkarkuar ose sesionet e hyrjes. Përdor vetëm llogarinë tënde dhe mos lër shfletuesin të ruajë fjalëkalimin. Në pajisjen e dikujt tjetër, mos ndrysho cilësimet pa leje dhe mos instalo programe.",
+          "Nëse mundesh, shmang qasjen në llogari shumë të ndjeshme nga pajisje që nuk e administron. Nëse duhet të hysh, sigurohu që po përdor faqen e saktë, mos e shëno opsionin “më mbaj mend” dhe mbylle sesionin përpara se të largohesh."
+        ],
+        "example": "Përdoruesi pas teje mund ta hapë shfletuesin dhe të gjejë sesionin tënd ende aktiv, nëse nuk del nga llogaria."
+      },
+      {
+        "title": "Kupto çfarë bën dhe nuk bën dritarja private",
+        "paragraphs": [
+          "Dritarja private ose incognito zakonisht kufizon ruajtjen lokale të historikut dhe cookie-ve pasi ta mbyllësh dritaren. Ajo nuk të bën anonim ndaj faqes, rrjetit të shkollës, punëdhënësit ose ofruesit të internetit dhe nuk heq malware-in nga pajisja. Mos e ngatërro privatësinë lokale me mbrojtje të plotë.",
+          "Në pajisje të përbashkët, mbyll të gjitha dritaret private dhe dil nga secili shërbim. Fshi skedarët që shkarkove nëse nuk duhen, por mos ruaj dokumente private në desktop ose dosje të përbashkëta. Nëse nuk je i sigurt për politikat e pajisjes, pyet administratorin."
+        ],
+        "example": "Incognito nuk e fsheh aktivitetin nga rrjeti i shkollës; shërben kryesisht që shfletuesi të mos ruajë disa të dhëna lokalisht."
+      },
+      {
+        "title": "Mbyll sesionin dhe kontrollo para largimit",
+        "paragraphs": [
+          "Përdor komandën “Dil” brenda faqes, jo vetëm mbylljen e skedës. Mbylli dokumentet dhe aplikacionet që ke hapur, kontrollo që nuk ke zgjedhur ruajtjen e fjalëkalimit dhe hiq skedarët personalë nga dosja e përkohshme e shkarkimeve sipas rregullave të institucionit.",
+          "Nëse ke harruar të dalësh, përdor cilësimet e sigurisë së shërbimit nga pajisja jote për të mbyllur sesionet aktive. Nëse ke futur të dhëna në pajisje që të duket e pasigurt, ndrysho fjalëkalimin përkatës nga pajisje e besuar dhe njofto administratorin."
+        ],
+        "example": "Bëj një kontroll të shpejtë para se të largohesh: llogaritë janë mbyllur, skedarët janë hequr dhe fjalëkalimi nuk është ruajtur."
+      },
+      {
+        "title": "Pajisjet e publikut dhe privatësia e të dhënave",
+        "paragraphs": [
+          "Mos ruaj dokumente personale, fotografi apo skanime identifikimi në pajisje të përbashkët. Nëse duhet të shkarkosh material, vendose vetëm në vendin e miratuar nga institucioni dhe fshije sipas rregullave të tij kur mbaron. Mos lidh pajisje USB të panjohura.",
+          "Mos shtyp të dhëna financiare ose shumë të ndjeshme në pajisje që nuk e njeh mirë. Nëse je në shkollë ose bibliotekë, kërko ndihmë nga administratori në vend që të anashkalosh paralajmërime ose të instalosh mjete për qasje."
+        ],
+        "example": "Kur printon dokument, merre menjëherë nga printeri dhe kontrollo nëse dokumentet e tua kanë mbetur në radhën e printimit."
+      },
+      {
+        "title": "Çfarë mund të mbetet pas përdorimit",
+        "paragraphs": [
+          "Dalja nga llogaria dhe dritarja private nuk pastrojnë domosdoshmërisht skedarët e shkarkuar, kopjet në clipboard, historikun e shkarkimeve ose të dhënat që ruan vetë shërbimi. Pajisja mund të administrohet nga shkolla ose punëdhënësi, ndaj mos e përdor për materiale personale të ndjeshme.",
+          "Mos zgjidh ‘ruaj fjalëkalimin’ dhe mos lër sesion të hapur. Nëse duhet të hysh në llogari të ndjeshme, përdor pajisjen tënde të përditësuar kur është e mundur."
+        ],
+        "example": "Pas printimit, mblidh faqet nga printeri dhe mos harro dokumentet në dosjen Downloads."
+      },
+      {
+        "title": "Përfundimi i sigurt i sesionit",
+        "paragraphs": [
+          "Dil nga çdo shërbim veçmas, mbyll dritaret dhe kontrollo që shfletuesi nuk ofron ruajtje kredencialesh. Fshi skedarët personalë vetëm sipas rregullave të pajisjes dhe mos fshi materiale të organizatës pa leje.",
+          "Nëse ke hyrë në email ose bankë, kontrollo aktivitetin e llogarisë nga pajisja jote pas përdorimit. Raporto tastierat, pajisjet ose paralajmërimet e pazakonta te administratori."
+        ],
+        "example": "Përdor një listë të shkurtër: dil, mbyll, kontrollo shkarkimet dhe merr dokumentet."
+      }
+    ],
+    "action": "Nëse përdor pajisje të përbashkëta, krijo një listë të shkurtër kontrolli për daljen nga llogaritë dhe heqjen e skedarëve.",
+    "sources": [
+      {
+        "name": "NCSC — Menaxhimi i fjalëkalimeve dhe pajisjet e përbashkëta",
+        "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/password-managers"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Ransomware dhe rikuperimi i sigurt",
+    "icon": "▧",
+    "time": "7 min",
+    "level": "Mesatar",
+    "category": "Incidente",
+    "short": "Kupto si bllokohen skedarët dhe si përgatitesh për rikthim.",
+    "body": "Ransomware është lloj malware-i që mund të enkriptojë skedarët dhe të kërkojë pagesë për rikthimin e tyre. Parandalimi, kopjet rezervë të testuara dhe reagimi i qetë ndihmojnë në uljen e dëmit.",
+    "points": [
+      "Përditëso pajisjet dhe mos hap bashkëngjitje të papritura.",
+      "Mbaj kopje rezervë të ndara dhe provo rikthimin e skedarëve.",
+      "Në pajisje pune ose shkolle, njofto menjëherë ekipin e IT-së.",
+      "Mos paguaj dhe mos ndrysho pajisjen pa udhëzimin e autoriteteve përkatëse."
+    ],
+    "agentChapters": [
+      {
+        "title": "Çfarë është ransomware",
+        "paragraphs": [
+          "Ransomware është një lloj malware-i që mund të enkriptojë skedarë ose t’i bëjë sistemet të paarritshme, pastaj kërkon shpërblim. Disa sulmues mund të kopjojnë të dhëna dhe të kërcënojnë publikimin e tyre; pagesa nuk garanton rikthim ose fshirje të kopjeve.",
+          "Ransomware mund të prekë individë, shkolla dhe organizata. Një skedar i vetëm i humbur mund të jetë i bezdisshëm, ndërsa ndërprerja e shërbimeve të një organizate mund të prekë shumë njerëz. Prandaj përgatitja dhe raportimi kanë rëndësi."
+        ],
+        "example": "Një dokument që papritur nuk hapet dhe një kërkesë për pagesë janë shenja për të kërkuar ndihmë, jo për të negociuar vetë."
+      },
+      {
+        "title": "Ule mundësinë e infektimit",
+        "paragraphs": [
+          "Mbaji sistemin dhe programet të përditësuara, përdor burime zyrtare për instalime dhe ndalo para se të hapësh bashkëngjitje që nuk i prisje. Mesazhet për dërgesa, fatura ose dokumente mund të përdoren për të të nxituar; verifiko dërguesin në një kanal të pavarur.",
+          "Përdor llogari me të drejta të kufizuara për punët e përditshme kur kjo ofrohet. Në pajisjen e punës, ndiq udhëzimet e ekipit të IT-së dhe mos çaktivizo mbrojtjen për të hapur një skedar."
+        ],
+        "example": "Nëse një faturë e papritur kërkon të aktivizosh përmbajtjen ose të instalosh një program, verifikoje me kompaninë përmes kontaktit zyrtar."
+      },
+      {
+        "title": "Kopjet rezervë dhe plani i rikuperimit",
+        "paragraphs": [
+          "Ruaj kopje të skedarëve të rëndësishëm në një shërbim të besuar ose pajisje të veçantë. Një disk i lidhur vazhdimisht mund të preket bashkë me pajisjen, ndaj shqyrto kopje që shkëputen pas përdorimit dhe kontrollo historikun/versionet e ofruesit.",
+          "Provo herë pas here të rikthesh një skedar, sepse kopja që nuk mund të rikthehet nuk të ndihmon në incident. Mbaj shënim ku gjenden kopjet dhe siguroje llogarinë cloud me fjalëkalim unik dhe MFA."
+        ],
+        "example": "Provo rikthimin e një dokumenti jo të ndjeshëm nga kopja rezervë përpara se të mbështetesh tek ajo për situatë urgjente."
+      },
+      {
+        "title": "Si të reagosh kur dyshon për ransomware",
+        "paragraphs": [
+          "Nëse pajisja e punës ose shkollës shfaq kërkesë për shpërblim apo skedarët bëhen të paarritshëm, njofto menjëherë ekipin e IT-së përmes kanalit zyrtar. Mos e izolo, fik ose pastro pajisjen pa udhëzimin e tyre, sepse veprimet mund të ndikojnë te hetimi dhe rikuperimi.",
+          "Për pajisjen personale, mos paguaj menjëherë dhe mos ndiq udhëzime të panjohura në ekran. Përdor ndihmë teknike të besueshme dhe udhëzimet e autoriteteve; ruaje kopjen rezervë të paprekur derisa të konfirmohet se pajisja është pastruar."
+        ],
+        "example": "Njofto IT-në, ruaj mesazhin si provë dhe mos e lidh diskun rezervë me pajisjen e dyshimtë."
+      },
+      {
+        "title": "Plan veprimi gjatë incidentit",
+        "paragraphs": [
+          "Pajtohu paraprakisht me familjen ose ekipin se kujt i raportohet problemi dhe cilat kontakte përdoren. Për pajisje të menaxhuara nga organizata, ndiq politikën e saj dhe mos u përpiq të hetosh vetë. Për pajisje personale, kërko profesionist të besueshëm dhe përdor udhëzime zyrtare.",
+          "Mos lidh pajisje rezervë ose USB me kompjuterin e dyshimtë; prit udhëzimin e specialistit. Mbaj shënim çfarë u shfaq, kur filloi dhe çfarë veprimesh kryeve, pa fshirë prova. Nëse preken të dhëna pune, organizata duhet të ndjekë përgjegjësitë e saj raportuese.",
+          "Pas rikuperimit, ndrysho kredencialet nga pajisje e besuar, kontrollo llogaritë dhe sigurohu që kopjet rezervë po funksionojnë. Mëso nga incidenti pa fajësuar viktimën: identifiko çfarë mund të përmirësohet në përditësime, trajnim ose kopje rezervë."
+        ],
+        "example": "Përgatit në një fletë të sigurt emrin e personit të IT-së, kontaktin e bankës dhe vendin ku ruhen kopjet."
+      },
+      {
+        "title": "Shkëputja, ruajtja e provave dhe raportimi",
+        "paragraphs": [
+          "Nëse skedarët ndryshojnë papritur ose shfaqet kërkesë për shpërblim, mos ndërvepro me shënimin dhe mos e lidh diskun rezervë. Në pajisje pune ose shkolle, njofto ekipin e IT-së menjëherë; për pajisje personale, kërko ndihmë nga specialist i besuar.",
+          "Mos paguaj si hap automatik: pagesa nuk garanton rikthim ose fshirje të të dhënave. Mos provo mjete të rastësishme që mund të dëmtojnë provat ose të instalojnë malware shtesë."
+        ],
+        "example": "Fotografo shënimin me pajisje tjetër dhe shëno kohën pa klikuar lidhjet e tij."
+      },
+      {
+        "title": "Rikthimi i kontrolluar dhe mësimet pas incidentit",
+        "paragraphs": [
+          "Rikthimi bëhet pasi pajisja të jetë pastruar ose rindërtuar sipas udhëzimit profesional. Përdor kopje të njohura si të pastra dhe testo disa skedarë përpara se të rikthesh gjithë sistemin. Ndrysho fjalëkalimet nga pajisje e besuar dhe mbyll sesionet.",
+          "Pas rikuperimit, dokumento çfarë mungoi: kopje të izoluara, përditësime, kontroll hyrjeje apo plan reagimi. Kjo analizë duhet të përmirësojë proceset, jo të fajësojë personin që pa mesazhin."
+        ],
+        "example": "Provo rikthimin e një dosjeje të vogël në pajisje tjetër përpara se të zëvendësosh origjinalet."
+      }
+    ],
+    "action": "Shkruaj ku ruhen tre skedarët më të rëndësishëm dhe provo një rikthim të sigurt nga kopja rezervë.",
+    "sources": [
+      {
+        "name": "CISA — Udhëzuesi për parandalimin dhe reagimin ndaj ransomware",
+        "url": "https://www.cisa.gov/stopransomware/ransomware-guide"
+      },
+      {
+        "name": "NCSC — Këshilla për kopjet rezervë",
+        "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/always-back-up-your-most-important-data"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Pajisjet inteligjente dhe IoT",
+    "icon": "⌁",
+    "time": "6 min",
+    "level": "Mesatar",
+    "category": "Pajisjet",
+    "short": "Mbro kamerat, televizorët dhe pajisjet e lidhura në shtëpi.",
+    "body": "Pajisjet inteligjente mbledhin ose shkëmbejnë të dhëna përmes internetit. Cilësimet e parazgjedhura, mbështetja e përditësimeve dhe llogaria e lidhur ndikojnë në sigurinë e tyre.",
+    "points": [
+      "Ndrysho fjalëkalimet e parazgjedhura dhe përdor kode unike.",
+      "Instalo përditësime nga aplikacioni ose faqja zyrtare e prodhuesit.",
+      "Çaktivizo veçoritë dhe qasjen në distancë që nuk i përdor.",
+      "Rivendos pajisjen sipas udhëzimeve para se ta shesësh ose ta hedhësh."
+    ],
+    "agentChapters": [
+      {
+        "title": "Çfarë quhet pajisje IoT",
+        "paragraphs": [
+          "Internet of Things (IoT) përfshin sende që lidhen në internet dhe shkëmbejnë të dhëna, si kamera, televizorë, altoparlantë, zile dere dhe pajisje shtëpiake. Ato mund të ofrojnë komoditet, por llogaria, aplikacioni, rrjeti dhe vetë pajisja kanë cilësime sigurie.",
+          "Disa pajisje mbështeten te cloud-i i prodhuesit. Kjo do të thotë se siguria nuk varet vetëm nga Wi-Fi i shtëpisë, por edhe nga mënyra si prodhuesi mirëmban pajisjen dhe trajton të dhënat."
+        ],
+        "example": "Një kamerë inteligjente mund të dërgojë video në aplikacion; kontrollo kush mund të hyjë në llogarinë e saj."
+      },
+      {
+        "title": "Zgjidh dhe konfiguro pajisjen me kujdes",
+        "paragraphs": [
+          "Para blerjes, kontrollo nëse prodhuesi ofron përditësime sigurie, sa gjatë mbështetet pajisja dhe cilat të dhëna mbledh. Gjatë konfigurimit, përdor fjalëkalim unik, aktivizo MFA nëse ofrohet dhe çaktivizo shërbimet që nuk të duhen.",
+          "Përditëso pajisjen përmes aplikacionit ose faqes zyrtare. Mos përdor kredencialet e parazgjedhura dhe mos e lidh pajisjen me llogari që nuk e njeh. Nëse ruteri yt ofron rrjet mysafirësh ose ndarje pajisjesh, ndiq udhëzimet e prodhuesit."
+        ],
+        "example": "Pas konfigurimit të kamerës, kontrollo në aplikacion pajisjet që kanë qasje dhe hiq përdoruesit që nuk i njeh."
+      },
+      {
+        "title": "Privatësia dhe fundi i përdorimit",
+        "paragraphs": [
+          "Shiko cilat leje i kërkon aplikacioni dhe nëse mund t’i kufizosh mikrofonin, kamerën ose vendndodhjen. Mbaj parasysh se fikja e një funksioni nga aplikacioni mund të mos e shkëpusë pajisjen nga rrjeti; kontrollo udhëzimin specifik të prodhuesit.",
+          "Kur pajisja shitet ose hidhet, hiqe nga llogaria dhe rrjeti, pastaj bëj rivendosjen në parametrat fillestarë sipas manualit. Hiq ose fshi ruajtjen lokale nëse pajisja ka kartë memorieje."
+        ],
+        "example": "Përpara se të japësh një altoparlant inteligjent, çlidhe nga llogaria dhe bëj rivendosjen sipas udhëzimeve të prodhuesit."
+      },
+      {
+        "title": "Ruteri dhe ndarja e rrjetit",
+        "paragraphs": [
+          "Ruteri lidh pajisjet e shtëpisë me internetin. Përdor fjalëkalim administratori unik, instaloni përditësimet nga prodhuesi dhe kontrollo që rrjeti Wi-Fi përdor mbrojtjen e rekomanduar në udhëzuesin e pajisjes.",
+          "Nëse ruteri ofron rrjet mysafirësh, mund të përdorësh atë për vizitorë ose pajisje që nuk kanë nevojë të komunikojnë me kompjuterët personalë. Veçoritë varen nga modeli; ndiq dokumentacionin e prodhuesit dhe mos çaktivizo mbrojtje që nuk i kupton."
+        ],
+        "example": "Kontrollo listën e pajisjeve në aplikacionin e ruterit dhe kërko ndihmë nga ofruesi nëse sheh pajisje që nuk i njeh."
+      },
+      {
+        "title": "Mbikëqyrja dhe mirëmbajtja e pajisjeve",
+        "paragraphs": [
+          "Përditësimet e pajisjeve mund të instalohen automatikisht ose përmes aplikacionit të prodhuesit. Kontrollo periodikisht nëse pajisja ende merr mbështetje; nëse jo, shqyrto çaktivizimin, zëvendësimin ose kufizimin e përdorimit sipas këshillës së prodhuesit.",
+          "Vendos kamerat, mikrofonët dhe sensorët vetëm aty ku janë të nevojshëm dhe informo personat që mund të regjistrohen. Kufizo ndarjen e llogarisë dhe hiq menjëherë përdoruesit që nuk kanë më nevojë për qasje. Shmang përdorimin e të njëjtit fjalëkalim në disa pajisje.",
+          "Kur shet ose hedh pajisjen, çlidhe nga aplikacioni dhe shërbimi cloud, fshi të dhënat dhe bëj rivendosjen sipas dokumentacionit. Kur pajisja ka ruajtje të heqshme, trajtoje veçmas. Mos supozo se heqja nga Wi-Fi i fshin automatikisht të dhënat në cloud."
+        ],
+        "example": "Krijo një listë familjare të pajisjeve inteligjente, pronarit të llogarisë dhe datës së fundit të përditësimit."
+      },
+      {
+        "title": "Inventari, rrjeti dhe llogaria e pajisjes",
+        "paragraphs": [
+          "Shëno pajisjet IoT, pronarin, aplikacionin shoqërues dhe nëse marrin ende përditësime. Ndrysho kredencialet e parazgjedhura, përdor fjalëkalime unike dhe aktivizo MFA për llogarinë cloud. Pajisja e lirë mund të jetë pikë hyrjeje në rrjetin e shtëpisë.",
+          "Kur ruteri e mbështet, vendos pajisjet inteligjente në rrjet mysafirësh ose segment të veçantë dhe kufizo qasjen nga interneti që nuk të nevojitet. Ndryshoje vetëm duke ndjekur dokumentacionin e prodhuesit."
+        ],
+        "example": "Kamera e vjetër që nuk merr më përditësime mund të fiket ose kufizohet në rrjet sipas udhëzimeve zyrtare."
+      },
+      {
+        "title": "Privatësia e sensorëve dhe asgjësimi i sigurt",
+        "paragraphs": [
+          "Kupto kur pajisja dëgjon, regjistron ose ndan vendndodhjen. Çaktivizo funksionet që nuk përdor dhe kufizo mikrofonin ose kamerën kur është e mundur. Njofto anëtarët e shtëpisë dhe mysafirët për sensorët që mund t’i regjistrojnë.",
+          "Para shitjes, çlidhe nga aplikacioni dhe cloud, fshi të dhënat dhe kryej rivendosjen e fabrikës sipas prodhuesit. Kontrollo edhe kartat SD dhe lidhjet me asistentët zanorë."
+        ],
+        "example": "Hiq pronarin e vjetër nga aplikacioni i pajisjes para se t’ia japësh dikujt tjetër."
+      }
+    ],
+    "action": "Zgjidh një pajisje inteligjente në shtëpi dhe kontrollo përditësimet, fjalëkalimin dhe lejet e saj.",
+    "sources": [
+      {
+        "name": "CISA — Sigurimi i pajisjeve Internet of Things",
+        "url": "https://www.cisa.gov/news-events/news/securing-internet-things-iot"
+      },
+      {
+        "name": "NCSC — Pajisjet inteligjente në shtëpi",
+        "url": "https://www.ncsc.gov.uk/guidance/smart-devices-in-the-home"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Blerjet dhe pagesat online",
+    "icon": "¤",
+    "time": "7 min",
+    "level": "Fillestar",
+    "category": "Mashtrimet",
+    "short": "Kontrollo shitësin, faqen dhe kushtet para se të paguash.",
+    "body": "Blerjet online janë të përshtatshme, por ofertat e rreme dhe faqet imituese mund të vjedhin të dhëna ose para. Para pagesës, kontrollo adresën e saktë, identitetin e shitësit dhe politikat e kthimit.",
+    "points": [
+      "Gjej vetë faqen zyrtare në vend që të ndjekësh lidhje të papritura.",
+      "Kontrollo emrin e domenit, kontaktin dhe kushtet e shitjes.",
+      "Përdor metoda pagese me mbrojtje sipas kushteve të ofruesit.",
+      "Mos dërgo kode bankare ose njëpërdorimëshe me email, telefon apo chat."
+    ],
+    "agentChapters": [
+      {
+        "title": "Vlerëso shitësin dhe ofertën",
+        "paragraphs": [
+          "Një faqe e bukur nuk provon se shitësi është i besueshëm. Kërko emrin e saktë të kompanisë, të dhënat e kontaktit, kushtet e dërgesës, kthimit dhe rimbursimit. Kërko edhe komente nga burime të pavarura; vlerësimet në vetë faqen mund të mos jenë të plota.",
+          "Ofertat me çmim shumë të ulët, afat të rremë ose kërkesë për pagesë të pazakontë janë shenjë për të ndaluar. HTTPS mbron lidhjen, por nuk verifikon se shitësi do ta dërgojë produktin."
+        ],
+        "example": "Nëse një ofertë të shtyn të paguash me transfertë të pakthyeshme dhe nuk ka kontakt të qartë, kërko një shitës tjetër."
+      },
+      {
+        "title": "Mbro pagesën dhe të dhënat",
+        "paragraphs": [
+          "Përdor faqen ose aplikacionin zyrtar të shitësit dhe kontrollo domenin para se të fusësh të dhënat e pagesës. Përdor opsione pagese që ofrojnë mbrojtje sipas kushteve të ofruesit; kjo nuk garanton rikthimin e parave, prandaj lexo kushtet.",
+          "Mos dërgo PIN, fjalëkalim, kod njëpërdorimësh ose fotografi karte me mesazh. Banka apo tregtari legjitim nuk duhet të kërkojë kodin sekret të hyrjes për të përfunduar blerjen. Ruaj konfirmimin dhe kontrollo shumën e transaksionit."
+        ],
+        "example": "Nëse faqja kërkon kodin e hyrjes në bankë përmes një bisede, ndalo dhe kontakto bankën në numrin zyrtar."
+      },
+      {
+        "title": "Pas blerjes dhe kur diçka shkon keq",
+        "paragraphs": [
+          "Kontrollo njoftimin e porosisë, shumën e faturuar dhe lëvizjet në llogari. Mos ndiq një mesazh të papritur për tarifë shtesë pa e verifikuar porosinë në faqen ku e ke bërë vetë blerjen.",
+          "Nëse sheh pagesë të panjohur ose ndan të dhëna në faqe mashtruese, kontakto menjëherë bankën me numrin e kartës ose aplikacionin zyrtar dhe ndiq udhëzimet e saj. Raporto shitësin te platforma dhe organet përkatëse në vendin tënd."
+        ],
+        "example": "Një SMS për tarifë doganore pas blerjes mund të jetë real ose mashtrim; krahasoje me gjurmimin zyrtar të dërgesës."
+      },
+      {
+        "title": "Fatura, kthimi dhe dëshmia e blerjes",
+        "paragraphs": [
+          "Ruaj konfirmimin e porosisë, çmimin, datën dhe kushtet e kthimit. Kontrollo nëse faqja e tregon qartë mënyrën e kontaktit dhe afatet. Kushtet ligjore ndryshojnë sipas shtetit dhe shitësit, ndaj verifiko informacionin lokal para se të blesh.",
+          "Nëse paketa nuk mbërrin, kontakto shitësin përmes të dhënave zyrtare dhe platformën ku u bë blerja. Nëse sheh pagesë të panjohur, njofto bankën. Mos paguaj tarifa të tjera përmes lidhjeve të papritura pa e konfirmuar porosinë."
+        ],
+        "example": "Ruaj email-in e konfirmimit, por mos ia dërgo askujt me të dhënat e plota të kartës."
+      },
+      {
+        "title": "Krahaso pagesën dhe ruaj dëshminë",
+        "paragraphs": [
+          "Çdo metodë pagese ka kushte dhe afate të veta për kundërshtimin e një transaksioni. Lexo informacionin e bankës ose ofruesit përpara përdorimit dhe mos u mbështet te pretendimet e shitësit për mbrojtje të garantuar. Për blerje me vlerë të lartë, konfirmo shitësin dhe kushtet para se të paguash.",
+          "Shiko adresën dhe shumën në ekranin e konfirmimit para autorizimit. Mos ruaj të dhënat e kartës në pajisje të përbashkëta dhe mos dërgo fotografi të kartës me mesazh. Nëse përdor portofol elektronik, siguroje llogarinë me kyçje dhe verifikim shtesë.",
+          "Ruaj faturën, komunikimet me shitësin dhe numrin e porosisë, por mbaji në vend privat. Nëse ka problem, raportoje përmes platformës zyrtare dhe bankës; mos paguaj një “agjent rikuperimi” të panjohur që të kontakton papritur."
+        ],
+        "example": "Para se të shtypësh “Paguaj”, krahaso shumën, monedhën dhe emrin e tregtarit me porosinë."
+      },
+      {
+        "title": "Verifikimi i tregtarit dhe i pagesës",
+        "paragraphs": [
+          "Kërko emrin ligjor, kontaktin, kushtet e kthimit dhe komente nga burime të ndryshme. Një faqe me logo dhe HTTPS mund të jetë përsëri mashtruese. Kontrollo domenin shkronjë për shkronjë dhe mos u mbështet te reklama ose lidhja e dërguar me mesazh.",
+          "Para autorizimit, krahaso shumën, monedhën dhe marrësin me porosinë. Përdor mënyra pagese me mbrojtje sipas kushteve të ofruesit; transferimi i pakthyeshëm ose kartat dhuratë janë sinjale rreziku kur kërkohen nga shitës i panjohur."
+        ],
+        "example": "Një ofertë shumë nën çmimin e zakonshëm kërkon verifikim të shitësit përpara pagesës."
+      },
+      {
+        "title": "Dokumentimi dhe reagimi ndaj mashtrimit",
+        "paragraphs": [
+          "Ruaj faturën, numrin e porosisë dhe komunikimin në dosje private. Mos dërgo kod bankar ose kod njëpërdorimësh në chat, edhe nëse dikush paraqitet si mbështetje teknike. Banka nuk ka nevojë për PIN-in ose fjalëkalimin tënd.",
+          "Në rast pagese të dyshimtë, kontakto bankën përmes aplikacionit ose numrit zyrtar menjëherë dhe raporto llogarinë te platforma e tregtimit. Mos paguaj ‘agjent rikuperimi’ që të gjen vetë pas incidentit."
+        ],
+        "example": "Krahaso shumën te porosia me njoftimin e bankës përpara se të shtypësh konfirmo."
+      }
+    ],
+    "action": "Para blerjes tjetër, kontrollo domenin, kushtet e kthimit dhe mënyrën e pagesës.",
+    "sources": [
+      {
+        "name": "FTC — Këshilla për blerjet online",
+        "url": "https://consumer.ftc.gov/articles/online-shopping"
+      },
+      {
+        "name": "NCSC — Njih dhe raporto mashtrimet phishing",
+        "url": "https://www.ncsc.gov.uk/collection/phishing-scams"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Rrjedhja e të dhënave dhe identiteti",
+    "icon": "◎",
+    "time": "6 min",
+    "level": "Mesatar",
+    "category": "Privatësia",
+    "short": "Vepro me kujdes kur një shërbim njofton se të dhënat janë ekspozuar.",
+    "body": "Një rrjedhje e të dhënave ndodh kur informacioni personal bëhet i qasshëm pa autorizim. Njoftimi për rrjedhje mund të pasohet nga mesazhe mashtruese që shfrytëzojnë shqetësimin.",
+    "points": [
+      "Verifiko njoftimin në faqen zyrtare të shërbimit.",
+      "Ndrysho fjalëkalimin e prekur dhe çdo fjalëkalim të ripërdorur.",
+      "Aktivizo MFA dhe kontrollo aktivitetin e llogarisë.",
+      "Jep vetëm të dhënat e nevojshme dhe ndiq udhëzimet e autoriteteve lokale."
+    ],
+    "agentChapters": [
+      {
+        "title": "Çfarë ndodh në rrjedhje të të dhënave",
+        "paragraphs": [
+          "Rrjedhja ndodh kur të dhënat personale bëhen të qasshme për persona të paautorizuar. Informacioni mund të përfshijë email, fjalëkalime, adresë ose të dhëna të tjera, varësisht nga shërbimi. Nuk do të thotë automatikisht se çdo llogari e jotja është marrë nën kontroll.",
+          "Të dhënat e zbuluara mund të përdoren për tentativa hyrjeje, mesazhe bindëse mashtruese ose vjedhje identiteti. Kujdesu sidomos nëse fjalëkalimin e prekur e ke përdorur edhe diku tjetër."
+        ],
+        "example": "Një njoftim për ekspozim të email-it nuk tregon vetvetiu nëse fjalëkalimi është zbuluar; lexo me kujdes çfarë thotë shërbimi."
+      },
+      {
+        "title": "Verifiko njoftimin dhe mbro llogaritë",
+        "paragraphs": [
+          "Hape vetë aplikacionin ose faqen zyrtare të shërbimit për të kontrolluar njoftimin. Mos kliko lidhjen në mesazhin që pretendon se të dhënat janë ekspozuar; mashtruesit mund ta përdorin lajmin për të vjedhur hyrjen.",
+          "Ndrysho fjalëkalimin e prekur dhe ato të ripërdorura, aktivizo MFA dhe kontrollo sesionet, pajisjet e lidhura dhe mënyrat e rikuperimit. Mos ndaj kode verifikimi me askënd që të kontakton papritur."
+        ],
+        "example": "Në vend të lidhjes në email, shkruaj vetë adresën e shërbimit dhe kërko njoftimin te llogaria jote."
+      },
+      {
+        "title": "Monitorimi dhe raportimi",
+        "paragraphs": [
+          "Ndiq udhëzimet e shërbimit dhe kontrollo llogaritë financiare nëse preken të dhëna pagese. Në rast transaksioni të panjohur, kontakto bankën nga kanali zyrtar. Për dokumente identifikimi, ndiq udhëzimet e autoritetit kompetent në vendin ku jeton.",
+          "Mos publiko të dhëna të ekspozuara për të kërkuar ndihmë dhe mos paguaj persona që premtojnë fshirjen e tyre. Ruaj njoftimin dhe datat e veprimeve; kanalet ligjore dhe afatet varen nga juridiksioni."
+        ],
+        "example": "Përdor një shënim privat për të regjistruar shërbimin, datën e njoftimit dhe veprimet e kryera."
+      },
+      {
+        "title": "Minimizimi i të dhënave personale",
+        "paragraphs": [
+          "Sa më pak të dhëna të shpërndash, aq më pak informacion mund të ekspozohet nëse një shërbim pëson rrjedhje. Jep vetëm të dhënat që kërkohen për funksionin, kontrollo cilësimet e privatësisë dhe mbyll llogaritë që nuk i përdor duke ndjekur hapat zyrtarë.",
+          "Mos dërgo kopje dokumentesh me email ose mesazh nëse nuk e ke verifikuar kërkesën dhe kanalin. Për shërbime që kërkojnë identifikim, përdor faqen e tyre zyrtare dhe ndiq rregullat e vendit ku jeton."
+        ],
+        "example": "Para se të plotësosh një formular, pyet veten nëse fusha është e domosdoshme për shërbimin që po kërkon."
+      },
+      {
+        "title": "Plan personal pas ekspozimit",
+        "paragraphs": [
+          "Përcakto cilat llogari dhe të dhëna janë prekur sipas njoftimit zyrtar. Ndrysho fjalëkalimet e përfshira dhe ato të ripërdorura, duke filluar nga email-i dhe llogaritë që rikuperohen përmes tij. Përdor fjalëkalime të reja e unike; menaxheri i fjalëkalimeve mund të ndihmojë.",
+          "Kontrollo njoftimet dhe transaksionet për aktivitet të panjohur. Për të dhëna bankare, kontakto bankën; për dokument identifikimi, ndiq këshillat e autoritetit lokal kompetent. Mos i dërgo dokumentet në adresa që gjenden vetëm në mesazhin e dyshimtë.",
+          "Mbaj shënim veprimet, por mos krijo një kopje të re të të dhënave të ndjeshme të ekspozuara. Bëj kujdes me telefonata që pretendojnë se do të rregullojnë shkeljen kundrejt pagesës ose kërkojnë qasje në pajisjen tënde."
+        ],
+        "example": "Përgatit një listë kontrolli: njoftimi origjinal, llogaritë e prekura, fjalëkalimet e ndryshuara dhe kontaktet zyrtare."
+      },
+      {
+        "title": "Vlerësimi i njoftimit dhe llojit të të dhënave",
+        "paragraphs": [
+          "Njoftimi i vërtetë për rrjedhje duhet konfirmuar te faqja ose aplikacioni zyrtar. Kërkesat ndryshojnë nëse u ekspozua email, fjalëkalim, dokument identifikimi apo informacion pagese; mos supozo se çdo incident prek gjithçka. Shëno çfarë thotë burimi zyrtar dhe kur ndodhi.",
+          "Prit mesazhe mashtruese që përdorin lajmin për të krijuar urgjencë. Mos kliko ‘kontrollo nëse je prekur’ nga SMS i papritur dhe mos ngarko dokument identifikimi në faqe të paverifikuar."
+        ],
+        "example": "Hap vetë aplikacionin e shërbimit dhe krahaso njoftimin me email-in që more."
+      },
+      {
+        "title": "Kufizimi i ekspozimit dhe monitorimi",
+        "paragraphs": [
+          "Ndrysho fjalëkalimin e prekur dhe kudo ku ishte ripërdorur, nisur nga llogaritë me ndikim të lartë. Aktivizo MFA, mbyll sesionet e panjohura dhe kontrollo transaksionet ose ndryshimet e profilit.",
+          "Për të dhëna bankare, kontakto bankën; për identitet, ndiq udhëzimet e autoritetit kompetent në vendin tënd. Mos dërgo kopje të reja dokumentesh pa kuptuar pse duhen dhe si ruhen."
+        ],
+        "example": "Mbaj listë me veprimet e kryera dhe datat, që të mos humbasësh njoftimet pasuese."
+      }
+    ],
+    "action": "Rishiko në një llogari të rëndësishme fjalëkalimin unik, MFA-në dhe metodat e rikuperimit.",
+    "sources": [
+      {
+        "name": "NCSC — Udhëzim për rrjedhjet e të dhënave për individë dhe familje",
+        "url": "https://www.ncsc.gov.uk/guidance/data-breaches"
+      },
+      {
+        "name": "NIST — Udhëzimet për autentifikimin dhe fjalëkalimet",
+        "url": "https://pages.nist.gov/800-63-4/sp800-63b.html"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Mashtrimet me zë dhe përmbajtje të gjeneruar nga AI",
+    "icon": "✳",
+    "time": "7 min",
+    "level": "Mesatar",
+    "category": "Mashtrimet",
+    "short": "Verifiko kërkesat urgjente edhe kur zëri ose videoja duket e njohur.",
+    "body": "Mjetet digjitale mund të krijojnë ose ndryshojnë zë dhe imazh bindës. Një zë i njohur në telefon nuk është provë e mjaftueshme për identitetin, sidomos kur kërkohen para ose kode me urgjencë.",
+    "points": [
+      "Ndalo bisedën dhe telefono personin në numrin që e ke ruajtur vetë.",
+      "Përdor një fjalë-kod familjare vetëm si masë shtesë, jo si provë të vetme.",
+      "Mos dërgo para, kode apo dokumente nën presion.",
+      "Raporto mashtrimin te platforma dhe te autoritetet përkatëse në vendin tënd."
+    ],
+    "agentChapters": [
+      {
+        "title": "Pse zëri dhe videoja nuk mjaftojnë si provë",
+        "paragraphs": [
+          "Mjetet e krijimit dhe redaktimit të përmbajtjes mund ta bëjnë një regjistrim të duket bindës. Një zë i ngjashëm me familjarin, kolegun ose drejtuesin nuk provon se pikërisht ai person po kërkon para apo të dhëna.",
+          "Shenja si cilësia e dobët e videos nuk janë gjithmonë të dukshme. Më e rëndësishme është kërkesa: urgjencë e pazakontë, fshehtësi, pagesë, kartë dhuratë ose kod hyrjeje kërkojnë verifikim të pavarur."
+        ],
+        "example": "Një telefonatë që kërkon para menjëherë nga një familjar duhet verifikuar përmes numrit të tij të ruajtur më parë."
+      },
+      {
+        "title": "Verifiko në një kanal të dytë",
+        "paragraphs": [
+          "Mbylle telefonatën dhe kontakto personin në numrin që e ke ruajtur vetë ose në një kanal të njohur. Mos përdor numrin që telefonon ose të dhënat e kontaktit të dhëna gjatë kërkesës së dyshimtë.",
+          "Në familje ose ekip, mund të bini dakord për një procedurë verifikimi, si telefonata e kthyer ose fjalë-kodi. Fjalë-kodi është vetëm një sinjal ndihmës: mos e trajto si provë të vetme dhe mos e dërgo në një mesazh publik."
+        ],
+        "example": "Për një kërkesë pagese nga drejtuesi, verifikoje përmes numrit të zakonshëm të zyrës ose sistemit të miratuar."
+      },
+      {
+        "title": "Vepro me qetësi dhe raporto",
+        "paragraphs": [
+          "Mos dërgo para, dokumente ose kode gjatë telefonatës. Nëse bëre pagesë, kontakto bankën menjëherë nga aplikacioni ose numri zyrtar. Nëse ndave kredenciale, ndryshoji nga shërbimi zyrtar dhe mbyll sesionet e panjohura.",
+          "Ruaj mesazhin ose detajet e thirrjes pa i shpërndarë publikisht. Raporto te platforma dhe te autoriteti përkatës sipas rregullave të vendit. Bisedo me të afërmit që të njohin këtë lloj mashtrimi pa krijuar panik."
+        ],
+        "example": "Pajtohuni në familje që çdo kërkesë urgjente për para konfirmohet me një telefonatë të dytë."
+      },
+      {
+        "title": "Përgatituni si familje ose ekip",
+        "paragraphs": [
+          "Mund të bini dakord paraprakisht si do të verifikoni kërkesa urgjente, cilat kanale përdorni dhe kujt i telefononi. Kjo e bën më të lehtë të ndalesh kur dikush përpiqet të krijojë panik ose fshehtësi.",
+          "Mos publiko zërin apo të dhënat personale të të tjerëve pa leje. Përmbajtja publike mund të keqpërdoret; megjithatë, nuk është e nevojshme të fajësosh viktimën. Raporto incidentet dhe kërko ndihmë."
+        ],
+        "example": "Marrëveshja e thjeshtë “telefonojmë përsëri në numrin e njohur” është më e dobishme se të mbështetesh vetëm te zëri."
+      },
+      {
+        "title": "Përdorimi i kujdesshëm i përmbajtjes digjitale",
+        "paragraphs": [
+          "Mos publiko regjistrime zanore, video ose fotografi të të tjerëve pa leje. Përmbajtja e publikuar mund të kopjohet dhe ripëpunohet. Kjo nuk do të thotë se duhet të shmangësh teknologjinë; do të thotë të kufizosh publikimin e materialit që mund të keqpërdoret.",
+          "Shenjat vizuale nuk e zgjidhin gjithmonë dyshimin, ndaj verifiko kërkesën dhe jo vetëm cilësinë e videos. Nëse dikush pretendon se është në rrezik, mund ta ndihmosh duke telefonuar shërbimet lokale ose një të afërm të besuar, por mos dërgo para te një kontakt i paverifikuar.",
+          "Në vendin e punës, ndiq procedurën e aprovimit për pagesa dhe ndryshime të llogarive bankare; kërkesat e pazakonta konfirmohen në një kanal të dytë. Raporto incidentet te organizata dhe platforma, duke ruajtur provat privatisht."
+        ],
+        "example": "Nëse video-thirrja kërkon transferim urgjent, mbylle dhe konfirmoje kërkesën përmes numrit ose sistemit të zakonshëm."
+      },
+      {
+        "title": "Verifikimi jashtë kanalit të dyshimtë",
+        "paragraphs": [
+          "Zëri, videoja ose fotografia nuk janë provë e mjaftueshme e identitetit. Sulmuesi mund të imitojë person të afërt, shef ose zyrtar dhe të kërkojë para, dokumente apo kode. Ndalo bisedën dhe telefono numrin që e ke ruajtur vetë.",
+          "Përdor një procedurë të dytë për kërkesa të pazakonta: telefonatë kthimi, miratim nga një person tjetër ose kod familjar si masë shtesë. Mos përdor numrin ose lidhjen që të dha vetë telefonuesi."
+        ],
+        "example": "Nëse ‘familjari’ kërkon para, mbylle telefonatën dhe telefonoje në kontaktin e zakonshëm."
+      },
+      {
+        "title": "Parandalimi, raportimi dhe mbështetja e viktimës",
+        "paragraphs": [
+          "Kufizo publikimin e regjistrimeve zanore, videove dhe hollësive që mund të përdoren për imitim. Në organizata, pagesat dhe ndryshimet e të dhënave bankare duhet të kenë verifikim të ndarë nga kërkesa me email ose video.",
+          "Ruaj mesazhin, profilin dhe kohën si provë; raportoje te platforma, banka ose autoriteti përkatës. Mos e shpërnda klipin e rremë pa kontekst dhe mos fajëso personin e mashtruar."
+        ],
+        "example": "Kërko miratim të dytë për transferime të pazakonta, edhe kur kërkesa vjen në video."
+      }
+    ],
+    "action": "Përcakto një mënyrë të pavarur për të verifikuar kërkesat urgjente nga familjarët ose kolegët.",
+    "sources": [
+      {
+        "name": "FTC — Mashtrimet familjare me zë të krijuar nga AI",
+        "url": "https://consumer.ftc.gov/consumer-alerts/2023/11/scammers-use-ai-enhance-their-family-emergency-schemes"
+      },
+      {
+        "name": "NCSC — Si të dallosh dhe raportosh mashtrimet",
+        "url": "https://www.ncsc.gov.uk/collection/phishing-scams"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Lidhjet, domenet dhe shfletimi i sigurt",
+    "icon": "↗",
+    "time": "7 min",
+    "level": "Fillestar",
+    "category": "Rrjetet",
+    "short": "Kontrollo adresat dhe paralajmërimet para se të vazhdosh.",
+    "body": "Faqet e rreme mund të përdorin emra dhe pamje të ngjashme me shërbimet e njohura. Ikona e kyçit ose HTTPS tregon enkriptimin e lidhjes, por nuk provon se faqja është e ndershme.",
+    "points": [
+      "Lexo me kujdes të gjithë emrin e domenit para se të futësh të dhëna.",
+      "Mos anashkalo paralajmërimet e shfletuesit për certifikata ose lidhje.",
+      "Shkruaj vetë adresën ose përdor aplikacionin zyrtar për hyrje të ndjeshme.",
+      "Mos instalo shtesa të shfletuesit nga burime që nuk i njeh."
+    ],
+    "agentChapters": [
+      {
+        "title": "Lexo adresën dhe domenin",
+        "paragraphs": [
+          "Domeni është pjesa e adresës që tregon se cili shërbim po viziton. Një shkronjë e ndryshuar, prapashtesë tjetër ose fjalë shtesë mund ta bëjë një adresë të duket e ngjashme me origjinalin. Lexoje të gjithë adresën, veçanërisht para hyrjes ose pagesës.",
+          "Shfletuesit mund ta shkurtojnë adresën në ekranin e telefonit. Kur ke dyshim, mos përdor lidhjen; hape vetë aplikacionin ose shkruaj adresën e njohur."
+        ],
+        "example": "Një domen që përmban emrin e bankës, por përfundon te një domen tjetër i palidhur, nuk është domosdoshmërisht faqja e bankës."
+      },
+      {
+        "title": "Kupto HTTPS dhe paralajmërimet",
+        "paragraphs": [
+          "HTTPS enkripton lidhjen mes shfletuesit dhe faqes, por nuk vërteton se pronari i faqes është i besueshëm. Edhe mashtruesit mund të përdorin HTTPS. Prandaj kontrollo emrin e domenit dhe arsyen pse po kërkohen të dhënat.",
+          "Nëse shfletuesi jep paralajmërim për certifikatën ose lidhjen, mos e anashkalo për të vazhduar. Për pajisje pune ose shkolle, ndiq procedurën e IT-së dhe mos instalo certifikata ose shtesa me udhëzim nga mesazh i papritur."
+        ],
+        "example": "Ikona e kyçit nuk e bën një faqe të rreme të bankës të ligjshme."
+      },
+      {
+        "title": "Shfletuesi, shtesat dhe shkarkimet",
+        "paragraphs": [
+          "Përditëso shfletuesin dhe instalo shtesa vetëm nga burime zyrtare. Kontrollo lejet e kërkuara: një shtesë mund të kërkojë qasje të gjerë në faqet që viziton, ndaj instalo vetëm atë që të nevojitet dhe rishikoje periodikisht.",
+          "Shkarko programe nga faqja zyrtare e prodhuesit dhe mos ndiq udhëzime që kërkojnë çaktivizimin e mbrojtjes. Nëse një faqe të ridrejton ose shfaq paralajmërim të papritur, mbylle dhe verifiko shërbimin në mënyrë të pavarur."
+        ],
+        "example": "Para instalimit të shtesës, kontrollo emrin e botuesit, lejet dhe nëse ekziston alternativë e miratuar nga organizata jote."
+      },
+      {
+        "title": "Lidhjet e shkurtuara dhe ridrejtimet",
+        "paragraphs": [
+          "Lidhjet e shkurtuara fshehin adresën përfundimtare. Nëse vijnë papritur, mos i hap pa verifikuar me dërguesin në një kanal tjetër. Po ashtu, kontrollo adresën përsëri pasi faqja të ridrejtojë, para se të futësh fjalëkalim ose të dhëna pagese.",
+          "Për shërbimet që përdor shpesh, ruaj faqeshënues nga faqja zyrtare. Shfletuesi i përditësuar dhe mbrojtja nga phishing-u ndihmojnë, por nuk e zëvendësojnë kontrollin e adresës dhe kujdesin ndaj kërkesave të pazakonta."
+        ],
+        "example": "Nëse një lidhje në SMS të çon te një domen i panjohur, mbylle dhe hap aplikacionin zyrtar për të parë njoftimet."
+      },
+      {
+        "title": "Rutina e sigurt para hyrjes ose pagesës",
+        "paragraphs": [
+          "Ruaj faqeshënues për bankën, email-in dhe shërbimet që përdor shpesh. Kur arrin te një faqe nga mesazhi, kontrollo domenin edhe pas ridrejtimit; nëse adresa ndryshon papritur, mos fut kredenciale. Për hyrje të ndjeshme, prefero aplikacionin zyrtar ose faqen që e hape vetë.",
+          "Mos lejo njoftimet e shfletuesit ose shtesat të instalohen vetëm sepse një dritare të thotë se janë të nevojshme. Rishiko shtesat dhe lejet e tyre, hiq ato që nuk përdor dhe përditëso shfletuesin nga dyqani ose faqja zyrtare.",
+          "Nëse ke futur të dhëna në faqe të dyshimtë, mos u kthe për të kontrolluar. Hyr nga pajisje e besuar te shërbimi i saktë, ndrysho fjalëkalimin e prekur dhe kontrollo aktivitetin e fundit. Njofto bankën nëse ke autorizuar pagesë të panjohur."
+        ],
+        "example": "Krijo një rutinë të shkurtër: kontrollo adresën, kërkesën, shumën dhe destinacionin para se të vazhdosh."
+      },
+      {
+        "title": "Leximi i domenit dhe i ridrejtimeve",
+        "paragraphs": [
+          "Identifiko domenin e regjistruar nga e djathta në të majtë dhe kontrollo pjesën menjëherë para prapashtesës. Emri i njohur mund të jetë vetëm nën-domen i një faqeje tjetër. Shkronjat e ngjashme, vizat dhe shtesat e pazakonta mund të fshehin imitimin.",
+          "Lidhjet e shkurtuara dhe ridrejtimet fshehin destinacionin fillestar. Pas hapjes, adresa mund të ndryshojë; kontrolloje përsëri përpara se të shkruash kredenciale. HTTPS tregon lidhje të enkriptuar me domenin e shfaqur, jo besueshmërinë e pronarit."
+        ],
+        "example": "Në `login.bank.example.attacker.test`, domeni i fundit është `attacker.test`, jo `bank.example`."
+      },
+      {
+        "title": "Vendimi i sigurt para hyrjes dhe shkarkimit",
+        "paragraphs": [
+          "Për hyrje të rëndësishme, shkruaj vetë adresën ose përdor faqeshënues që krijove nga burimi zyrtar. Mos instalo shtesë shfletuesi ose përditësim nga dritare e papritur. Paralajmërimin e certifikatës mos e anashkalo për të vazhduar.",
+          "Nëse ke futur të dhëna, përdor pajisje të besuar dhe faqen e saktë për të ndryshuar fjalëkalimin; kontrollo sesionet dhe njofto bankën nëse u bë pagesë."
+        ],
+        "example": "Ruaj faqeshënuesin e shërbimit pasi e konfirmon nga burimi i tij zyrtar."
+      }
+    ],
+    "action": "Kontrollo adresën e një shërbimi që përdor dhe ruaje në faqeshënues nga faqja e tij zyrtare.",
+    "sources": [
+      {
+        "name": "NCSC — Këshilla për qëndrimin e sigurt online",
+        "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online"
+      },
+      {
+        "name": "CISA — Njih dhe raporto phishing-un",
+        "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Passkeys dhe çelësat e sigurisë",
+    "icon": "⌑",
+    "time": "5 min",
+    "level": "Mesatar",
+    "category": "Llogaritë",
+    "short": "Mëso si hyrja pa fjalëkalim mund të mbrojë llogarinë.",
+    "body": "Passkeys përdorin çelës kriptografik të ruajtur në pajisjen tënde dhe verifikim lokal, si PIN ose biometrikë. Ato lidhen me domenin e shërbimit dhe ulin rrezikun e phishing-ut, por duhet të mbrosh pajisjen dhe mënyrat e rikuperimit.",
+    "points": [
+      "Aktivizo passkey vetëm nga cilësimet zyrtare të shërbimit.",
+      "Mbro pajisjen me kod të fortë dhe përditësime.",
+      "Kontrollo cilat pajisje kanë passkey dhe hiq ato që nuk i përdor.",
+      "Mbaj metodë rikuperimi të sigurt dhe të përditësuar."
+    ],
+    "agentChapters": [
+      {
+        "title": "Parimet kryesore",
+        "paragraphs": [
+          "Passkeys përdorin çelës kriptografik të ruajtur në pajisjen tënde dhe verifikim lokal, si PIN ose biometrikë. Ato lidhen me domenin e shërbimit dhe ulin rrezikun e phishing-ut, por duhet të mbrosh pajisjen dhe mënyrat e rikuperimit."
+        ],
+        "example": "Aktivizo passkey vetëm nga cilësimet zyrtare të shërbimit."
+      },
+      {
+        "title": "Si lidhet passkey me shërbimin",
+        "paragraphs": [
+          "Passkey përdor çift çelësash kriptografikë: çelësi privat qëndron në pajisjen ose menaxherin tënd, ndërsa shërbimi ruan çelësin publik. Hyrja miratohet lokalisht me PIN ose biometrikë; fjalëkalimi nuk dërgohet në formularin e faqes.",
+          "Passkey-t e sinkronizuara dhe ato të lidhura me pajisje kanë mënyra të ndryshme rikuperimi. Kontrollo si kopjohen, ku ruhen dhe cilat llogari mund t’i rikuperojnë para se të zgjedhësh konfigurimin."
+        ],
+        "example": "Aktivizo passkey vetëm nga cilësimet e llogarisë pasi hap vetë aplikacionin zyrtar."
+      },
+      {
+        "title": "Mbrojtja nga phishing-u dhe kufijtë praktikë",
+        "paragraphs": [
+          "Passkey lidhet me domenin e duhur dhe e bën më të vështirë hyrjen në një kopje të faqes, por pajisja e komprometuar ose rikuperimi i dobët mbeten rrezik. Mbro pajisjen me kyçje, përditësime dhe ekran të kyçur kur nuk përdoret.",
+          "Kontrollo listën e pajisjeve dhe hiq çelësat që nuk i njeh. Mbaj të paktën një mënyrë tjetër zyrtare rikuperimi dhe mos ia jep askujt kodin që shfaqet gjatë regjistrimit."
+        ],
+        "example": "Nëse shërbimi të kërkon të regjistrosh passkey nga lidhje SMS, mbylle dhe hape vetë aplikacionin."
+      },
+      {
+        "title": "Kalimi gradual dhe llogaritë e përbashkëta",
+        "paragraphs": [
+          "Nis me një llogari me ndikim të lartë, provo hyrjen nga pajisja kryesore dhe pastaj provo rikuperimin nga pajisja rezervë. Për pajisje të përbashkëta ose të shkollës, mos krijo çelës lokal pa e kuptuar kush mund ta përdorë.",
+          "Passkey nuk e heq nevojën për të kontrolluar domenin e shërbimit, njoftimet e hyrjes dhe sesionet. Nëse humb pajisjen, çaktivizo kredencialet nga kanali zyrtar."
+        ],
+        "example": "Testo hyrjen në një skedë private përpara se të mbështetesh te passkey si mënyrë e vetme."
+      },
+      {
+        "title": "Kontrolli periodik dhe reagimi",
+        "paragraphs": [
+          "Rishiko passkeys dhe çelësat e sigurisë në faqen e llogarisë. Regjistro datën dhe pajisjen kur shton një të ri; hiqi ato që janë shitur ose humbur. Për llogaritë e punës, ndiq politikat e administratorit.",
+          "Nëse merr njoftim për regjistrim që nuk e ke kryer, ndrysho fjalëkalimin rezervë, mbyll sesionet dhe kontakto ofruesin. Mos aprovo kërkesa të njëpasnjëshme për hyrje."
+        ],
+        "example": "Mbaj një listë private të pajisjeve ku ke regjistruar kredenciale pa fjalëkalim."
+      },
+      {
+        "title": "Zgjedhja mes passkey të sinkronizuar dhe të pajisjes",
+        "paragraphs": [
+          "Passkey e sinkronizuar mund të jetë më e lehtë për përdorim në disa pajisje, por siguria varet edhe nga llogaria që e sinkronizon. Passkey e lidhur me një çelës fizik kërkon kujdes për humbjen e tij dhe çelës rezervë.",
+          "Krahaso rikuperimin, qasjen familjare dhe politikat e organizatës përpara zgjedhjes. Mos regjistro kredenciale të llogarisë personale në pajisje që administrohet nga dikush tjetër."
+        ],
+        "example": "Regjistro një çelës rezervë dhe provo hyrjen nga pajisja dytësore."
+      },
+      {
+        "title": "Pastrimi i kredencialeve pas humbjes së pajisjes",
+        "paragraphs": [
+          "Nëse humbet telefonin që mban passkeys, hyr te shërbimi nga pajisje e besuar, hiqe pajisjen nga llogaria dhe mbyll sesionet. Nëse passkey menaxhohet nga cloud, siguro edhe llogarinë që e sinkronizon.",
+          "Mos e fshi të vetmen mënyrë hyrjeje para se të shtosh një tjetër të verifikuar. Ndiq hapat zyrtarë të ofruesit për rikuperim dhe kontrollo njoftimet për regjistrime të reja."
+        ],
+        "example": "Ruaj një metodë të dytë rikuperimi përpara se të zëvendësosh pajisjen kryesore."
+      }
+    ],
+    "action": "Regjistro passkey nga cilësimet zyrtare dhe verifiko paraprakisht mënyrën e rikuperimit.",
+    "sources": [
+      {
+        "name": "CISA — Phishing-resistant MFA",
+        "url": "https://www.cisa.gov/resources-tools/resources/using-phishing-resistant-mfa"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Mashtrimet me QR code",
+    "icon": "▦",
+    "time": "5 min",
+    "level": "Fillestar",
+    "category": "Mashtrimet",
+    "short": "Kontrollo destinacionin para se të hapësh një kod QR.",
+    "body": "Një kod QR mund të çojë në faqe hyrjeje të rreme, shkarkim ose pagesë. Përmbajtja nuk shihet para skanimit, prandaj trajtoje si çdo lidhje tjetër dhe kontrollo adresën që shfaq telefoni.",
+    "points": [
+      "Kontrollo domenin e plotë para se të vazhdosh.",
+      "Mos fut kredenciale pas një kodi QR të papritur.",
+      "Për pagesa, verifiko shumën dhe marrësin në aplikacionin zyrtar.",
+      "Mos skano kode të ngjitura mbi kode të tjera në vende publike."
+    ],
+    "agentChapters": [
+      {
+        "title": "Parimet kryesore",
+        "paragraphs": [
+          "Një kod QR mund të çojë në faqe hyrjeje të rreme, shkarkim ose pagesë. Përmbajtja nuk shihet para skanimit, prandaj trajtoje si çdo lidhje tjetër dhe kontrollo adresën që shfaq telefoni."
+        ],
+        "example": "Kontrollo domenin e plotë para se të vazhdosh."
+      },
+      {
+        "title": "Nga kodi QR te destinacioni real",
+        "paragraphs": [
+          "QR është vetëm mënyrë për të koduar tekst ose lidhje; ai nuk vërteton kush e krijoi. Kamera mund të shfaqë parapamjen e URL-së, kontaktit, pagesës ose rrjetit Wi-Fi. Lexoje përmbajtjen para se të hapësh, telefonosh ose lidhesh.",
+          "Kontrollo domenin e plotë, përfshirë emrin para prapashtesës. Një kod në tavolinë mund të jetë zëvendësuar me ngjitëse, ndaj verifiko pagesën dhe marrësin brenda aplikacionit zyrtar."
+        ],
+        "example": "Para se të paguash, krahaso emrin e marrësit në aplikacion me emrin e biznesit."
+      },
+      {
+        "title": "QR për hyrje, pagesë dhe rrjet",
+        "paragraphs": [
+          "Mos fut kredenciale pasi skanon kod të papritur në poster, parkim ose mesazh. Për hyrje, hape faqen zyrtare vetë. Për Wi-Fi, pyet stafin për SSID-në dhe mos instalo profil konfigurimi të panjohur.",
+          "Në pagesë, kontrollo shumën, monedhën dhe përfituesin përpara miratimit. Nëse kodi nis telefonatë ose draft email-i, kontrollo numrin dhe adresën siç do të bëje me çdo lidhje tjetër."
+        ],
+        "example": "Nëse faqja hap një adresë të shkurtuar, mos e vazhdo hyrjen derisa të verifikosh destinacionin."
+      },
+      {
+        "title": "Shenja të ngjitjes zëvendësuese dhe raportimi",
+        "paragraphs": [
+          "Kontrollo nëse etiketa është vendosur sipër kodit origjinal, nëse është dëmtuar ose ndryshon nga materialet e tjera. Mos e skano nëse duket e manipuluar; lajmëro stafin ose menaxherin e vendit.",
+          "Nëse ke hapur faqe dhe ke futur kredenciale, vepro sipas planit të phishing-ut: ndrysho fjalëkalimin nga shërbimi zyrtar, mbyll sesionet dhe njofto bankën nëse autorizove pagesë."
+        ],
+        "example": "Në një restorant, kërko menunë nga punonjësi në vend që të skanosh një kod të dyshimtë."
+      },
+      {
+        "title": "Rregull për përdorim të sigurt",
+        "paragraphs": [
+          "Trajtoje kodin QR si lidhje të zakonshme, jo si shenjë sigurie. Përdor vetëm aplikacionin që i nevojitet funksionit dhe shmang lejimin e hapjes automatike kur telefoni ta jep mundësinë.",
+          "Mos ndaj kod QR që përmban hyrje, biletë apo identifikues personal në rrjete publike; pamja e tij mund t’i japë dikujt qasje në shërbim."
+        ],
+        "example": "Bileta me QR ruaje në aplikacionin zyrtar dhe mos publiko screenshot-in e saj."
+      },
+      {
+        "title": "QR në email, poster dhe dokument",
+        "paragraphs": [
+          "Kodi mund të përmbajë URL, vCard, tekst, Wi-Fi ose komandë tjetër. Kontrollo çfarë veprimi po propozon telefoni dhe mos lejo shtimin automatik të kontaktit, profilit ose rrjetit pa e shqyrtuar.",
+          "Nëse kodi vjen nga email ose faturë e papritur, verifiko dërguesin me kanal tjetër. Një kod i shtypur mund të kopjohet nga një sulmues dhe të zëvendësohet fizikisht."
+        ],
+        "example": "Mos fut kredencialet e email-it në një faqe hyrjeje të hapur nga QR i papritur."
+      },
+      {
+        "title": "Kontrollet e pagesës dhe raportimi",
+        "paragraphs": [
+          "Për pagesa, kontrollo emrin e përfituesit dhe shumën në aplikacionin e bankës, jo vetëm te faqja që hapi kodi. Nëse marrësi nuk përputhet me tregtarin, anuloje dhe pyet stafin.",
+          "Nëse skanove kod të manipuluar, ruaj vendin dhe kohën dhe njofto menaxherin ose platformën. Nëse fut kredenciale, ndryshoji nga faqja zyrtare dhe kontrollo transaksionet."
+        ],
+        "example": "Për një faturë, telefono kompaninë në numrin që ke ruajtur më herët për të konfirmuar pagesën."
+      }
+    ],
+    "action": "Skanoni vetëm pasi të shfaqet URL-ja; kontrollo domenin, shumën dhe marrësin.",
+    "sources": [
+      {
+        "name": "CISA — Njih dhe raporto phishing-un",
+        "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Wi-Fi publik dhe hotspot-et",
+    "icon": "◉",
+    "time": "5 min",
+    "level": "Fillestar",
+    "category": "Rrjetet",
+    "short": "Lidhu me kujdes dhe shmang rrjetet e rreme publike.",
+    "body": "Emri i rrjetit publik mund të imitohet dhe rrjeti mund të mos jetë ai i organizatës. Përdor rrjetet e njohura, përditëso pajisjen dhe verifiko faqet. HTTPS mbron lidhjen me faqen, por nuk provon që faqja është e besueshme.",
+    "points": [
+      "Pyet stafin për emrin e saktë të rrjetit.",
+      "Çaktivizo lidhjen automatike me Wi-Fi publik.",
+      "Përdor të dhënat celulare për veprime të ndjeshme kur ke mundësi.",
+      "Shkëputu dhe harro rrjetin kur largohesh."
+    ],
+    "agentChapters": [
+      {
+        "title": "Parimet kryesore",
+        "paragraphs": [
+          "Emri i rrjetit publik mund të imitohet dhe rrjeti mund të mos jetë ai i organizatës. Përdor rrjetet e njohura, përditëso pajisjen dhe verifiko faqet. HTTPS mbron lidhjen me faqen, por nuk provon që faqja është e besueshme."
+        ],
+        "example": "Pyet stafin për emrin e saktë të rrjetit."
+      },
+      {
+        "title": "Zgjedhja e hotspot-it dhe enkriptimi",
+        "paragraphs": [
+          "Emri i Wi-Fi-t nuk vërteton kush e administron; hotspot i rremë mund të përdorë emër të ngjashëm. Pyet stafin dhe çaktivizo bashkimin automatik. Përdor kyçjen e pajisjes dhe përditësimet edhe në rrjete publike.",
+          "HTTPS enkripton lidhjen me domenin, por nuk provon që faqja është e ndershme. VPN mund të mbrojë një pjesë të trafikut nga rrjeti lokal, por nuk parandalon phishing-un, malware-in ose ndarjen e tepërt të të dhënave."
+        ],
+        "example": "Nëse Wi-Fi kërkon fjalëkalimin e email-it për ‘verifikim’, mos e jep."
+      },
+      {
+        "title": "Pajisja në rrjet publik dhe ndarja",
+        "paragraphs": [
+          "Çaktivizo ndarjen e skedarëve dhe printerëve kur nuk të duhen dhe cakto profilin e rrjetit si publik në sistemet që e ofrojnë. Mos prano kërkesa të papritura për zbulim pajisjeje ose certifikata.",
+          "Për punë, ndiq udhëzimin e organizatës mbi VPN dhe aksesin. Mos përdor pajisje publike për të menaxhuar llogari të rëndësishme nëse ke një alternativë të sigurt."
+        ],
+        "example": "Mbyll hotspot-in personal kur mbaron përdorimi dhe ndrysho fjalëkalimin nëse e ndave publikisht."
+      },
+      {
+        "title": "Veprime me ndjeshmëri të lartë",
+        "paragraphs": [
+          "Për bankë, dokumente identifikimi ose hyrje administrative, përdor lidhje celulare ose rrjet të njohur kur mundesh. Nëse duhet të përdorësh Wi-Fi publik, shkruaj vetë adresën dhe kontrollo paralajmërimet e shfletuesit.",
+          "Mos supozo që ‘rrjeti i aeroportit’ është i sigurt vetëm nga emri. Sulmuesit mund të kopjojnë emërtime dhe faqe portal hyrjeje."
+        ],
+        "example": "Konfirmo emrin e rrjetit me sportelin zyrtar dhe harroje rrjetin pas përdorimit."
+      },
+      {
+        "title": "Pas përdorimit dhe reagimi ndaj dyshimit",
+        "paragraphs": [
+          "Shkëputu dhe zgjidh ‘harro këtë rrjet’ në vende ku nuk kthehesh shpesh. Kontrollo nëse pajisja ruajti rrjetin për lidhje automatike dhe rishiko profilet e instaluara.",
+          "Nëse pate paralajmërim certifikate ose ridrejtim të dyshimtë, mbyll faqen. Nëse fute kredenciale, ndryshoji nga lidhje e besuar dhe kontrollo sesionet."
+        ],
+        "example": "Mos anashkalo paralajmërimin e shfletuesit vetëm që të përfundosh pagesën në Wi-Fi publik."
+      },
+      {
+        "title": "Rrjeti mysafir dhe ndarja e pajisjeve",
+        "paragraphs": [
+          "Hotspot-i personal duhet të ketë fjalëkalim të fortë dhe emër që nuk zbulon të dhëna personale. Çaktivizoje kur nuk përdoret dhe mos lejo pajisje të panjohura të lidhen.",
+          "Kur përdor hotspot të dikujt tjetër, pronari mund të shohë disa të dhëna lidhjeje, por HTTPS mbron përmbajtjen e trafikut me domenin. Kjo nuk e bën të besueshme çdo faqe që hap."
+        ],
+        "example": "Mos ndaje fjalëkalimin e hotspot-it në vend publik pa e ndryshuar më pas."
+      },
+      {
+        "title": "DNS, portalet dhe sinjalet e ndërhyrjes",
+        "paragraphs": [
+          "Portali i hyrjes mund të ridrejtojë në faqe që imiton ofrues të njohur. Lexo domenin dhe mos instalo certifikata ose profile të panjohura për të kaluar portalin.",
+          "Nëse faqja të dërgon disa herë te adresa të ndryshme ose shfletuesi paralajmëron për certifikatë, shkëputu dhe përdor rrjet tjetër. Mos vazhdo vetëm sepse rrjeti kërkohet për një shërbim urgjent."
+        ],
+        "example": "Mbyll portalin nëse kërkon kodin e llogarisë bankare për Wi-Fi falas."
+      }
+    ],
+    "action": "Harro hotspot-et e panevojshme dhe përdor rrjet celular për hyrje veçanërisht të ndjeshme.",
+    "sources": [
+      {
+        "name": "FTC — Përdorimi i rrjeteve publike Wi-Fi",
+        "url": "https://consumer.ftc.gov/articles/using-public-wi-fi-networks"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Kopjet rezervë dhe rikthimi",
+    "icon": "▣",
+    "time": "5 min",
+    "level": "Mesatar",
+    "category": "Incidente",
+    "short": "Krijo kopje të ndara dhe provo rikthimin e skedarëve.",
+    "body": "Kopjet rezervë të rregullta ndihmojnë pas humbjes, dëmtimit ose ransomware-it. Një kopje e vetme e lidhur vazhdimisht me pajisjen mund të preket bashkë me skedarët origjinalë; zgjidhje të ndara dhe testimi i rikthimit janë të rëndësishme.",
+    "points": [
+      "Kopjo skedarët e rëndësishëm sipas një rutine.",
+      "Mbaj të paktën një kopje të ndarë nga pajisja kryesore.",
+      "Mbro llogarinë e ruajtjes me MFA.",
+      "Provo rikthimin e një skedari dhe kontrollo që hapet."
+    ],
+    "agentChapters": [
+      {
+        "title": "Parimet kryesore",
+        "paragraphs": [
+          "Kopjet rezervë të rregullta ndihmojnë pas humbjes, dëmtimit ose ransomware-it. Një kopje e vetme e lidhur vazhdimisht me pajisjen mund të preket bashkë me skedarët origjinalë; zgjidhje të ndara dhe testimi i rikthimit janë të rëndësishme."
+        ],
+        "example": "Kopjo skedarët e rëndësishëm sipas një rutine."
+      },
+      {
+        "title": "Kopjimi kundër sinkronizimit",
+        "paragraphs": [
+          "Sinkronizimi përcjell ndryshimet dhe fshirjet mes pajisjeve; kopja rezervë ruan gjendje që mund të rikthehet. Kontrollo nëse shërbimi mban versionet, sa gjatë dhe si rikthehet dosja pas fshirjes masive.",
+          "Mbro llogarinë cloud me MFA dhe krijo kopje të ndarë nga pajisja. Ransomware ose gabimi i përdoruesit mund të ndikojë në kopje të lidhura vazhdimisht."
+        ],
+        "example": "Fshi një dokument prove nga një dosje sinkronizuese dhe mëso ku rikthehet para se të mbështetesh tek ajo."
+      },
+      {
+        "title": "Rutina, ruajtja dhe enkriptimi",
+        "paragraphs": [
+          "Cakto orar që përputhet me ritmin e punës dhe kontrollo që kopja përfundon. Ruaje pajisjen e jashtme të shkëputur pas kopjimit; nëse përmban të dhëna private, mbroje sipas udhëzimeve të prodhuesit.",
+          "Për llogarinë cloud përdor fjalëkalim unik dhe metoda rikuperimi të përditësuara. Mos e ruaj kodin e rikuperimit vetëm brenda të njëjtit cloud."
+        ],
+        "example": "Shëno datën e kopjes së fundit dhe vendin ku ruhet."
+      },
+      {
+        "title": "Testi i rikthimit dhe integriteti",
+        "paragraphs": [
+          "Rikthe një skedar në dosje tjetër dhe kontrollo që hapet, ka përmbajtjen e duhur dhe nuk u mbishkrua origjinali. Për organizata, testet duhet të përfshijnë skenarë me humbje pajisjeje dhe mosqasje në llogari.",
+          "Nëse kopja nuk hapet, trajtoje si problem dhe rregullo procesin para incidentit. Një shenjë ‘backup complete’ nuk tregon gjithmonë se çdo skedar është i rikuperueshëm."
+        ],
+        "example": "Provo rikthimin e një fotografie dhe një dokumenti, jo vetëm një lloj skedari."
+      },
+      {
+        "title": "Rikuperimi pas humbjes ose ransomware-it",
+        "paragraphs": [
+          "Përdor kopje të njohura si të pastra pasi pajisja të jetë pastruar ose rindërtuar sipas udhëzimit. Mos lidh backup-in te pajisja e dyshimtë para se të marrësh udhëzim, sepse skedarët rezervë mund të infektohen ose fshihen.",
+          "Për pajisje të punës, kontakto IT-në dhe ruaj provat. Pas rikthimit, ndrysho kredencialet nga pajisje e besuar dhe kontrollo që kopjet e ardhshme janë planifikuar."
+        ],
+        "example": "Mbaj një udhëzim rikuperimi offline me kontaktet e rëndësishme dhe vendndodhjen e kopjes."
+      },
+      {
+        "title": "Kopjet e ndara dhe modeli i ruajtjes",
+        "paragraphs": [
+          "Një kopje lokale, një kopje në cloud dhe një kopje e shkëputur mund të ulin rrezikun që një incident i vetëm t’i prekë të gjitha. Zgjidh numrin dhe shpeshtësinë sipas rëndësisë së të dhënave dhe mundësive të tua.",
+          "Enkripto kopjet që përmbajnë të dhëna personale dhe ruaj çelësin e rikuperimit veçmas. Mos e lidh diskun rezervë gjatë përdorimit të zakonshëm nëse nuk nevojitet."
+        ],
+        "example": "Mbaj një kopje të fotografive jashtë pajisjes kryesore dhe provoje periodikisht."
+      },
+      {
+        "title": "Përgjegjësia, afati dhe dështimet e kopjimit",
+        "paragraphs": [
+          "Vendos kush kontrollon njoftimet e dështimit dhe sa gjatë mbahen versionet. Në kopje pune, ndiq politikën e organizatës për ruajtje, qasje dhe fshirje.",
+          "Rikthimi duhet të përfshijë edhe llogarinë, licencën ose aplikacionin që hap skedarin. Mbaj një listë të shkurtër të gjërave të nevojshme për të rikthyer punën, jo vetëm vetë skedarët."
+        ],
+        "example": "Kontrollo një herë në muaj datën e kopjes dhe hap një dokument të rikthyer."
+      }
+    ],
+    "action": "Provo rikthimin e një skedari dhe dokumento hapat e rikuperimit.",
+    "sources": [
+      {
+        "name": "NCSC — Kopjet rezervë të të dhënave",
+        "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/always-back-up-your-most-important-data"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Ndarja e sigurt e dokumenteve",
+    "icon": "↗",
+    "time": "5 min",
+    "level": "Fillestar",
+    "category": "Privatësia",
+    "short": "Kontrollo marrësit dhe lejet para se të ndash skedarë.",
+    "body": "Lidhjet për dokumente mund të bëhen të qasshme për më shumë njerëz sesa synon. Para ndarjes, kontrollo marrësin, nivelin e lejes dhe nëse lidhja skadon. Hiq qasjen kur bashkëpunimi përfundon.",
+    "points": [
+      "Jep vetëm lejen e nevojshme: shikim ose redaktim.",
+      "Shmang lidhjet publike për dokumente me të dhëna personale.",
+      "Kontrollo marrësit para dërgimit.",
+      "Rishiko dhe hiq qasjet e vjetra."
+    ],
+    "agentChapters": [
+      {
+        "title": "Parimet kryesore",
+        "paragraphs": [
+          "Lidhjet për dokumente mund të bëhen të qasshme për më shumë njerëz sesa synon. Para ndarjes, kontrollo marrësin, nivelin e lejes dhe nëse lidhja skadon. Hiq qasjen kur bashkëpunimi përfundon."
+        ],
+        "example": "Jep vetëm lejen e nevojshme: shikim ose redaktim."
+      },
+      {
+        "title": "Lejet, identiteti dhe marrësi",
+        "paragraphs": [
+          "Zgjidh marrës konkret dhe lejen minimale që i duhet: shikim, komentim apo redaktim. Lidhja ‘kushdo që e ka’ mund të përcillet jashtë audiencës, prandaj përdore vetëm kur është e domosdoshme dhe me afat.",
+          "Kontrollo adresën e marrësit dhe emrin e dokumentit; plotësimi automatik mund të zgjedhë personin e gabuar. Për dosje të ndjeshme, verifiko domenin e organizatës dhe përdor platformën e miratuar."
+        ],
+        "example": "Për një dokument vetëm për lexim, mos jep leje redaktimi nëse nuk nevojitet."
+      },
+      {
+        "title": "Minimizimi dhe mbrojtja e përmbajtjes",
+        "paragraphs": [
+          "Hiq fushat, komentet, versionet e vjetra ose metadata që nuk duhen ndarë. Kontrollo që dokumenti nuk përmban numra identifikimi, adresa ose të dhëna të fshehura në fletë të tjera.",
+          "Fjalëkalimi në të njëjtin email si lidhja nuk e ndan realisht qasjen. Ndiq metodën e sigurt që ofron platforma dhe politikat e organizatës."
+        ],
+        "example": "Krijo kopje të redaktuar të dokumentit para ndarjes, jo versionin e plotë origjinal."
+      },
+      {
+        "title": "Afati i qasjes dhe kontrolli pas ndarjes",
+        "paragraphs": [
+          "Vendos datë skadimi dhe hiq qasjen kur bashkëpunimi mbaron. Rishiko listën e personave me qasje, lidhjet publike dhe pronarët e dokumentit periodikisht.",
+          "Ndryshimi i lejes nuk mund të fshijë kopjet që marrësi shkarkoi më parë; ndaj vetëm atë që je i autorizuar të dërgosh. Për gabim marrësi, hiq qasjen menjëherë dhe lajmëro pronarin."
+        ],
+        "example": "Pas përfundimit të projektit, hiq qasjen e përkohshme dhe konfirmo pronësinë."
+      },
+      {
+        "title": "Reagimi ndaj lidhjes së dërguar gabimisht",
+        "paragraphs": [
+          "Nëse ndave dokumentin me person të gabuar, revoko lidhjen, kontrollo regjistrin e aktivitetit dhe njofto përgjegjësin e të dhënave. Mos u mbështet vetëm te kërkesa për fshirje; kopja mund të jetë shkarkuar.",
+          "Për skedar pune ose shkolle, ndiq procedurën e raportimit dhe mos e ridërgo dokumentin pa kontroll."
+        ],
+        "example": "Shëno dokumentin, marrësin dhe kohën, pastaj kërko ndihmë përmes kanalit zyrtar."
+      },
+      {
+        "title": "Versionet, komentet dhe metadata",
+        "paragraphs": [
+          "Dokumentet mund të përmbajnë histori ndryshimesh, komente, autorë, vendndodhje ose fletë të fshehura. Kontrollo paraprakisht çfarë përfshihet kur eksporton ose ndan një kopje.",
+          "Për material sensitiv, krijo version të veçantë të pastruar dhe kontrolloje me pamjen e marrësit. Mos u mbështet te mbulimi me ngjyrë nëse teksti mund të kopjohet nga poshtë."
+        ],
+        "example": "Eksporto PDF prove dhe provo të kërkosh brenda tij për informacion që mendove se e fshehe."
+      },
+      {
+        "title": "Qasja e jashtme dhe mbyllja e projektit",
+        "paragraphs": [
+          "Kur bashkëpunon me një person jashtë organizatës, verifiko domenin dhe cakto afat për qasje. Shmang lejet publike, sidomos për lista klientësh, të dhëna nxënësish ose dokumente financiare.",
+          "Në fund të projektit, revoko lidhjen, transfero pronësinë te organizata dhe kontrollo nëse kopjet ose komentet mbeten të qasshme."
+        ],
+        "example": "Hiq qasjen e kontraktorit pasi dorëzimi përfundon dhe konfirmo me pronarin e skedarit."
+      },
+      {
+        "title": "Kontrolli final para dergimit",
+        "paragraphs": [
+          "Perdor pamjen e marresit kur platforma e ofron dhe verifiko qe lidhja hap vetem dokumentin e synuar. Kontrollo adresat, njoftimet dhe personat e kopjuar.",
+          "Per dokumente me te dhena personale, sigurohu qe ndarja perputhet me lejen dhe marresi ka nevoje per te gjitha faqet."
+        ],
+        "example": "Dergo nje lidhje prove te llogaria jote dytesore perpara se ta ndash me grupin."
+      }
+    ],
+    "action": "Rishiko një dokument të ndarë dhe hiq lejet që nuk nevojiten më.",
+    "sources": [
+      {
+        "name": "NCSC — Ndarja e sigurt e të dhënave",
+        "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Siguria e telefonit kur humbet",
+    "icon": "▣",
+    "time": "5 min",
+    "level": "Mesatar",
+    "category": "Incidente",
+    "short": "Përgatit mënyrat e gjetjes, bllokimit dhe rikuperimit.",
+    "body": "Humbja e telefonit mund të ekspozojë mesazhe, sesione dhe të dhëna personale. Përgatitja paraprake e bën më të lehtë bllokimin e pajisjes dhe mbrojtjen e llogarive.",
+    "points": [
+      "Përdor kod kyçjeje dhe aktivizo gjetjen në distancë.",
+      "Ruaj numrin IMEI dhe mënyrën zyrtare të kontaktit me operatorin.",
+      "Në humbje, blloko SIM-in dhe sesionet përmes kanaleve zyrtare.",
+      "Ndrysho fjalëkalimet e llogarive të rëndësishme nëse pajisja ishte e hapur."
+    ],
+    "agentChapters": [
+      {
+        "title": "Parimet kryesore",
+        "paragraphs": [
+          "Humbja e telefonit mund të ekspozojë mesazhe, sesione dhe të dhëna personale. Përgatitja paraprake e bën më të lehtë bllokimin e pajisjes dhe mbrojtjen e llogarive."
+        ],
+        "example": "Përdor kod kyçjeje dhe aktivizo gjetjen në distancë."
+      },
+      {
+        "title": "Përgatitja para humbjes së telefonit",
+        "paragraphs": [
+          "Aktivizo shërbimin zyrtar të gjetjes, kyçje të fortë dhe kopje rezervë. Sigurohu që email-i ose numri i rikuperimit nuk varen vetëm nga telefoni që mund të humbësh. Shëno mënyrën e kontaktit me operatorin dhe numrin IMEI privatisht.",
+          "Fshih përmbajtjen e njoftimeve në ekranin e kyçur dhe cakto kyçje automatike. Mos ruaj kodet rezervë vetëm në pajisjen që mbrojnë."
+        ],
+        "example": "Provo hyrjen në portalin zyrtar të gjetjes nga pajisje tjetër, pa e fshirë telefonin."
+      },
+      {
+        "title": "Renditja e veprimeve pas humbjes",
+        "paragraphs": [
+          "Përdor shërbimin zyrtar për të gjetur ose kyçur pajisjen; mos shko vetë në vend të rrezikshëm për ta marrë. Kontakto operatorin për bllokimin e SIM-it dhe ndrysho kredencialet e email-it e llogarive financiare nga pajisje e besuar.",
+          "Mbyll sesionet, hiq passkeys ose pajisjet e besuara që humbe dhe aktivizo njoftimet e sigurisë. Nëse dyshon vjedhje, ndiq udhëzimet lokale për raportim."
+        ],
+        "example": "Nis me email-in, sepse mund të përdoret për rivendosjen e llogarive të tjera."
+      },
+      {
+        "title": "SIM, autentifikuesit dhe pagesat",
+        "paragraphs": [
+          "Nëse SMS përdoret për rikuperim, kërko operatorit pezullimin e SIM-it dhe ndiq procedurën e tij për zëvendësim të sigurt. Për aplikacion autentikues në telefon, përdor kodet rezervë ose rikuperimin zyrtar.",
+          "Kontrollo wallet-in digjital, kartat dhe aktivitetin bankar. Kontakto bankën nga numri i kartës ose aplikacioni zyrtar nëse pajisja ishte e zhbllokuar ose humbi bashkë me kartën."
+        ],
+        "example": "Mos jep kod verifikimi personit që telefonon duke thënë se po të ndihmon të gjesh telefonin."
+      },
+      {
+        "title": "Rikthimi dhe mësimi nga incidenti",
+        "paragraphs": [
+          "Kur pajisja rikthehet, verifiko që nuk ka qasje të panjohur, përditësoje dhe ndrysho kodin e kyçjes nëse dikush mund ta ketë parë. Nëse fshihet nga distanca, përdor kopjen rezervë pas rivendosjes së sigurt.",
+          "Rishiko se cilat llogari kishin sesione aktive dhe hiq pajisjen e humbur nga lista e besuar."
+        ],
+        "example": "Pasi të zëvendësosh SIM-in, testoni që kodet dhe njoftimet po shkojnë te pajisja e duhur."
+      },
+      {
+        "title": "Bllokimi i SIM-it dhe pajisja e besuar",
+        "paragraphs": [
+          "Bllokimi i SIM-it mund të pengojë marrjen e kodeve, por llogaritë mund të kenë edhe sesione aktive ose passkeys në pajisje. Kontakto operatorin dhe njëkohësisht hiqe pajisjen nga portalet e sigurisë.",
+          "Përdor një pajisje të besuar për të ndryshuar kredencialet. Mos kërko rikuperim nga lidhje që të vjen pas humbjes; hap vetë faqet e ofruesve."
+        ],
+        "example": "Përgatit paraprakisht një listë kontakti për operatorin dhe bankën."
+      },
+      {
+        "title": "Dallimi mes humbjes dhe vjedhjes",
+        "paragraphs": [
+          "Nëse pajisja duket afër, përdor sinjalin zanor vetëm kur vendi është i sigurt. Mos shko vetëm të përballesh me dikë. Për vjedhje, ndiq procedurat lokale dhe jep numrin serial ose IMEI vetëm kanaleve zyrtare.",
+          "Fshirja në distancë mund të jetë e pakthyeshme. Përdore pasi të vlerësosh nëse kopjet rezervë janë gati dhe pasi të kesh provuar kyçjen, sipas udhëzimeve të prodhuesit."
+        ],
+        "example": "Blloko pajisjen fillimisht, pastaj vendos nëse fshirja e largët është e nevojshme."
+      }
+    ],
+    "action": "Konfiguro gjetjen në distancë dhe siguro një mënyrë rikuperimi jashtë telefonit.",
+    "sources": [
+      {
+        "name": "NCSC — Siguria e pajisjeve mobile",
+        "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Siguria e takimeve me video",
+    "icon": "◉",
+    "time": "5 min",
+    "level": "Fillestar",
+    "category": "Privatësia",
+    "short": "Mbro lidhjen, ekranin dhe informacionin që ndan në takim.",
+    "body": "Takimet online mund të zbulojnë dokumente, njoftime ose lidhje private në ekran. Përdor cilësimet e pritjes dhe ndarjes me kujdes, sidomos në takime me njerëz që nuk i njeh.",
+    "points": [
+      "Përdor lidhjen nga organizatori i njohur.",
+      "Mos publiko lidhjen e takimit në hapësira publike.",
+      "Kontrollo ekranin dhe dritaret e hapura para ndarjes.",
+      "Përdor kodin e takimit dhe dhomën e pritjes kur ofrohen."
+    ],
+    "agentChapters": [
+      {
+        "title": "Parimet kryesore",
+        "paragraphs": [
+          "Takimet online mund të zbulojnë dokumente, njoftime ose lidhje private në ekran. Përdor cilësimet e pritjes dhe ndarjes me kujdes, sidomos në takime me njerëz që nuk i njeh."
+        ],
+        "example": "Përdor lidhjen nga organizatori i njohur."
+      },
+      {
+        "title": "Kontrollet e hyrjes dhe të ftesës",
+        "paragraphs": [
+          "Përdor fjalëkalim unik për takimin, dhomë pritjeje dhe kufizo hyrjen te llogaritë e ftuara kur ofrohet. Mos publiko lidhjen në rrjete publike; pjesëmarrësi mund ta përcjellë pa dashje.",
+          "Për takime të përsëritura, rishiko cilësimet dhe mos përdor të njëjtin kod publik përgjithmonë. Përditëso aplikacionin dhe përdor vetëm faqen ose aplikacionin zyrtar."
+        ],
+        "example": "Nëse një pjesëmarrës i panjohur hyn, hiqe dhe rivendos lidhjen sipas cilësimeve të shërbimit."
+      },
+      {
+        "title": "Ndarja e ekranit dhe e dokumenteve",
+        "paragraphs": [
+          "Mbyll njoftimet private, skedat dhe dokumentet që nuk lidhen me takimin përpara ndarjes së ekranit. Ndaj vetëm dritaren e nevojshme në vend të desktopit të plotë, nëse platforma e lejon.",
+          "Kontrollo audiencën para se të shfaqësh të dhëna personale ose dokument pune. Regjistrimi duhet të jetë i nevojshëm dhe pjesëmarrësit të njoftohen sipas rregullave të organizatës."
+        ],
+        "example": "Hap një dritare të pastër me materialin e takimit dhe mos shfaq inbox-in."
+      },
+      {
+        "title": "Mikrofoni, kamera dhe lejet e aplikacionit",
+        "paragraphs": [
+          "Jep qasje te kamera ose mikrofoni vetëm aplikacionit të takimit dhe vetëm kur nevojitet. Kontrollo treguesin e pajisjes dhe mbylli kur mbaron. Mos instalo shtesa ose kodekë që të kërkon një mesazh i papritur gjatë takimit.",
+          "Për takime me të dhëna sensitive, përdor platformën e miratuar dhe rrjetin që rekomandon organizata."
+        ],
+        "example": "Nëse kërkohet përditësim, mbylle takimin dhe kontrollo versionin nga dyqani zyrtar."
+      },
+      {
+        "title": "Përgjigjja ndaj ndërhyrjes në takim",
+        "paragraphs": [
+          "Nëse hyn dikush i paftuar, hiqe, kufizo ndarjen e ekranit dhe përdor kontrollet e hostit. Mos kliko lidhje që shpërndahen nga pjesëmarrës i panjohur.",
+          "Ruaj detajet e takimit dhe njofto organizatorin ose IT-në nëse u shfaq përmbajtje e papërshtatshme ose u regjistruan të dhëna pa leje."
+        ],
+        "example": "Cakto paraprakisht një host rezervë që di si të mbyllë takimin."
+      },
+      {
+        "title": "Roli i organizatorit dhe kontrolli i pjesëmarrësve",
+        "paragraphs": [
+          "Cakto kush mund të ndajë ekranin, të regjistrojë ose të ftojë të tjerë. Për takime publike, mbaj një organizator që mund të mbyllë mikrofonët dhe të heqë pjesëmarrësit e paftuar.",
+          "Verifiko emrin dhe kanalin e të ftuarve para se të diskutosh të dhëna të ndjeshme. Përdor një takim të ri me kod të ri në vend që të ripërdorësh lidhje të publikuar."
+        ],
+        "example": "Cakto host rezervë nëse organizatori kryesor humb lidhjen."
+      },
+      {
+        "title": "Regjistrimet, transkriptet dhe ruajtja",
+        "paragraphs": [
+          "Regjistrimi mund të vazhdojë të qarkullojë pas takimit. Njofto pjesëmarrësit dhe ruaje vetëm në hapësirë të miratuar me qasje të kufizuar.",
+          "Kontrollo kush mund të shkarkojë regjistrimin, kur fshihet dhe nëse transkripti përmban emra, kode ose të dhëna personale. Mos dërgo regjistrim te bisedë e hapur publike."
+        ],
+        "example": "Pas takimit, fshi regjistrimin provë nëse nuk ka arsye të dokumentuar për ta ruajtur."
+      },
+      {
+        "title": "Permbledhja dhe materialet pas takimit",
+        "paragraphs": [
+          "Dergo shenimet vetem te pjesemarresit e duhur dhe hiq detajet qe nuk u duhen. Nese perdor transkript automatik, rishiko emrat, shumat dhe detyrat perpara shperndarjes.",
+          "Lidhjet e dokumenteve te perbashketa duhet te kene leje dhe afat te pershtatshem. Mos i le materialet te hapura per kedo vetem per lehtesi."
+        ],
+        "example": "Kontrollo cil?simet e qasjes se regjistrimit perpara se te dergosh permbledhjen."
+      }
+    ],
+    "action": "Kontrollo listën e pjesëmarrësve, lejet e ekranit dhe cilësimet e regjistrimit.",
+    "sources": [
+      {
+        "name": "CISA — Siguria e takimeve online",
+        "url": "https://www.cisa.gov/news-events/news/securing-video-conferencing"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Raportimi i një incidenti kibernetik",
+    "icon": "!",
+    "time": "5 min",
+    "level": "Mesatar",
+    "category": "Incidente",
+    "short": "Ruaj provat dhe njofto personin ose institucionin e duhur.",
+    "body": "Raportimi i shpejtë ndihmon në kufizimin e dëmit dhe në mbrojtjen e të tjerëve. Ruaj mesazhin ose pamjet relevante, por mos e përcill lidhjen e rrezikshme dhe mos fshi prova para se të marrësh udhëzim.",
+    "points": [
+      "Njofto ekipin e IT-së nëse është llogari pune ose shkolle.",
+      "Kontakto bankën nga numri zyrtar nëse përfshihet pagesa.",
+      "Raporto mesazhin në platformën ku e more.",
+      "Përshkruaj çfarë ndodhi, kur dhe çfarë të dhënash mund të jenë ndarë."
+    ],
+    "agentChapters": [
+      {
+        "title": "Parimet kryesore",
+        "paragraphs": [
+          "Raportimi i shpejtë ndihmon në kufizimin e dëmit dhe në mbrojtjen e të tjerëve. Ruaj mesazhin ose pamjet relevante, por mos e përcill lidhjen e rrezikshme dhe mos fshi prova para se të marrësh udhëzim."
+        ],
+        "example": "Njofto ekipin e IT-së nëse është llogari pune ose shkolle."
+      },
+      {
+        "title": "Informacioni minimal që duhet në raport",
+        "paragraphs": [
+          "Një raport i dobishëm përshkruan çfarë ndodhi, kur, në cilin shërbim ose pajisje dhe çfarë veprimi u krye. Shëno nëse u hap lidhje, u shkarkua skedar, u fut fjalëkalim, u miratua MFA ose u dërguan para.",
+          "Mos përfshi fjalëkalime, kode, numra karte të plotë ose dokumente të panevojshme në raport. Dërgo prova përmes kanalit të sigurt që përcakton organizata ose shërbimi."
+        ],
+        "example": "Shkruaj kohën, temën e email-it dhe veprimin, pa kopjuar kodin sekret."
+      },
+      {
+        "title": "Zgjedhja e kanalit të duhur",
+        "paragraphs": [
+          "Për llogari pune ose shkolle, raporto te IT-ja, mësuesi ose personi përgjegjës sipas procedurës. Për pagesa, kontakto bankën nga aplikacioni ose numri zyrtar. Për phishing në platformë, përdor funksionin e raportimit.",
+          "Nëse ka rrezik të menjëhershëm për sigurinë fizike ose kërcënim, përdor shërbimet lokale të emergjencës. Autoritetet dhe procedurat ndryshojnë sipas vendit."
+        ],
+        "example": "Mos e dërgo raportin te adresa që përmbahet vetëm në mesazhin e dyshimtë."
+      },
+      {
+        "title": "Ruajtja e provave dhe privatësia",
+        "paragraphs": [
+          "Ruaj email-in origjinal, header-at kur kërkohen nga IT-ja, screenshot-in ose numrin e transaksionit. Mos e përcill bashkëngjitjen e dyshimtë te grupi i punës dhe mos publiko të dhënat e personave të prekur.",
+          "Regjistro kush e mori raportin dhe numrin e rastit. Mos ndrysho pajisjen ose mos fshi skedarë kur organizata kërkon hetim; ndiq udhëzimin e ekipit përgjegjës."
+        ],
+        "example": "Ruaj screenshot të njoftimit me datën, por mbulo të dhënat e panevojshme para dërgimit."
+      },
+      {
+        "title": "Ndjekja, përshkallëzimi dhe mbyllja",
+        "paragraphs": [
+          "Nëse nuk merr përgjigje dhe rreziku vazhdon, përdor kanalin tjetër zyrtar ose përshkallëzoje te drejtuesi, banka apo autoriteti kompetent. Mos supozo se raportimi në platformë e bllokon automatikisht llogarinë.",
+          "Pas incidentit, shëno veprimet korrigjuese dhe çfarë mund të parandalohet herën tjetër. Informacioni duhet të përdoret për përmirësim dhe mbrojtje, jo për fajësim."
+        ],
+        "example": "Mbaj numrin e rastit dhe kthehu te ekipi nëse shfaqen transaksione ose hyrje të reja."
+      },
+      {
+        "title": "Klasifikimi dhe përshkallëzimi i incidentit",
+        "paragraphs": [
+          "Përshkruaj nëse rasti prek pajisje personale, sistem shkolle, llogari pune, para ose të dhëna të njerëzve të tjerë. Kjo ndihmon që raporti të shkojë te personi i duhur pa dërguar të dhëna te publiku.",
+          "Në organizata, ndiq kanalin e incidentit dhe kohën e kërkuar nga politika. Për përdorues individualë, kërko ofruesin, bankën ose autoritetin përmes faqes zyrtare."
+        ],
+        "example": "Një llogari shkolle e komprometuar raportohet te administratori, edhe nëse s’ka pagesë."
+      },
+      {
+        "title": "Ushtrimi paraprak dhe përmirësimi i procesit",
+        "paragraphs": [
+          "Një plan raportimi është i dobishëm vetëm nëse njerëzit dinë ku ta gjejnë. Provo një skenar të thjeshtë: kush njoftohet, çfarë informacioni nevojitet dhe si ruhet prova.",
+          "Pas incidentit, përditëso kontaktet dhe udhëzimet bazuar në çfarë funksionoi. Mbro privatësinë e personit që raportoi dhe përdor rastin për të mbyllur boshllëqet."
+        ],
+        "example": "Shkruaj një mesazh prove pa sekrete dhe identifiko adresën zyrtare ku do ta dërgoje."
+      }
+    ],
+    "action": "Përgatit një raport prove pa të dhëna sekrete dhe identifiko kanalin zyrtar të raportimit.",
+    "sources": [
+      {
+        "name": "CISA — Raportimi i phishing-ut",
+        "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing"
+      }
+    ]
+  }
+]
