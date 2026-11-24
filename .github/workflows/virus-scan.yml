@@ -1,0 +1,36 @@
+name: Scan repository for malware
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "23 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: clamav-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  clamav:
+    name: ClamAV repository scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install ClamAV
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes clamav
+
+      - name: Update virus definitions
+        run: sudo freshclam --stdout
+
+      - name: Scan CyberEdu source
+        run: clamscan --recursive --infected --exclude-dir='^\.git$' Platforme_Siguria_Kibernetike_AI
