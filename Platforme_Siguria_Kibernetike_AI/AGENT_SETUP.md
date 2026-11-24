@@ -14,4 +14,6 @@ AI nuk heq përmbajtjen ekzistuese dhe nuk ndryshon përparimin e nxënësve. Mu
    - `KV_REST_API_URL` dhe `KV_REST_API_TOKEN` — kredencialet Redis nëse integrimi nuk i ka shtuar vetë.
 3. Ruaji variablat dhe bëj **Redeploy** të Production. Cron-i aktivizohet në deploy-in Production.
 
+Për llogari cloud, sinkronizimin e arritjeve dhe qasjen e administratorit, ndiq edhe udhëzuesin [SUPABASE_ADMIN_SETUP.md](SUPABASE_ADMIN_SETUP.md). Pa këtë konfigurim profili vazhdon të jetë vetëm demonstrim lokal.
+
 Për udhëzim të menjëhershëm, përdor **Mësimet → Hap panelin e AI-së** dhe jep një kërkesë të qartë, p.sh. “Shto një pyetje të re për passkeys dhe një skenar të ri për QR phishing; ruaj të gjitha përmbajtjet ekzistuese.” Paneli mund të përditësojë përmbajtje dhe konfigurim, por nuk mund të modifikojë vetë kodin ose dizajnin. Modeli parazgjedhur është `gpt-4.1-mini`; `OPENAI_MODEL` mund të përdoret për ta ndërruar.
