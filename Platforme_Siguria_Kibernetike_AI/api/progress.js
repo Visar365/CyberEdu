@@ -1,4 +1,4 @@
-const { send, readBody, getSupabaseConfig, verifyUser, progressRequest } = require("../lib/user-admin");
+const { send, readBody, getSupabaseConfig, verifyUser, progressRequest } = require("../lib/supabase");
 const { getLessons } = require("../lib/agent-shared");
 
 module.exports = async function handler(req, res) {

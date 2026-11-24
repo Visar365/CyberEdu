@@ -465,11 +465,11 @@ function mergeManagedContent(content={}){
   if(typeof renderLabCase==="function"&&labCases.length)renderLabCase();
 }
 
-const titles={dashboard:"Përshëndetje, mirë se erdhe!",lessons:"Mësimet e tua",quiz:"Kuizi i sigurisë",assistant:"Chatbot edukativ",lab:"Laboratori i sigurisë",safety:"Këshilla sigurie",admin:"Paneli i administratorit"};
+const titles={dashboard:"Përshëndetje, mirë se erdhe!",lessons:"Mësimet e tua",quiz:"Kuizi i sigurisë",assistant:"Chatbot edukativ",lab:"Laboratori i sigurisë",safety:"Këshilla sigurie"};
 function readProgress(key,fallback){try{const value=localStorage.getItem(key);return value?JSON.parse(value):fallback}catch{return fallback}}
 let activeUser=readProgress("cyberedu_session",null);
-let cloudAuth=readProgress("cyberedu_auth_session",null),cloudAuthConfigured=false,adminAccess=false;
-const cloudAuthReady=fetch("/api/auth").then(response=>response.ok?response.json():null).then(result=>{if(!result)return null;cloudAuthConfigured=Boolean(result.configured);document.getElementById("auth-password").minLength=cloudAuthConfigured?8:6;document.getElementById("auth-password-confirm").minLength=cloudAuthConfigured?8:6;document.querySelector(".auth-privacy").textContent=cloudAuthConfigured?"🔒 Llogaritë ruhen online; administratori mund të shohë emrin, email-in dhe arritjet.":"🔒 Profili dhe përparimi ruhen vetëm në këtë shfletues.";document.querySelector(".auth-demo-note").classList.toggle("hidden",cloudAuthConfigured);return cloudAuthConfigured}).catch(()=>null);
+let cloudAuth=readProgress("cyberedu_auth_session",null),cloudAuthConfigured=false;
+const cloudAuthReady=fetch("/api/auth").then(response=>response.ok?response.json():null).then(result=>{if(!result)return null;cloudAuthConfigured=Boolean(result.configured);document.getElementById("auth-password").minLength=cloudAuthConfigured?8:6;document.getElementById("auth-password-confirm").minLength=cloudAuthConfigured?8:6;document.querySelector(".auth-privacy").textContent=cloudAuthConfigured?"🔒 Llogaria dhe përparimi yt ruhen online.":"🔒 Profili dhe përparimi ruhen vetëm në këtë shfletues.";document.querySelector(".auth-demo-note").classList.toggle("hidden",cloudAuthConfigured);return cloudAuthConfigured}).catch(()=>null);
 const progressPrefix=()=>`cyberedu_profile_${activeUser?.email||"guest"}_`;
 let completed=readProgress(progressPrefix()+"completed",[]);if(!Array.isArray(completed))completed=[];
 let favorites=readProgress(progressPrefix()+"favorites",[]);if(!Array.isArray(favorites))favorites=[];
@@ -493,9 +493,6 @@ async function pushCloudProgress(){try{const response=await cloudFetch("/api/pro
 async function hydrateCloudProgress(){
   try{const response=await cloudFetch("/api/progress");if(!response.ok)throw new Error("Nuk mundëm të lexojmë përparimin online.");const result=await response.json(),saved=result.progress||{};completed=[...new Set([...(Array.isArray(saved.completed_lessons)?saved.completed_lessons:[]),...completed])];totalScore=Math.max(totalScore,Number(saved.quiz_score)||0);try{localStorage.setItem(progressPrefix()+"completed",JSON.stringify(completed));localStorage.setItem(progressPrefix()+"score",String(totalScore))}catch{}renderLessons();updateDashboard();await pushCloudProgress()}catch(error){console.warn("Përparimi online nuk u ngarkua:",error.message)}
 }
-async function updateAdminAccess(){adminAccess=false;const button=document.getElementById("admin-nav");if(button)button.hidden=true;if(activeUser?.provider!=="supabase")return;try{const response=await cloudFetch("/api/admin/progress?check=1");adminAccess=response.ok;if(button)button.hidden=!adminAccess;const panel=document.getElementById("admin");if(panel)panel.hidden=!adminAccess}catch{adminAccess=false}}
-async function loadAdminProgress(){const status=document.getElementById("admin-status"),body=document.getElementById("admin-users");status.textContent="Po ngarkohen arritjet…";body.replaceChildren();try{const response=await cloudFetch("/api/admin/progress"),result=await response.json();if(!response.ok)throw new Error(result.error||"Nuk mundëm të ngarkojmë arritjet.");const users=result.users||[];document.getElementById("admin-user-count").textContent=String(users.length);if(!users.length){status.textContent="Ende nuk ka përparim të sinkronizuar nga përdoruesit.";return}status.textContent=`U gjetën ${users.length} profile me përparim.`;users.forEach(user=>{const row=document.createElement("tr"),cells=Array.from({length:6},()=>document.createElement("td"));cells[0].textContent=user.display_name||"—";cells[1].textContent=user.email;cells[2].textContent=String(Array.isArray(user.completed_lessons)?user.completed_lessons.length:0);cells[3].textContent=String(user.quiz_score||0);cells[4].textContent=String(Array.isArray(user.earned_achievements)?user.earned_achievements.length:0);cells[5].textContent=user.updated_at?new Date(user.updated_at).toLocaleString("sq-AL"):"—";row.append(...cells);body.append(row)})}catch(error){status.textContent=error.message;document.getElementById("admin-user-count").textContent="—"}}
-document.getElementById("admin-refresh").addEventListener("click",loadAdminProgress);
 function renderActivity(){const list=document.getElementById("activity-list"),entries=[...activityLog];const logged=new Set(entries.map(item=>item.text));completed.map(id=>lessons.find(lesson=>lesson.id===id)).filter(Boolean).forEach(lesson=>{const label=`Përfundove mësimin: ${lesson.title}`;if(!logged.has(label))entries.push({text:label,at:""})});document.getElementById("activity-summary").textContent=`Ke përfunduar ${completed.length} nga ${lessons.length} mësime, ke fituar ${totalScore} pikë kuizi dhe ke ${entries.length} aktivitete të regjistruara.`;list.replaceChildren();if(!entries.length){const empty=document.createElement("p");empty.className="activity-empty";empty.textContent="Ende nuk ka aktivitete. Përfundo një mësim ose kuiz për ta nisur historikun.";list.append(empty);return}entries.slice(0,30).forEach(item=>{const row=document.createElement("article");row.className="activity-entry";const icon=document.createElement("span");icon.className="activity-entry-icon";icon.textContent="✓";const copy=document.createElement("div"),title=document.createElement("b"),date=document.createElement("small");title.textContent=item.text;date.textContent=item.at?new Date(item.at).toLocaleString("sq-AL"):"Përparim i ruajtur";copy.append(title,date);row.append(icon,copy);list.append(row)})}const activityModal=document.getElementById("activity-modal");document.getElementById("activity-button").onclick=()=>{renderActivity();activityModal.classList.remove("hidden");document.getElementById("activity-close").focus()};function closeActivity(){activityModal.classList.add("hidden");document.getElementById("activity-button").focus()}document.getElementById("activity-close").onclick=closeActivity;activityModal.addEventListener("click",event=>{if(event.target===activityModal)closeActivity()});document.addEventListener("keydown",event=>{if(event.key==="Escape"&&!activityModal.classList.contains("hidden"))closeActivity()});
 
 function updateDashboard(){
@@ -584,12 +581,11 @@ function updateReadingProgress(){
 window.addEventListener("scroll",updateReadingProgress,{passive:true});
 window.addEventListener("resize",updateReadingProgress);
 function showView(name){
-  if(!titles[name]||(name==="admin"&&!adminAccess))return;
+  if(!titles[name])return;
   document.querySelectorAll(".view").forEach(view=>view.classList.toggle("active",view.id===name));
   document.querySelectorAll(".nav-link").forEach(button=>{const active=button.dataset.view===name;button.classList.toggle("active",active);if(active)button.setAttribute("aria-current","page");else button.removeAttribute("aria-current")});
   document.getElementById("page-title").textContent=titles[name];
   if(name!=="lessons")document.getElementById("lesson-detail").classList.add("hidden");
-  if(name==="admin")loadAdminProgress();
   window.scrollTo({top:0,behavior:"smooth"});
 }
 document.querySelectorAll("[data-view]").forEach(button=>button.addEventListener("click",()=>showView(button.dataset.view)));
@@ -723,7 +719,7 @@ function startSession(profile){
   document.getElementById("page-title").textContent=`Përshëndetje, ${activeUser.name.split(/\s+/)[0]}!`;
   document.body.classList.add("authenticated");
   renderLessons();renderChatHistory();updateDashboard();
-  if(activeUser.provider==="supabase"){void hydrateCloudProgress();void updateAdminAccess()}else{adminAccess=false;document.getElementById("admin-nav").hidden=true;document.getElementById("admin").hidden=true}
+  if(activeUser.provider==="supabase")void hydrateCloudProgress();
 }
 authForm.addEventListener("submit",async event=>{
   event.preventDefault();
@@ -766,10 +762,9 @@ authForm.addEventListener("submit",async event=>{
 });
 document.getElementById("logout-button").addEventListener("click",()=>{
   if(cloudAuth?.access_token)void fetch("/api/auth",{method:"POST",headers:{"Content-Type":"application/json",Authorization:`Bearer ${cloudAuth.access_token}`},body:JSON.stringify({action:"logout"})}).catch(()=>{});
-  cloudAuth=null;adminAccess=false;
+  cloudAuth=null;
   try{localStorage.removeItem("cyberedu_session")}catch{}
   try{localStorage.removeItem("cyberedu_auth_session")}catch{}
-  document.getElementById("admin-nav").hidden=true;document.getElementById("admin").hidden=true;
   activeUser=null;document.body.classList.remove("authenticated");
   showView("dashboard");
   document.getElementById("auth-form").reset();setAuthMode("login");
@@ -794,7 +789,7 @@ function applySiteConfig(config){
   const announcement=document.getElementById("site-announcement");announcement.textContent=config.announcement||"";announcement.classList.toggle("hidden",!config.announcement);
   document.title=`${config.siteName||"CyberEdu"} — Mëso të mbrohesh online`;
   const enabled=new Set(config.enabledViews||["dashboard","lessons","quiz","lab","assistant","safety"]);
-  document.querySelectorAll(".nav-link[data-view]").forEach(button=>{const isAdmin=button.dataset.view==="admin",visible=isAdmin?adminAccess:enabled.has(button.dataset.view);button.hidden=!visible;const view=document.getElementById(button.dataset.view);if(view)view.hidden=!visible});
+  document.querySelectorAll(".nav-link[data-view]").forEach(button=>{const visible=enabled.has(button.dataset.view);button.hidden=!visible;const view=document.getElementById(button.dataset.view);if(view)view.hidden=!visible});
   const active=document.querySelector(".view.active");if(active?.hidden)showView("dashboard");
   renderLessons();
 }

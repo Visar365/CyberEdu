@@ -1,4 +1,4 @@
-const { send, readBody, getSupabaseConfig, readJson } = require("../lib/user-admin");
+const { send, readBody, getSupabaseConfig, readJson } = require("../lib/supabase");
 
 module.exports = async function handler(req, res) {
   const config = getSupabaseConfig();

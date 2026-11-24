@@ -45,9 +45,5 @@ async function progressRequest(config, method, query, body) {
   return payload;
 }
 
-async function isAdmin(user) {
-  const adminEmail = (process.env.CYBEREDU_ADMIN_EMAIL || "").trim().toLowerCase();
-  return Boolean(adminEmail && user?.email?.trim().toLowerCase() === adminEmail);
-}
 
-module.exports = { getSupabaseConfig, readBody, readJson, verifyUser, progressRequest, isAdmin, send };
+module.exports = { getSupabaseConfig, readBody, readJson, verifyUser, progressRequest, send };
