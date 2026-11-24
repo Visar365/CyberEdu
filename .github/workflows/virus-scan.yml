@@ -30,7 +30,9 @@ jobs:
           sudo apt-get install --yes clamav
 
       - name: Update virus definitions
-        run: sudo freshclam --stdout
+        run: |
+          sudo systemctl stop clamav-freshclam || true
+          sudo freshclam --stdout
 
       - name: Scan CyberEdu source
         run: clamscan --recursive --infected --exclude-dir='^\.git$' Platforme_Siguria_Kibernetike_AI
