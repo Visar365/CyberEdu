@@ -88,7 +88,7 @@ function validateSiteConfig(config, lessons) {
 
 async function saveSiteConfig(config) { await redis("set", SITE_STORE_KEY, config); }
 
-async function commandSite(request, config, lessons, { maxLessonChanges = 3 } = {}) {
+async function commandSite(request, config, lessons, { maxLessonChanges = 3, requireNewLesson = false } = {}) {
   requireEnv("OPENAI_API_KEY", "KV_REST_API_URL", "KV_REST_API_TOKEN");
   const response = await fetch("https://api.openai.com/v1/responses", {
     method: "POST",
@@ -114,6 +114,7 @@ async function commandSite(request, config, lessons, { maxLessonChanges = 3 } = 
   for (const key of ["siteName", "tagline", "announcement", "heroTitle", "heroDescription", "sidebarTitle", "sidebarNote", "tipTitle", "tipText"]) cleaned[key] = cleaned[key].trim();
   const proposals = parsed.lessonProposals || [];
   if (!Array.isArray(proposals) || proposals.length > 3) throw new Error("AI ktheu shumë ndryshime në mësime.");
+  if (requireNewLesson && (proposals.length !== 1 || proposals[0]?.operation !== "add")) throw new Error("Cikli ditor kërkonte një mësim të ri.");
   const currentIds = new Set(lessons.map(lesson => lesson.id));
   let nextId = Math.max(0, ...currentIds) + 1;
   for (const proposal of proposals) {
